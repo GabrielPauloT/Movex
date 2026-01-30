@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/Button';
 import { Phone } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import CountUp from '@/components/ui/CountUp';
 
 const CITIES = ['Melbourne', 'Sydney', 'Canberra', 'Adelaide'];
 
@@ -120,7 +121,9 @@ export default function QuoteCalculator() {
       {estimate !== null && (
         <div className="mt-6 p-8 bg-gradient-to-br from-primary to-accent rounded-xl text-center text-white animate-in fade-in zoom-in-95 duration-300">
           <div className="text-sm font-bold uppercase tracking-widest opacity-90 mb-2">Your Estimated Cost</div>
-          <div className="text-[3.5rem] font-black leading-none mb-5 tracking-tight">${estimate.toLocaleString()}</div>
+          <div className="text-[3.5rem] font-black leading-none mb-5 tracking-tight">
+            <CountUp end={estimate} prefix="$" duration={1500} />
+          </div>
           <a href="tel:1300480732" className="block w-full">
             <Button variant="white" size="lg" className="w-full">
               <Phone className="w-4 h-4 mr-2" />

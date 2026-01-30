@@ -11,7 +11,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', isLoading, children, disabled, ...props }, ref) => {
     const variants = {
-      primary: 'bg-primary text-white hover:bg-primary-dark shadow-[0_2px_8px_rgba(230,126,34,0.3)] hover:shadow-[0_4px_12px_rgba(230,126,34,0.4)] hover:-translate-y-px',
+      primary: 'bg-gradient-to-r from-primary to-accent text-white hover:brightness-110 shadow-[0_4px_14px_rgba(230,126,34,0.3)] hover:shadow-[0_6px_20px_rgba(230,126,34,0.5)] hover:-translate-y-0.5',
       secondary: 'bg-white text-gray-700 border-2 border-gray-300 hover:bg-gray-50 hover:border-gray-400',
       white: 'bg-white text-primary hover:bg-gray-50',
       outline: 'border-2 border-primary text-primary hover:bg-primary/5',
@@ -29,7 +29,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={isLoading || disabled}
         className={cn(
-          'inline-flex items-center justify-center gap-2 rounded-md font-bold transition-all duration-200 active:scale-[0.98]',
+          'inline-flex items-center justify-center gap-2 rounded-md font-bold transition-all duration-200 active:scale-[0.98] cursor-pointer',
           variants[variant],
           sizes[size],
           (isLoading || disabled) && 'opacity-70 cursor-not-allowed hover:transform-none hover:shadow-none',

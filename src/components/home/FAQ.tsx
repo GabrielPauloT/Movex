@@ -43,7 +43,7 @@ export default function FAQ() {
 
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={index}
               className={cn(
                 "bg-white border-2 rounded-xl overflow-hidden transition-all duration-300",
@@ -51,7 +51,7 @@ export default function FAQ() {
               )}
             >
               <button
-                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
+                className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none cursor-pointer"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <span className="text-lg font-bold text-secondary pr-8">{faq.question}</span>
@@ -62,8 +62,8 @@ export default function FAQ() {
                   <Plus className="w-5 h-5" />
                 </div>
               </button>
-              
-              <div 
+
+              <div
                 className={cn(
                   "transition-all duration-300 ease-in-out overflow-hidden",
                   openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
