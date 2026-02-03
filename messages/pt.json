@@ -1,0 +1,400 @@
+{
+    "TopBar": {
+        "resources": "Recursos",
+        "support": "Suporte",
+        "payment": "Fazer Pagamento"
+    },
+    "Header": {
+        "nav": {
+            "services": "Serviços",
+            "howItWorks": "Como Funciona",
+            "pricing": "Preços",
+            "reviews": "Avaliações",
+            "contact": "Contato",
+            "volumeCalculator": "Calculadora de Volume"
+        },
+        "getQuote": "Fazer Orçamento",
+        "tagline": "MUDANÇAS E ARMAZENAMENTO"
+    },
+    "Hero": {
+        "trustedSince": "CONFIÁVEL DESDE 2009",
+        "title": "Profissionais de <primary>Mudanças Interestaduais</primary> em quem Você Pode Confiar",
+        "description": "Empresa familiar atendendo de Melbourne a Sydney, Canberra e Adelaide. Totalmente segurada, preços transparentes e cuidado excepcional por mais de 15 anos.",
+        "quote": "\"Mudar não precisa ser estressante. Deixe nossa equipe experiente cuidar de tudo.\"",
+        "buttons": {
+            "calculate": "Calcular Custo",
+            "call": "Ligar Agora"
+        },
+        "trust": {
+            "customers": "Clientes Felizes",
+            "insured": "Totalmente Segurado",
+            "rating": "Avaliação Google",
+            "owned": "Propriedade e Operação"
+        }
+    },
+    "StatsBar": {
+        "years": "Anos de Negócio",
+        "moves": "Mudanças Realizadas",
+        "insured": "Totalmente Segurado",
+        "rating": "Avaliação de Clientes"
+    },
+    "Features": {
+        "sectionTitle": "Por que escolher a MoverX",
+        "title": "Experiência, Confiança e Cuidado",
+        "description": "Como uma empresa familiar, entendemos o que é mais importante: tratar seus pertences como se fossem nossos e tornar sua mudança o mais tranquila possível.",
+        "items": {
+            "insured": {
+                "title": "Proteção Total",
+                "description": "Seguro total de trânsito e responsabilidade civil em cada mudança. Sua tranquilidade é nossa prioridade."
+            },
+            "family": {
+                "title": "Familiar desde 2009",
+                "description": "Três gerações de experiência em mudanças. Não somos uma empresa qualquer — somos uma família servindo famílias."
+            },
+            "fees": {
+                "title": "Sem Taxas Ocultas",
+                "description": "O que você vê é o que você paga. Preços claros e transparentes, sem surpresas no dia da mudança."
+            },
+            "tracking": {
+                "title": "Rastreamento em Tempo Real",
+                "description": "Rastreamento GPS e atualizações ao vivo durante toda a sua mudança. Saiba sempre onde estão seus pertences."
+            }
+        }
+    },
+    "Services": {
+        "sectionTitle": "Nossos Serviços",
+        "title": "Soluções Completas de Mudança",
+        "description": "Seja qual for a sua necessidade de mudança, temos a experiência e o equipamento para cuidar disso com cuidado.",
+        "items": {
+            "interstate": {
+                "title": "Mudança Interestadual",
+                "description": "Melbourne para Sydney, Canberra e Adelaide. Seguro total, rastreamento GPS e suporte dedicado durante toda a jornada."
+            },
+            "packing": {
+                "title": "Embalagem Profissional",
+                "description": "Serviços de embalagem especializada com materiais premium. Especialistas em itens frágeis e caixotes personalizados disponíveis."
+            },
+            "commercial": {
+                "title": "Mudanças Comerciais",
+                "description": "Realocações de escritórios e armazéns com o mínimo de interrupção. Serviço fora do horário comercial e gerenciamento de projetos incluídos."
+            },
+            "local": {
+                "title": "Mudança Local",
+                "description": "Mudanças rápidas e cuidadosas dentro de Melbourne. Serviço no mesmo dia disponível para realocações urgentes."
+            },
+            "storage": {
+                "title": "Armazenamento Seguro",
+                "description": "Armazenamento climatizado com segurança 24/7. Opções de curto ou longo prazo com acesso flexível."
+            },
+            "specialty": {
+                "title": "Itens Especiais",
+                "description": "Pianos, antiguidades, obras de arte. Nossos especialistas lidam com itens delicados e valiosos com cuidado extra."
+            }
+        }
+    },
+    "Process": {
+        "sectionTitle": "Como funciona",
+        "title": "Processo Simples e Transparente",
+        "description": "Desde a sua primeira ligação até a entrega final, estamos com você em cada passo do caminho.",
+        "steps": {
+            "quote": {
+                "title": "Receba seu Orçamento",
+                "description": "Avaliação gratuita com preços transparentes e detalhados. Sem obrigações."
+            },
+            "pack": {
+                "title": "Nós Embalamos e Carregamos",
+                "description": "Embalagem profissional com materiais premium. Tudo etiquetado e protegido."
+            },
+            "transport": {
+                "title": "Transporte Seguro",
+                "description": "Viagem monitorada por GPS com atualizações em tempo real e comunicação constante."
+            },
+            "delivery": {
+                "title": "Entrega e Montagem",
+                "description": "Descarregamos, desembalamos e colocamos tudo exatamente onde você quiser."
+            }
+        }
+    },
+    "Pricing": {
+        "sectionTitle": "Preços",
+        "title": "Pacotes Honestos e Transparentes",
+        "description": "Todos os pacotes incluem seguro total. Escolha o nível de serviço ideal para você.",
+        "mostPopular": "Mais Popular",
+        "getQuote": "Fazer Orçamento",
+        "packages": {
+            "essential": {
+                "name": "Essencial",
+                "subtitle": "Serviços básicos de mudança",
+                "description": "Perfeito para mudanças de 1-2 quartos",
+                "features": {
+                    "loading": "Carregamento e descarregamento profissional",
+                    "insurance": "Cobertura básica de seguro",
+                    "materials": "Materiais de embalagem padrão",
+                    "gps": "Rastreamento GPS",
+                    "packing": "Serviço completo de embalagem",
+                    "assembly": "Montagem de móveis"
+                }
+            },
+            "complete": {
+                "name": "Completo",
+                "subtitle": "Mudança completa",
+                "description": "Ideal para casas de 3-4 quartos",
+                "features": {
+                    "essential": "Tudo no Essencial",
+                    "packing": "Serviço completo de embalagem",
+                    "insurance": "Seguro premium",
+                    "assembly": "Desmontagem e montagem de móveis",
+                    "storage": "30 dias de armazenamento gratuito",
+                    "scheduling": "Agendamento prioritário"
+                }
+            },
+            "premium": {
+                "name": "Premium",
+                "subtitle": "Serviço de luxo",
+                "description": "Para 4+ quartos ou mudanças de luxo",
+                "features": {
+                    "complete": "Tudo no Completo",
+                    "coordinator": "Coordenador de mudança dedicado",
+                    "crating": "Caixotes personalizados para valores",
+                    "storage": "90 dias de armazenamento gratuito",
+                    "sameday": "Serviço no mesmo dia disponível",
+                    "cleaning": "Limpeza pós-mudança"
+                }
+            }
+        }
+    },
+    "Testimonials": {
+        "sectionTitle": "Depoimentos",
+        "title": "O que nossos clientes dizem",
+        "description": "Feedback real de pessoas reais. Veja por que as famílias confiam em nós para suas mudanças.",
+        "items": [
+            {
+                "text": "A equipe foi incrível. Trataram nossos pertences como se fossem deles e tornaram nossa mudança de Melbourne para Sydney completamente livre de estresse. Recomendo muito!",
+                "author": "Sarah Johnson",
+                "location": "Melbourne → Sydney"
+            },
+            {
+                "text": "Profissionais, amigáveis e eficientes. O orçamento foi transparente, sem custos ocultos, e entregaram exatamente o que prometeram. Melhor empresa de mudanças que já usamos.",
+                "author": "Michael Chen",
+                "location": "Melbourne → Canberra"
+            },
+            {
+                "text": "Eles cuidaram da nossa mudança de escritório com muito profissionalismo. Tempo de inatividade mínimo, tudo chegou perfeitamente e foi maravilhoso trabalhar com a equipe.",
+                "author": "Emma Parker",
+                "location": "Cliente Comercial"
+            }
+        ]
+    },
+    "FAQ": {
+        "sectionTitle": "FAQ",
+        "title": "Suas Perguntas Respondidas",
+        "description": "Tem perguntas? Nós temos respostas. Não consegue encontrar o que procura? Ligue para nós.",
+        "items": [
+            {
+                "question": "Com que antecedência devo reservar?",
+                "answer": "Recomendamos reservar com 2-4 semanas de antecedência para mudanças interestaduais, especialmente durante a alta temporada (verão e final de mês). No entanto, muitas vezes podemos acomodar mudanças de última hora — basta nos ligar!"
+            },
+            {
+                "question": "Que seguro vocês oferecem?",
+                "answer": "Todas as nossas mudanças incluem seguro total de trânsito e responsabilidade civil. A cobertura básica está incluída em todos os pacotes, com opções de cobertura adicional para itens de alto valor. Somos totalmente licenciados e segurados para sua tranquilidade."
+            },
+            {
+                "question": "Posso rastrear meus pertences?",
+                "answer": "Sim! Todas as mudanças interestaduais incluem rastreamento por GPS. Você receberá atualizações em tempo real sobre a localização da sua carga e a estimativa de chegada. Nossa equipe também está disponível por telefone para atualizações a qualquer momento."
+            },
+            {
+                "question": "O que vocês não podem transportar?",
+                "answer": "Por razões legais e de segurança, não podemos transportar materiais perigosos, alimentos perecíveis, plantas (interestaduais), animais de estimação ou itens ilegais. Ficaremos felizes em aconselhar sobre alternativas para plantas e animais de estimação, se necessário."
+            },
+            {
+                "question": "Quais são os termos de pagamento?",
+                "answer": "Exigimos um depósito de 25% para garantir sua reserva, com o saldo devido na conclusão. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Planos de pagamento disponíveis para mudanças maiores."
+            }
+        ]
+    },
+    "CTA": {
+        "title": "Pronto para fazer sua mudança?",
+        "description": "Deixe nossa família ajudar a sua. Receba seu orçamento gratuito hoje — sem obrigações, sem pressão, apenas conselhos honestos.",
+        "call": "Ligar 1300 480 732",
+        "calculate": "Calcular Online"
+    },
+    "QuoteCalculator": {
+        "title": "Orçamento Instantâneo",
+        "subtitle": "Sem taxas ocultas, sem surpresas",
+        "labels": {
+            "from": "Saindo de",
+            "to": "Indo para",
+            "size": "Tamanho do Imóvel",
+            "date": "Data Preferida"
+        },
+        "placeholders": {
+            "city": "Selecione a cidade",
+            "size": "Selecione o tamanho"
+        },
+        "button": "Calcular Estimativa",
+        "errors": {
+            "fields": "Por favor, preencha todos os campos",
+            "sameCity": "Cidades de origem e destino não podem ser as mesmas"
+        },
+        "result": {
+            "title": "Seu Custo Estimado",
+            "call": "Ligar para Confirmar Reserva",
+            "note": "Inclui seguro e materiais de embalagem premium. Preço final confirmado após avaliação."
+        },
+        "sizes": {
+            "1bed": "1 Quarto",
+            "2bed": "2 Quartos",
+            "3bed": "3 Quartos",
+            "4bed": "4+ Quartos"
+        }
+    },
+    "Home": {
+        "title": "MoverX",
+        "description": "Soluções em mudanças"
+    },
+    "Footer": {
+        "header": {
+            "about": "MoverX Solutions",
+            "tagline": "Mudanças e Armazenamento",
+            "description": "Empresa familiar operando desde 2009. Serviços profissionais de mudança e armazenamento em Melbourne, Sydney, Canberra e Adelaide. Três gerações de expertise em mudanças."
+        },
+        "titles": {
+            "services": "Serviços",
+            "company": "Empresa",
+            "getInTouch": "Entre em Contato"
+        },
+        "services": {
+            "interstate": "Mudança Interestadual",
+            "local": "Mudança Local",
+            "packing": "Serviços de Embalagem",
+            "storage": "Soluções de Armazenamento",
+            "commercial": "Mudanças Comerciais"
+        },
+        "company": {
+            "about": "Sobre Nós",
+            "reviews": "Avaliações",
+            "faq": "FAQ",
+            "careers": "Carreiras",
+            "payment": "Fazer Pagamento"
+        },
+        "hours": {
+            "title": "Horários",
+            "weekdays": "Seg-Sex: 8h - 17h",
+            "weekend": "Sáb: 9h - 16h | Dom: Fechado"
+        },
+        "legal": {
+            "rights": "© 2024 MoverX Solutions. Todos os direitos reservados. ABN: 55 608 835 794",
+            "privacy": "Política de Privacidade",
+            "terms": "Termos de Serviço"
+        }
+    },
+    "VolumeCalculator": {
+        "title": "Calculadora de Volume",
+        "subtitle": "Selecione seus itens para calcular o volume e obter uma recomendação de caminhão",
+        "search": {
+            "placeholder": "Buscar itens...",
+            "noResults": "Nenhum item encontrado para \"{query}\""
+        },
+        "categories": {
+            "bedroom": "Quarto",
+            "living": "Sala de Estar",
+            "kitchen": "Cozinha",
+            "dining": "Sala de Jantar",
+            "office": "Escritório",
+            "outdoor": "Área Externa",
+            "boxes": "Caixas"
+        },
+        "items": {
+            "add": "Adicionar Item",
+            "single_bed": "Cama de Solteiro",
+            "double_bed": "Cama de Casal",
+            "queen_bed": "Cama Queen",
+            "king_bed": "Cama King",
+            "wardrobe_small": "Guarda-roupa Pequeno",
+            "wardrobe_large": "Guarda-roupa Grande",
+            "dresser": "Cômoda",
+            "nightstand": "Criado-mudo",
+            "bedside_table": "Mesa de Cabeceira",
+            "chest_drawers": "Gaveteiro",
+            "mirror": "Espelho",
+            "sofa_2seat": "Sofá 2 Lugares",
+            "sofa_3seat": "Sofá 3 Lugares",
+            "armchair": "Poltrona",
+            "coffee_table": "Mesa de Centro",
+            "tv_stand": "Rack de TV",
+            "tv_small": "TV (até 50\")",
+            "tv_large": "TV (50\"+)",
+            "bookshelf": "Estante",
+            "side_table": "Mesa Lateral",
+            "cabinet": "Cristaleira",
+            "rug_large": "Tapete Grande",
+            "fridge": "Geladeira",
+            "freezer": "Freezer",
+            "washing_machine": "Máquina de Lavar",
+            "dryer": "Secadora",
+            "dishwasher": "Lava-louças",
+            "microwave": "Micro-ondas",
+            "kitchen_table": "Mesa de Cozinha",
+            "kitchen_chairs": "Cadeira de Cozinha",
+            "pantry": "Armário de Despensa",
+            "dining_table_4": "Mesa Jantar (4 lug)",
+            "dining_table_6": "Mesa Jantar (6 lug)",
+            "dining_table_8": "Mesa Jantar (8 lug)",
+            "dining_chair": "Cadeira de Jantar",
+            "buffet": "Buffet",
+            "china_cabinet": "Armário de Porcelana",
+            "desk": "Escrivaninha",
+            "office_chair": "Cadeira de Escritório",
+            "filing_cabinet_2": "Arquivo (2 gavetas)",
+            "filing_cabinet_4": "Arquivo (4 gavetas)",
+            "bookshelf_office": "Estante de Livros",
+            "printer": "Impressora",
+            "bbq": "Churrasqueira",
+            "outdoor_table": "Mesa Externa",
+            "outdoor_chair": "Cadeira Externa",
+            "sun_lounger": "Espreguiçadeira",
+            "umbrella": "Ombrelone",
+            "garden_tools": "Caixa de Ferramentas",
+            "bike": "Bicicleta",
+            "lawnmower": "Cortador de Grama",
+            "box_small": "Caixa Pequena",
+            "box_medium": "Caixa Média",
+            "box_large": "Caixa Grande",
+            "box_wardrobe": "Caixa Guarda-Roupa",
+            "box_book": "Caixa de Livros"
+        },
+        "summary": {
+            "title": "Resumo da Mudança",
+            "itemsSelected": "{count} itens selecionados",
+            "totalVolume": "Volume Total",
+            "capacity": "capacidade de",
+            "noItems": "Nenhum item selecionado",
+            "getQuote": "Obter Cotação Grátis"
+        },
+        "trucks": {
+            "4T": {
+                "description": "Perfeito para apartamentos de 1-2 quartos"
+            },
+            "8T": {
+                "description": "Ideal para casas de 2-3 quartos"
+            },
+            "10T": {
+                "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+            }
+        },
+        "modal": {
+            "title": "Solicite sua Cotação",
+            "totalVolume": "Volume Total",
+            "recommended": "Recomendado",
+            "form": {
+                "name": "Nome Completo",
+                "email": "E-mail",
+                "phone": "Telefone",
+                "pickup": "Retirada (Bairro/CEP)",
+                "delivery": "Entrega (Bairro/CEP)",
+                "submit": "Enviar Solicitação"
+            },
+            "success": "Solicitação enviada! (Demo)"
+        }
+    }
+}

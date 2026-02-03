@@ -1,0 +1,400 @@
+{
+    "TopBar": {
+        "resources": "Resources",
+        "support": "Support",
+        "payment": "Make a Payment"
+    },
+    "Header": {
+        "nav": {
+            "services": "Services",
+            "howItWorks": "How It Works",
+            "pricing": "Pricing",
+            "reviews": "Reviews",
+            "contact": "Contact",
+            "volumeCalculator": "Volume Calculator"
+        },
+        "getQuote": "Get a Quote",
+        "tagline": "REMOVALS & STORAGE"
+    },
+    "Hero": {
+        "trustedSince": "TRUSTED SINCE 2009",
+        "title": "Professional <primary>Interstate Removalists</primary> You Can Trust",
+        "description": "Family-owned business serving Melbourne to Sydney, Canberra and Adelaide. Fully insured, transparent pricing, and exceptional care for over 15 years.",
+        "quote": "\"Moving doesn't have to be stressful. Let our experienced team handle everything.\"",
+        "buttons": {
+            "calculate": "Calculate Your Cost",
+            "call": "Call Now"
+        },
+        "trust": {
+            "customers": "Happy Customers",
+            "insured": "Fully Insured",
+            "rating": "Google Rating",
+            "owned": "Owned & Operated"
+        }
+    },
+    "StatsBar": {
+        "years": "Years in Business",
+        "moves": "Successful Moves",
+        "insured": "Fully Insured",
+        "rating": "Customer Rating"
+    },
+    "Features": {
+        "sectionTitle": "Why Choose MoverX",
+        "title": "Experience, Trust & Care",
+        "description": "As a family-owned business, we understand what matters most: treating your belongings like our own and making your move as stress-free as possible.",
+        "items": {
+            "insured": {
+                "title": "Fully Insured Protection",
+                "description": "Comprehensive Transit and Public Liability insurance on every move. Your peace of mind is our priority."
+            },
+            "family": {
+                "title": "Family-Owned Since 2009",
+                "description": "Three generations of moving expertise. We're not a corporation—we're a family serving families."
+            },
+            "fees": {
+                "title": "No Hidden Fees",
+                "description": "What you see is what you pay. Clear, upfront pricing with no surprises on moving day."
+            },
+            "tracking": {
+                "title": "Real-Time Tracking",
+                "description": "GPS tracking and live updates throughout your move. Always know where your belongings are."
+            }
+        }
+    },
+    "Services": {
+        "sectionTitle": "Our Services",
+        "title": "Complete Moving Solutions",
+        "description": "Whatever your moving needs, we have the expertise and equipment to handle it with care.",
+        "items": {
+            "interstate": {
+                "title": "Interstate Moving",
+                "description": "Melbourne to Sydney, Canberra & Adelaide. Full insurance, GPS tracking, and dedicated support throughout your journey."
+            },
+            "packing": {
+                "title": "Professional Packing",
+                "description": "Expert packing services with premium materials. Fragile item specialists and custom crating available."
+            },
+            "commercial": {
+                "title": "Commercial Moves",
+                "description": "Office and warehouse relocations with minimal disruption. After-hours service and project management included."
+            },
+            "local": {
+                "title": "Local Moving",
+                "description": "Quick and careful moves within Melbourne. Same-day service available for urgent relocations."
+            },
+            "storage": {
+                "title": "Secure Storage",
+                "description": "Climate-controlled storage with 24/7 security. Short or long-term options with flexible access."
+            },
+            "specialty": {
+                "title": "Specialty Items",
+                "description": "Pianos, antiques, artwork. Our specialists handle delicate and valuable items with extra care."
+            }
+        }
+    },
+    "Process": {
+        "sectionTitle": "How It Works",
+        "title": "Simple, Transparent Process",
+        "description": "From your first call to final delivery, we're with you every step of the way.",
+        "steps": {
+            "quote": {
+                "title": "Get Your Quote",
+                "description": "Free assessment with transparent, detailed pricing. No obligations."
+            },
+            "pack": {
+                "title": "We Pack & Load",
+                "description": "Professional packing with premium materials. Everything labeled and protected."
+            },
+            "transport": {
+                "title": "Safe Transport",
+                "description": "GPS-tracked journey with real-time updates and constant communication."
+            },
+            "delivery": {
+                "title": "Delivery & Setup",
+                "description": "Unload, unpack, and place everything exactly where you want it."
+            }
+        }
+    },
+    "Pricing": {
+        "sectionTitle": "Pricing",
+        "title": "Honest, Transparent Packages",
+        "description": "All packages include full insurance. Choose the level of service that's right for you.",
+        "mostPopular": "Most Popular",
+        "getQuote": "Get Quote",
+        "packages": {
+            "essential": {
+                "name": "Essential",
+                "subtitle": "Core moving services",
+                "description": "Perfect for 1-2 bedroom moves",
+                "features": {
+                    "loading": "Professional loading & unloading",
+                    "insurance": "Basic insurance coverage",
+                    "materials": "Standard packing materials",
+                    "gps": "GPS tracking",
+                    "packing": "Full packing service",
+                    "assembly": "Furniture assembly"
+                }
+            },
+            "complete": {
+                "name": "Complete",
+                "subtitle": "Full-service moving",
+                "description": "Ideal for 3-4 bedroom homes",
+                "features": {
+                    "essential": "Everything in Essential",
+                    "packing": "Full packing service",
+                    "insurance": "Premium insurance",
+                    "assembly": "Furniture disassembly & assembly",
+                    "storage": "30 days free storage",
+                    "scheduling": "Priority scheduling"
+                }
+            },
+            "premium": {
+                "name": "Premium",
+                "subtitle": "White-glove service",
+                "description": "For 4+ bedrooms or luxury moves",
+                "features": {
+                    "complete": "Everything in Complete",
+                    "coordinator": "Dedicated move coordinator",
+                    "crating": "Custom crating for valuables",
+                    "storage": "90 days free storage",
+                    "sameday": "Same-day service available",
+                    "cleaning": "Post-move cleaning"
+                }
+            }
+        }
+    },
+    "Testimonials": {
+        "sectionTitle": "Testimonials",
+        "title": "What Our Customers Say",
+        "description": "Real feedback from real people. See why families trust us with their moves.",
+        "items": [
+            {
+                "text": "The team was incredible. They treated our belongings like their own and made our Melbourne to Sydney move completely stress-free. Can't recommend them enough!",
+                "author": "Sarah Johnson",
+                "location": "Melbourne → Sydney"
+            },
+            {
+                "text": "Professional, friendly, and efficient. The quote was transparent, no hidden costs, and they delivered exactly what they promised. Best moving company we've used.",
+                "author": "Michael Chen",
+                "location": "Melbourne → Canberra"
+            },
+            {
+                "text": "They handled our office move with such professionalism. Minimal downtime, everything arrived perfectly, and the team was just wonderful to work with.",
+                "author": "Emma Parker",
+                "location": "Commercial Client"
+            }
+        ]
+    },
+    "FAQ": {
+        "sectionTitle": "FAQ",
+        "title": "Your Questions Answered",
+        "description": "Have questions? We have answers. Can't find what you're looking for? Give us a call.",
+        "items": [
+            {
+                "question": "How far in advance should I book?",
+                "answer": "We recommend booking 2-4 weeks in advance for interstate moves, especially during peak season (summer and end of month). However, we can often accommodate last-minute moves—just give us a call!"
+            },
+            {
+                "question": "What insurance do you provide?",
+                "answer": "All our moves include comprehensive Transit and Public Liability insurance. Basic coverage is included in every package, with options for additional coverage for high-value items. We're fully licensed and insured for your peace of mind."
+            },
+            {
+                "question": "Can I track my belongings?",
+                "answer": "Yes! All interstate moves include GPS tracking. You'll receive real-time updates on your shipment's location and estimated arrival time. Our team is also available by phone for updates anytime."
+            },
+            {
+                "question": "What can't you move?",
+                "answer": "For safety and legal reasons, we cannot transport hazardous materials, perishable foods, plants (interstate), pets, or illegal items. We're happy to advise on alternatives for plants and pets if needed."
+            },
+            {
+                "question": "What are your payment terms?",
+                "answer": "We require a 25% deposit to secure your booking, with the balance due upon completion. We accept all major credit cards, bank transfers, and cash. Payment plans available for larger moves."
+            }
+        ]
+    },
+    "CTA": {
+        "title": "Ready to Make Your Move?",
+        "description": "Let our family help your family. Get your free quote today—no obligations, no pressure, just honest advice.",
+        "call": "Call 1300 480 732",
+        "calculate": "Calculate Online"
+    },
+    "QuoteCalculator": {
+        "title": "Get Instant Quote",
+        "subtitle": "No hidden fees, no surprises",
+        "labels": {
+            "from": "Moving From",
+            "to": "Moving To",
+            "size": "Property Size",
+            "date": "Preferred Date"
+        },
+        "placeholders": {
+            "city": "Select city",
+            "size": "Select size"
+        },
+        "button": "Calculate Estimate",
+        "errors": {
+            "fields": "Please fill in all fields",
+            "sameCity": "Pickup and delivery cities cannot be the same"
+        },
+        "result": {
+            "title": "Your Estimated Cost",
+            "call": "Call to Confirm Booking",
+            "note": "Includes insurance & premium packing materials. Final price confirmed after assessment."
+        },
+        "sizes": {
+            "1bed": "1 Bedroom",
+            "2bed": "2 Bedrooms",
+            "3bed": "3 Bedrooms",
+            "4bed": "4+ Bedrooms"
+        }
+    },
+    "Home": {
+        "title": "MoverX",
+        "description": "Moving solutions"
+    },
+    "Footer": {
+        "header": {
+            "about": "MoverX Solutions",
+            "tagline": "Removals & Storage",
+            "description": "Family-owned and operated since 2009. Professional moving and storage services across Melbourne, Sydney, Canberra, and Adelaide. Three generations of moving expertise."
+        },
+        "titles": {
+            "services": "Services",
+            "company": "Company",
+            "getInTouch": "Get in Touch"
+        },
+        "services": {
+            "interstate": "Interstate Moving",
+            "local": "Local Moving",
+            "packing": "Packing Services",
+            "storage": "Storage Solutions",
+            "commercial": "Commercial Moves"
+        },
+        "company": {
+            "about": "About Us",
+            "reviews": "Reviews",
+            "faq": "FAQ",
+            "careers": "Careers",
+            "payment": "Make a Payment"
+        },
+        "hours": {
+            "title": "Hours",
+            "weekdays": "Mon-Fri: 8AM - 5PM",
+            "weekend": "Sat: 9AM - 4PM | Sun: Closed"
+        },
+        "legal": {
+            "rights": "© 2024 MoverX Solutions. All rights reserved. ABN: 55 608 835 794",
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service"
+        }
+    },
+    "VolumeCalculator": {
+        "title": "Volume Calculator",
+        "subtitle": "Select your items to calculate volume and get a truck recommendation",
+        "search": {
+            "placeholder": "Search for items...",
+            "noResults": "No items found matching \"{query}\""
+        },
+        "categories": {
+            "bedroom": "Bedroom",
+            "living": "Living Room",
+            "kitchen": "Kitchen",
+            "dining": "Dining Room",
+            "office": "Office",
+            "outdoor": "Outdoor",
+            "boxes": "Boxes"
+        },
+        "items": {
+            "add": "Add Item",
+            "single_bed": "Single Bed",
+            "double_bed": "Double Bed",
+            "queen_bed": "Queen Bed",
+            "king_bed": "King Bed",
+            "wardrobe_small": "Small Wardrobe",
+            "wardrobe_large": "Large Wardrobe",
+            "dresser": "Dresser",
+            "nightstand": "Nightstand",
+            "bedside_table": "Bedside Table",
+            "chest_drawers": "Chest of Drawers",
+            "mirror": "Mirror",
+            "sofa_2seat": "2-Seater Sofa",
+            "sofa_3seat": "3-Seater Sofa",
+            "armchair": "Armchair",
+            "coffee_table": "Coffee Table",
+            "tv_stand": "TV Stand",
+            "tv_small": "TV (up to 50\")",
+            "tv_large": "TV (50\"+)",
+            "bookshelf": "Bookshelf",
+            "side_table": "Side Table",
+            "cabinet": "Display Cabinet",
+            "rug_large": "Large Rug",
+            "fridge": "Fridge",
+            "freezer": "Freezer",
+            "washing_machine": "Washing Machine",
+            "dryer": "Dryer",
+            "dishwasher": "Dishwasher",
+            "microwave": "Microwave",
+            "kitchen_table": "Kitchen Table",
+            "kitchen_chairs": "Kitchen Chair",
+            "pantry": "Pantry Cabinet",
+            "dining_table_4": "Dining Table (4 seat)",
+            "dining_table_6": "Dining Table (6 seat)",
+            "dining_table_8": "Dining Table (8 seat)",
+            "dining_chair": "Dining Chair",
+            "buffet": "Buffet",
+            "china_cabinet": "China Cabinet",
+            "desk": "Desk",
+            "office_chair": "Office Chair",
+            "filing_cabinet_2": "Filing Cabinet (2 drawer)",
+            "filing_cabinet_4": "Filing Cabinet (4 drawer)",
+            "bookshelf_office": "Bookshelf",
+            "printer": "Printer",
+            "bbq": "BBQ",
+            "outdoor_table": "Outdoor Table",
+            "outdoor_chair": "Outdoor Chair",
+            "sun_lounger": "Sun Lounger",
+            "umbrella": "Patio Umbrella",
+            "garden_tools": "Garden Tools Box",
+            "bike": "Bicycle",
+            "lawnmower": "Lawnmower",
+            "box_small": "Small Box",
+            "box_medium": "Medium Box",
+            "box_large": "Large Box",
+            "box_wardrobe": "Wardrobe Box",
+            "box_book": "Book Box"
+        },
+        "summary": {
+            "title": "Your Moving Summary",
+            "itemsSelected": "{count} items selected",
+            "totalVolume": "Total Volume",
+            "capacity": "capacity",
+            "noItems": "No items selected yet",
+            "getQuote": "Get Free Quote"
+        },
+        "trucks": {
+            "4T": {
+                "description": "Perfect for 1-2 bedroom apartments"
+            },
+            "8T": {
+                "description": "Ideal for 2-3 bedroom homes"
+            },
+            "10T": {
+                "description": "Best for 3+ bedroom homes or large moves"
+            }
+        },
+        "modal": {
+            "title": "Request Your Quote",
+            "totalVolume": "Total Volume",
+            "recommended": "Recommended",
+            "form": {
+                "name": "Full Name",
+                "email": "Email",
+                "phone": "Phone",
+                "pickup": "Pickup",
+                "delivery": "Delivery",
+                "submit": "Send Request"
+            },
+            "success": "Quote request submitted! (Demo)"
+        }
+    }
+}

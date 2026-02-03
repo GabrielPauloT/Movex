@@ -1,0 +1,109 @@
+{
+    "title": "Calculadora de Volume",
+    "subtitle": "Selecione seus itens para calcular o volume e obter uma recomendação de caminhão",
+    "search": {
+        "placeholder": "Buscar itens...",
+        "noResults": "Nenhum item encontrado para \"{query}\""
+    },
+    "categories": {
+        "bedroom": "Quarto",
+        "living": "Sala de Estar",
+        "kitchen": "Cozinha",
+        "dining": "Sala de Jantar",
+        "office": "Escritório",
+        "outdoor": "Área Externa",
+        "boxes": "Caixas"
+    },
+    "items": {
+        "add": "Adicionar Item",
+        "single_bed": "Cama de Solteiro",
+        "double_bed": "Cama de Casal",
+        "queen_bed": "Cama Queen",
+        "king_bed": "Cama King",
+        "wardrobe_small": "Guarda-roupa Pequeno",
+        "wardrobe_large": "Guarda-roupa Grande",
+        "dresser": "Cômoda",
+        "nightstand": "Criado-mudo",
+        "bedside_table": "Mesa de Cabeceira",
+        "chest_drawers": "Gaveteiro",
+        "mirror": "Espelho",
+        "sofa_2seat": "Sofá 2 Lugares",
+        "sofa_3seat": "Sofá 3 Lugares",
+        "armchair": "Poltrona",
+        "coffee_table": "Mesa de Centro",
+        "tv_stand": "Rack de TV",
+        "tv_small": "TV (até 50\")",
+        "tv_large": "TV (50\"+)",
+        "bookshelf": "Estante",
+        "side_table": "Mesa Lateral",
+        "cabinet": "Cristaleira",
+        "rug_large": "Tapete Grande",
+        "fridge": "Geladeira",
+        "freezer": "Freezer",
+        "washing_machine": "Máquina de Lavar",
+        "dryer": "Secadora",
+        "dishwasher": "Lava-louças",
+        "microwave": "Micro-ondas",
+        "kitchen_table": "Mesa de Cozinha",
+        "kitchen_chairs": "Cadeira de Cozinha",
+        "pantry": "Armário de Despensa",
+        "dining_table_4": "Mesa Jantar (4 lug)",
+        "dining_table_6": "Mesa Jantar (6 lug)",
+        "dining_table_8": "Mesa Jantar (8 lug)",
+        "dining_chair": "Cadeira de Jantar",
+        "buffet": "Buffet",
+        "china_cabinet": "Armário de Porcelana",
+        "desk": "Escrivaninha",
+        "office_chair": "Cadeira de Escritório",
+        "filing_cabinet_2": "Arquivo (2 gavetas)",
+        "filing_cabinet_4": "Arquivo (4 gavetas)",
+        "bookshelf_office": "Estante de Livros",
+        "printer": "Impressora",
+        "bbq": "Churrasqueira",
+        "outdoor_table": "Mesa Externa",
+        "outdoor_chair": "Cadeira Externa",
+        "sun_lounger": "Espreguiçadeira",
+        "umbrella": "Ombrelone",
+        "garden_tools": "Caixa de Ferramentas",
+        "bike": "Bicicleta",
+        "lawnmower": "Cortador de Grama",
+        "box_small": "Caixa Pequena",
+        "box_medium": "Caixa Média",
+        "box_large": "Caixa Grande",
+        "box_wardrobe": "Caixa Guarda-Roupa",
+        "box_book": "Caixa de Livros"
+    },
+    "summary": {
+        "title": "Resumo da Mudança",
+        "itemsSelected": "{count} itens selecionados",
+        "totalVolume": "Volume Total",
+        "capacity": "capacidade de",
+        "noItems": "Nenhum item selecionado",
+        "getQuote": "Obter Cotação Grátis"
+    },
+    "trucks": {
+        "4T": {
+            "description": "Perfeito para apartamentos de 1-2 quartos"
+        },
+        "8T": {
+            "description": "Ideal para casas de 2-3 quartos"
+        },
+        "10T": {
+            "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+        }
+    },
+    "modal": {
+        "title": "Solicite sua Cotação",
+        "totalVolume": "Volume Total",
+        "recommended": "Recomendado",
+        "form": {
+            "name": "Nome Completo",
+            "email": "E-mail",
+            "phone": "Telefone",
+            "pickup": "Retirada (Bairro/CEP)",
+            "delivery": "Entrega (Bairro/CEP)",
+            "submit": "Enviar Solicitação"
+        },
+        "success": "Solicitação enviada! (Demo)"
+    }
+}

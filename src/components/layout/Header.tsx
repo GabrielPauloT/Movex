@@ -1,28 +1,29 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { Link, usePathname, useRouter } from '@/i18n/routing';
 import { Truck, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { smoothScrollTo } from '@/lib/scroll';
-
-const navigation = [
-  { name: 'Services', href: '/#services' },
-  { name: 'How It Works', href: '/#process' },
-  { name: 'Pricing', href: '/#pricing' },
-  { name: 'Reviews', href: '/#testimonials' },
-  { name: 'Contact', href: '/#contact' },
-  { name: 'Volume Calculator', href: '/volume-calculator' },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+  const t = useTranslations('Header');
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const pathname = usePathname();
   const router = useRouter();
+
+  const navigation = [
+    { name: t('nav.services'), href: '/#services' },
+    { name: t('nav.howItWorks'), href: '/#process' },
+    { name: t('nav.pricing'), href: '/#pricing' },
+    { name: t('nav.reviews'), href: '/#testimonials' },
+    { name: t('nav.contact'), href: '/#contact' },
+    { name: t('nav.volumeCalculator'), href: '/volume-calculator' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,7 @@ export default function Header() {
     handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     if (pathname !== '/') {
@@ -43,7 +44,18 @@ export default function Header() {
     }
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
+      // Sort entries so navigation items are processed last
+      // This ensures that if both a section and a non-nav element (like features) 
+      // intersect at the same time, the navigation item wins
+      const sortedEntries = [...entries].sort((a, b) => {
+        const aIsNav = navigation.some(n => n.href === `/#${a.target.id}`);
+        const bIsNav = navigation.some(n => n.href === `/#${b.target.id}`);
+        if (aIsNav && !bIsNav) return 1;
+        if (!aIsNav && bIsNav) return -1;
+        return 0;
+      });
+
+      sortedEntries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection(entry.target.id);
         }
@@ -56,6 +68,16 @@ export default function Header() {
       threshold: 0
     });
 
+    // Observe non-nav sections to clear active state
+    // We observe these FIRST so they are processed earlier if unordered,
+    // though the sort above guarantees precedence.
+    ['quote', 'features'].forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
     navigation.forEach((item) => {
       if (item.href.startsWith('/#')) {
         const id = item.href.replace('/#', '');
@@ -66,16 +88,8 @@ export default function Header() {
       }
     });
 
-    // Observe non-nav sections to clear active state
-    ['quote', 'features'].forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) {
-        observer.observe(element);
-      }
-    });
-
     return () => observer.disconnect();
-  }, [pathname]);
+  }, [pathname, navigation]);
 
   const isActive = (item: typeof navigation[0]) => {
     if (item.href === pathname) return true;
@@ -154,7 +168,7 @@ export default function Header() {
           </div>
           <div className="flex flex-col">
             <span className="font-black text-2xl text-secondary leading-none tracking-tight">MoverX</span>
-            <span className="text-xs text-gray-600 font-semibold tracking-wider">REMOVALS & STORAGE</span>
+            <span className="text-xs text-gray-600 font-semibold tracking-wider">{t('tagline')}</span>
           </div>
         </Link>
 
@@ -178,7 +192,7 @@ export default function Header() {
 
         <div className="hidden lg:block">
           <Link href="/#quote" onClick={(e) => handleScroll(e, '/#quote')}>
-            <Button>Get a Quote</Button>
+            <Button>{t('getQuote')}</Button>
           </Link>
         </div>
 
@@ -204,7 +218,7 @@ export default function Header() {
               </Link>
             ))}
             <Link href="/#quote" onClick={(e) => handleScroll(e, '/#quote')}>
-              <Button className="w-full">Get a Quote</Button>
+              <Button className="w-full">{t('getQuote')}</Button>
             </Link>
           </div>
         )}

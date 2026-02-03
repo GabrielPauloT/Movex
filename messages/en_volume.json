@@ -1,0 +1,109 @@
+{
+    "title": "Volume Calculator",
+    "subtitle": "Select your items to calculate volume and get a truck recommendation",
+    "search": {
+        "placeholder": "Search for items...",
+        "noResults": "No items found matching \"{query}\""
+    },
+    "categories": {
+        "bedroom": "Bedroom",
+        "living": "Living Room",
+        "kitchen": "Kitchen",
+        "dining": "Dining Room",
+        "office": "Office",
+        "outdoor": "Outdoor",
+        "boxes": "Boxes"
+    },
+    "items": {
+        "add": "Add Item",
+        "single_bed": "Single Bed",
+        "double_bed": "Double Bed",
+        "queen_bed": "Queen Bed",
+        "king_bed": "King Bed",
+        "wardrobe_small": "Small Wardrobe",
+        "wardrobe_large": "Large Wardrobe",
+        "dresser": "Dresser",
+        "nightstand": "Nightstand",
+        "bedside_table": "Bedside Table",
+        "chest_drawers": "Chest of Drawers",
+        "mirror": "Mirror",
+        "sofa_2seat": "2-Seater Sofa",
+        "sofa_3seat": "3-Seater Sofa",
+        "armchair": "Armchair",
+        "coffee_table": "Coffee Table",
+        "tv_stand": "TV Stand",
+        "tv_small": "TV (up to 50\")",
+        "tv_large": "TV (50\"+)",
+        "bookshelf": "Bookshelf",
+        "side_table": "Side Table",
+        "cabinet": "Display Cabinet",
+        "rug_large": "Large Rug",
+        "fridge": "Fridge",
+        "freezer": "Freezer",
+        "washing_machine": "Washing Machine",
+        "dryer": "Dryer",
+        "dishwasher": "Dishwasher",
+        "microwave": "Microwave",
+        "kitchen_table": "Kitchen Table",
+        "kitchen_chairs": "Kitchen Chair",
+        "pantry": "Pantry Cabinet",
+        "dining_table_4": "Dining Table (4 seat)",
+        "dining_table_6": "Dining Table (6 seat)",
+        "dining_table_8": "Dining Table (8 seat)",
+        "dining_chair": "Dining Chair",
+        "buffet": "Buffet",
+        "china_cabinet": "China Cabinet",
+        "desk": "Desk",
+        "office_chair": "Office Chair",
+        "filing_cabinet_2": "Filing Cabinet (2 drawer)",
+        "filing_cabinet_4": "Filing Cabinet (4 drawer)",
+        "bookshelf_office": "Bookshelf",
+        "printer": "Printer",
+        "bbq": "BBQ",
+        "outdoor_table": "Outdoor Table",
+        "outdoor_chair": "Outdoor Chair",
+        "sun_lounger": "Sun Lounger",
+        "umbrella": "Patio Umbrella",
+        "garden_tools": "Garden Tools Box",
+        "bike": "Bicycle",
+        "lawnmower": "Lawnmower",
+        "box_small": "Small Box",
+        "box_medium": "Medium Box",
+        "box_large": "Large Box",
+        "box_wardrobe": "Wardrobe Box",
+        "box_book": "Book Box"
+    },
+    "summary": {
+        "title": "Your Moving Summary",
+        "itemsSelected": "{count} items selected",
+        "totalVolume": "Total Volume",
+        "capacity": "capacity",
+        "noItems": "No items selected yet",
+        "getQuote": "Get Free Quote"
+    },
+    "trucks": {
+        "4T": {
+            "description": "Perfect for 1-2 bedroom apartments"
+        },
+        "8T": {
+            "description": "Ideal for 2-3 bedroom homes"
+        },
+        "10T": {
+            "description": "Best for 3+ bedroom homes or large moves"
+        }
+    },
+    "modal": {
+        "title": "Request Your Quote",
+        "totalVolume": "Total Volume",
+        "recommended": "Recommended",
+        "form": {
+            "name": "Full Name",
+            "email": "Email",
+            "phone": "Phone",
+            "pickup": "Pickup",
+            "delivery": "Delivery",
+            "submit": "Send Request"
+        },
+        "success": "Quote request submitted! (Demo)"
+    }
+}
