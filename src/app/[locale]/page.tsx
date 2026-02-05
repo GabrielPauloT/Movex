@@ -24,7 +24,7 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const googleData = await getGooglePlaceDetails();
+  const googleData = await getGooglePlaceDetails(locale);
 
   return (
     <div className="min-h-screen bg-white">
