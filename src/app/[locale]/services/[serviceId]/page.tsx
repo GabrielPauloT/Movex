@@ -34,16 +34,30 @@ export default async function ServicePage({ params }: Props) {
     const features = (t.raw('features') || []) as string[];
     const benefits = (t.raw('benefits') || []) as string[];
 
+    const SERVICE_IMAGES: Record<string, string> = {
+        interstate: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80', // Moving truck/highway
+        packing: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80', // Boxes/packing
+        commercial: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80', // Office
+        local: 'https://images.unsplash.com/photo-1503951458645-643d536d9ccc?auto=format&fit=crop&q=80', // Melbourne street/moving
+        storage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80', // Warehouse
+        specialty: 'https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&q=80', // Piano/art
+    };
+
+    const heroImage = SERVICE_IMAGES[serviceId] || SERVICE_IMAGES.interstate;
+
     return (
         <div className="min-h-screen bg-white">
             <TopBar />
             <Header />
 
-            <main>
+            <main className="pb-24 lg:pb-0">
                 {/* Service Hero */}
                 <section className="relative bg-secondary py-20 lg:py-32 overflow-hidden">
-                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-secondary/50 to-secondary" />
+                    <div
+                        className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay transition-opacity duration-700"
+                        style={{ backgroundImage: `url('${heroImage}')` }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 to-secondary" />
 
                     <div className="container mx-auto px-6 relative z-10">
                         <FadeIn direction="up">
@@ -168,6 +182,21 @@ export default async function ServicePage({ params }: Props) {
 
                 <CTA />
             </main>
+
+            {/* Sticky Mobile CTA */}
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 lg:hidden z-50 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+                <a href="tel:1300480732" className="flex-1">
+                    <Button variant="outline" className="w-full h-12 text-base font-bold border-2 border-secondary text-secondary hover:bg-secondary hover:text-white">
+                        <Phone className="w-5 h-5 mr-2" />
+                        Call
+                    </Button>
+                </a>
+                <Link href="/#quote" className="flex-1">
+                    <Button className="w-full h-12 text-base font-bold shadow-lg shadow-primary/20">
+                        Get Quote
+                    </Button>
+                </Link>
+            </div>
 
             <Footer />
         </div>

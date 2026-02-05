@@ -27,25 +27,33 @@ export default function Hero({ rating }: { rating: number }) {
   );
 
   return (
-    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-20 overflow-hidden bg-gradient-to-br from-gray-50 to-white" id="quote">
-      {/* Decorative background circle */}
-      <div className="absolute -top-1/2 -right-[20%] w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(230,126,34,0.08)_0%,transparent_70%)] rounded-full pointer-events-none" />
+    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden bg-white" id="quote">
+      {/* Background Image with Gradient Fade */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply pointer-events-none"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1624821588859-96de23573a9e?auto=format&fit=crop&q=80')" }} // Family/Home vibe
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/50 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
           <div className="hero-content text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-[0.8125rem] font-bold text-primary mb-6 shadow-sm border-2 border-primary animate-in fade-in slide-in-from-bottom-4 duration-700">
-              <Check className="w-4 h-4 stroke-[3]" />
+            <div className="inline-flex items-center gap-2 bg-secondary/5 backdrop-blur-sm px-4 py-2 rounded-full text-[0.8125rem] font-bold text-secondary mb-6 shadow-sm border border-secondary/10 animate-in fade-in slide-in-from-bottom-4 duration-700">
+              <Check className="w-4 h-4 stroke-[3] text-primary" />
               {t('trustedSince')}
             </div>
 
-            <h1 className="text-secondary text-[clamp(2.5rem,5vw,3.75rem)] font-extrabold leading-[1.2] tracking-tight mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+            <h1 className="text-secondary text-[clamp(2.75rem,5.5vw,4.25rem)] font-extrabold leading-[1.1] tracking-tight mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100 drop-shadow-sm">
               {t.rich('title', {
-                primary: (chunks) => <span className="text-primary">{chunks}</span>
+                primary: (chunks) => <span className="text-primary relative inline-block">
+                  {chunks}
+                  <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 -z-10 -rotate-1 skew-x-12 rounded-full" />
+                </span>
               })}
             </h1>
 
-            <p className="text-xl text-gray-600 font-medium mb-3 leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
+            <p className="text-xl lg:text-2xl text-gray-600 font-medium mb-4 leading-relaxed max-w-2xl mx-auto lg:mx-0 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-200">
               {t('description')}
             </p>
 
@@ -53,13 +61,13 @@ export default function Hero({ rating }: { rating: number }) {
               {t('quote')}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
               <ScrollLink href="#quote">
-                <Button size="lg" className="w-full sm:w-auto">{t('buttons.calculate')}</Button>
+                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
               </ScrollLink>
               <a href="tel:1300480732">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-                  <Phone className="w-4 h-4 mr-2" />
+                <Button variant="secondary" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg border-2 border-transparent hover:border-secondary/10 hover:bg-white text-secondary">
+                  <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}
                 </Button>
               </a>
