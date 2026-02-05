@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button';
 import QuoteCalculator from './QuoteCalculator';
 import { useTranslations } from 'next-intl';
 
-export default function Hero() {
+export default function Hero({ rating }: { rating: number }) {
   const t = useTranslations('Hero');
 
   const TrustIndicators = () => (
@@ -12,7 +12,7 @@ export default function Hero() {
       {[
         { icon: Check, value: '6,000+', label: t('trust.customers') },
         { icon: Shield, value: '100%', label: t('trust.insured') },
-        { icon: Star, value: '4.9/5', label: t('trust.rating') },
+        { icon: Star, value: `${rating}/5`, label: t('trust.rating') },
         { icon: Users, value: 'Family', label: t('trust.owned') },
       ].map((item, index) => (
         <div key={index} className="text-center">

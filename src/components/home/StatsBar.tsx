@@ -1,13 +1,13 @@
 import { useTranslations } from 'next-intl';
 import FadeIn from '@/components/ui/FadeIn';
 
-export default function StatsBar() {
+export default function StatsBar({ rating, reviewCount }: { rating: number; reviewCount: number }) {
   const t = useTranslations('StatsBar');
   const stats = [
     { number: '15+', label: t('years') },
     { number: '6,000+', label: t('moves') },
     { number: '100%', label: t('insured') },
-    { number: '4.9★', label: t('rating') },
+    { number: `${rating}★`, label: t('rating') },
   ];
 
   return (

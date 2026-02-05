@@ -14,6 +14,8 @@ import FadeIn from '@/components/ui/FadeIn';
 import { MessageCircle } from 'lucide-react';
 import { setRequestLocale } from 'next-intl/server';
 
+import { getGooglePlaceDetails } from '@/lib/googleMaps';
+
 export default async function Home({
   params
 }: {
@@ -22,20 +24,25 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const googleData = await getGooglePlaceDetails();
+
   return (
     <div className="min-h-screen bg-white">
       <TopBar />
       <Header />
 
       <main className="overflow-hidden">
-        <Hero />
+        <Hero rating={googleData.rating} />
 
-        <StatsBar />
+        <StatsBar
+          rating={googleData.rating}
+          reviewCount={googleData.user_ratings_total}
+        />
         <Features />
         <Services />
         <Process />
         <Pricing />
-        <Testimonials />
+        <Testimonials reviews={googleData.reviews} />
         <FAQ />
         <CTA />
       </main>
