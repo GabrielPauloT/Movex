@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
@@ -48,6 +49,7 @@ export default async function RootLayout({
           <ScrollOrchestrator />
           {children}
           <ScrollToTop />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
