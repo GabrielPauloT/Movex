@@ -14,7 +14,7 @@ export interface GooglePlaceDetails {
     reviews: Review[];
 }
 
-const PLACE_ID = 'ChIJ02W78lQmzYERrzxAKhWxdZg'; // MoverX Solutions Place ID
+const PLACE_ID = process.env.GOOGLE_PLACES_ID_MOVEX;
 const GOOGLE_PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY;
 
 // Fallback data (Portuguese)
