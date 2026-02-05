@@ -396,5 +396,121 @@
             },
             "success": "Solicitação enviada! (Demo)"
         }
+    },
+    "ServiceDetails": {
+        "interstate": {
+            "title": "Mudanças Interestaduais",
+            "subtitle": "Transporte seguro e eficiente por toda a Austrália",
+            "description": "Nossos serviços de mudanças interestaduais são projetados para tornar sua realocação de longa distância o mais tranquila possível. Seja de Melbourne para Sydney, Canberra, Brisbane ou Adelaide, nossa equipe experiente garante que seus pertences cheguem com segurança e no prazo. Cuidamos de toda a logística, desde o planejamento da rota até a entrega final.",
+            "features": [
+                "Rastreamento por GPS em tempo real",
+                "Inventário detalhado de todos os itens",
+                "Embalagem especializada para longa distância",
+                "Seguro de trânsito completo incluído",
+                "Caminhões modernos com suspensão a ar",
+                "Equipe dedicada do início ao fim"
+            ],
+            "benefits": [
+                "Tranquilidade com rastreamento total",
+                "Sem troca de caminhões ou manuseio desnecessário",
+                "Prazos de entrega garantidos",
+                "Suporte ao cliente durante toda a viagem"
+            ]
+        },
+        "packing": {
+            "title": "Embalagem Profissional",
+            "subtitle": "Proteção máxima para seus pertences mais valiosos",
+            "description": "Deixe o trabalho pesado conosco. Nosso serviço de embalagem profissional utiliza materiais de alta qualidade e técnicas especializadas para garantir que cada item, do mais frágil ao mais robusto, esteja perfeitamente protegido. Oferecemos opções de embalagem completa, parcial (apenas itens frágeis) ou apenas fornecimento de materiais.",
+            "features": [
+                "Materiais de embalagem premium de camada tripla",
+                "Caixas especializadas para roupas (Porta-Roupas)",
+                "Isolamento extra para louças e cristais",
+                "Desembalagem e organização no destino",
+                "Remoção de todo o lixo de embalagem",
+                "Etiquetagem detalhada de cada caixa"
+            ],
+            "benefits": [
+                "Economize dias ou semanas de trabalho",
+                "Reduza drasticamente o risco de danos",
+                "Organização perfeita na nova casa",
+                "Seguros muitas vezes cobrem apenas itens embalados por profissionais"
+            ]
+        },
+        "commercial": {
+            "title": "Mudanças Comerciais",
+            "subtitle": "Realocações eficientes para minimizar o tempo de inatividade",
+            "description": "Entendemos que tempo é dinheiro. Nossas mudanças comerciais são planejadas meticulosamente para garantir a mínima interrupção nas operações do seu negócio. Trabalhamos fora do horário comercial e nos finais de semana para que sua equipe possa voltar ao trabalho o mais rápido possível.",
+            "features": [
+                "Gerenciamento de projeto dedicado",
+                "Serviço noturno e nos finais de semana",
+                "Desmontagem e montagem de estações de trabalho",
+                "Transporte seguro de equipamentos de TI",
+                "Destruição segura de documentos (se necessário)",
+                "Logística de sequenciamento de entrega"
+            ],
+            "benefits": [
+                "Mínimo impacto operacional",
+                "Segurança de dados e equipamentos",
+                "Conformidade com normas de SST",
+                "Orçamento fixo e transparente"
+            ]
+        },
+        "local": {
+            "title": "Mudança Local",
+            "subtitle": "Mudanças rápidas e sem estresse em Melbourne",
+            "description": "Conhecemos Melbourne como a palma da nossa mão. Nossas equipes locais são rápidas, eficientes e conhecem as melhores rotas. Seja para o bairro vizinho ou para o outro lado da cidade, oferecemos a mesma qualidade premium de nossos serviços interestaduais, mas com a agilidade que você precisa.",
+            "features": [
+                "Caminhões de vários tamanhos (4T a 10T)",
+                "Taxas horárias ou preço fixo",
+                "Reservas de última hora disponíveis",
+                "Proteção de piso e elevador incluída",
+                "Equipes locais experientes",
+                "Serviço de montagem de móveis"
+            ],
+            "benefits": [
+                "Rapidez e eficiência",
+                "Conhecimento local de acessos e estacionamento",
+                "Flexibilidade de horários",
+                "Custo-benefício excelente"
+            ]
+        },
+        "storage": {
+            "title": "Armazenamento Seguro",
+            "subtitle": "Soluções flexíveis de curto e longo prazo",
+            "description": "Precisa de espaço extra? Nossas instalações de armazenamento são modernas, seguras e climatizadas. Diferente do self-storage tradicional, nós fazemos todo o trabalho de coleta, inventário e armazenamento para você. Seus itens são mantidos em módulos selados, protegidos contra poeira e pragas.",
+            "features": [
+                "Instalações monitoradas 24/7 por CCTV",
+                "Controle de clima e umidade",
+                "Módulos de armazenamento individuais selados",
+                "Serviço de coleta e entrega porta a porta",
+                "Inventário digital com fotos",
+                "Acesso mediante agendamento"
+            ],
+            "benefits": [
+                "Segurança superior ao self-storage comum",
+                "Você não precisa carregar nada",
+                "Pague apenas pelo espaço que usar",
+                "Proteção total contra elementos externos"
+            ]
+        },
+        "specialty": {
+            "title": "Itens Especiais",
+            "subtitle": "Cuidado especializado para itens únicos e valiosos",
+            "description": "Alguns itens exigem mais do que apenas força; exigem técnica e equipamentos especiais. Somos especialistas em transportar pianos, mesas de bilhar, obras de arte, antiguidades e equipamentos pesados. Utilizamos elevadores hidráulicos, carrinhos especiais e embalagens personalizadas (crating) para garantir a integridade absoluta.",
+            "features": [
+                "Equipamento específico para Pianos e Bilhar",
+                "Caixotes de madeira sob medida (Crating)",
+                "Equipe treinada em manuseio de belas artes",
+                "Veículos com suspensão a ar e controle de temperatura",
+                "Seguro específico para alto valor",
+                "Instalação e nivelamento no destino"
+            ],
+            "benefits": [
+                "Riscos mitigados para itens insubstituíveis",
+                "Cobertura de seguro adequada",
+                "Técnicas apropriadas de conservação",
+                "Serviço completo 'luvas brancas'"
+            ]
+        }
     }
 }

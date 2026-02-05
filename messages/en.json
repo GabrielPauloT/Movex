@@ -396,5 +396,121 @@
             },
             "success": "Quote request submitted! (Demo)"
         }
+    },
+    "ServiceDetails": {
+        "interstate": {
+            "title": "Interstate Removalists",
+            "subtitle": "Safe and efficient transport across Australia",
+            "description": "Our interstate removal services are designed to make your long-distance relocation as smooth as possible. Whether moving from Melbourne to Sydney, Canberra, Brisbane, or Adelaide, our experienced team ensures your belongings arrive safely and on time. We handle all logistics, from route planning to final delivery.",
+            "features": [
+                "Real-time GPS tracking",
+                "Detailed inventory of all items",
+                "Specialized long-distance packing",
+                "Full transit insurance included",
+                "Modern trucks with air suspension",
+                "Dedicated team from start to finish"
+            ],
+            "benefits": [
+                "Peace of mind with full tracking",
+                "No truck swapping or unnecessary handling",
+                "Guaranteed delivery windows",
+                "Customer support throughout the journey"
+            ]
+        },
+        "packing": {
+            "title": "Professional Packing",
+            "subtitle": "Maximum protection for your most valuable belongings",
+            "description": "Leave the heavy lifting to us. Our professional packing service uses high-quality materials and specialized techniques to ensure every item, from the most fragile to the most robust, is perfectly protected. We offer full packing, partial packing (fragile items only), or materials-only options.",
+            "features": [
+                "Triple-layer premium packing materials",
+                "Specialized wardrobe boxes (Porta-Robes)",
+                "Extra padding for china and crystal",
+                "Unpacking and organizing at destination",
+                "Removal of all packing debris",
+                "Detailed labeling of every box"
+            ],
+            "benefits": [
+                "Save days or weeks of labor",
+                "Drastically reduce risk of damage",
+                "Perfect organization in your new home",
+                "Insurance often only covers professionally packed items"
+            ]
+        },
+        "commercial": {
+            "title": "Commercial Relocations",
+            "subtitle": "Efficient moves to minimize downtime",
+            "description": "We understand that time is money. Our commercial moves are meticulously planned to ensure minimum disruption to your business operations. We work after hours and on weekends so your team can get back to work as soon as possible.",
+            "features": [
+                "Dedicated project management",
+                "After-hours and weekend service",
+                "Workstation disassembly and reassembly",
+                "Secure IT equipment transport",
+                "Secure document destruction (if needed)",
+                "Delivery sequencing logistics"
+            ],
+            "benefits": [
+                "Minimal operational impact",
+                "Data and equipment security",
+                "OH&S compliance",
+                "Fixed and transparent quoting"
+            ]
+        },
+        "local": {
+            "title": "Local Removals",
+            "subtitle": "Fast and stress-free moves across Melbourne",
+            "description": "We know Melbourne like the back of our hand. Our local teams are fast, efficient, and know the best routes. Whether it's to the next suburb or across town, we offer the same premium quality as our interstate services, but with the agility you need.",
+            "features": [
+                "Various truck sizes (4T to 10T)",
+                "Hourly rates or fixed price",
+                "Last-minute bookings available",
+                "Floor and elevator protection included",
+                "Experienced local crews",
+                "Furniture assembly service"
+            ],
+            "benefits": [
+                "Speed and efficiency",
+                "Local knowledge of access and parking",
+                "Flexible scheduling",
+                "Excellent value for money"
+            ]
+        },
+        "storage": {
+            "title": "Secure Storage",
+            "subtitle": "Flexible short and long-term solutions",
+            "description": "Need extra space? Our storage facilities are modern, secure, and climate-controlled. Unlike traditional self-storage, we handle all the collection, inventory, and storage work for you. Your items are kept in sealed modules, protected from dust and pests.",
+            "features": [
+                "24/7 CCTV monitored facilities",
+                "Climate and humidity control",
+                "Sealed individual storage modules",
+                "Door-to-door collection and delivery",
+                "Digital inventory with photos",
+                "Access by appointment"
+            ],
+            "benefits": [
+                "Superior security to common self-storage",
+                "You don't have to lift a finger",
+                "Pay only for the space you use",
+                "Full protection against elements"
+            ]
+        },
+        "specialty": {
+            "title": "Specialty Items",
+            "subtitle": "Expert care for unique and valuable items",
+            "description": "Some items require more than just strength; they require technique and special equipment. We are experts in moving pianos, pool tables, fine art, antiques, and heavy equipment. We use hydraulic lifts, special dollies, and custom crating to ensure absolute integrity.",
+            "features": [
+                "Specific equipment for Pianos and Pool Tables",
+                "Custom wood crating",
+                "Fine art handling trained crew",
+                "Air-suspension vehicles with climate control",
+                "High-value specific insurance",
+                "Installation and leveling at destination"
+            ],
+            "benefits": [
+                "Mitigated risks for irreplaceable items",
+                "Appropriate insurance coverage",
+                "Proper conservation techniques",
+                "Full 'white glove' service"
+            ]
+        }
     }
 }
