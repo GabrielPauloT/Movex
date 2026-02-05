@@ -121,7 +121,7 @@ export default function QuoteCalculator() {
       </form>
 
       {estimate !== null && (
-        <div className="mt-6 p-8 bg-gradient-to-br from-primary to-accent rounded-xl text-center text-white animate-in fade-in zoom-in-95 duration-300">
+        <div className="mt-6 p-8 bg-gradient-to-br from-primary to-primary-light rounded-xl text-center text-white animate-in fade-in zoom-in-95 duration-300">
           <div className="text-sm font-bold uppercase tracking-widest opacity-90 mb-2">{t('result.title')}</div>
           <div className="text-[3.5rem] font-black leading-none mb-5 tracking-tight">
             <CountUp end={estimate} prefix="$" duration={1500} />

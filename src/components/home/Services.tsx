@@ -69,7 +69,7 @@ export default function Services() {
                   className="group h-full bg-white p-8 rounded-xl border-2 border-gray-100 relative overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-xl hover:-translate-y-1 cursor-pointer"
                 >
                   {/* Hover Line Effect */}
-                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-accent scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+                  <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-primary-light scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
 
                   <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-black text-sm mb-6 ml-2">
                     {service.number}

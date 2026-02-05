@@ -50,7 +50,7 @@ export default function Features() {
               <div
                 className="group h-full bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:shadow-primary/30 transition-shadow flex-shrink-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:shadow-primary/30 transition-shadow flex-shrink-0">
                   <feature.icon className="w-8 h-8" />
                 </div>
                 <h3 className="text-xl font-extrabold text-secondary mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>

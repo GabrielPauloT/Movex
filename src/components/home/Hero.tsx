@@ -16,7 +16,7 @@ export default function Hero({ rating }: { rating: number }) {
         { icon: Users, value: 'Family', label: t('trust.owned') },
       ].map((item, index) => (
         <div key={index} className="text-center">
-          <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-3 text-white shadow-sm">
+          <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center mx-auto mb-3 text-white shadow-sm">
             <item.icon className="w-5 h-5" />
           </div>
           <strong className="block text-xl font-extrabold text-secondary mb-1">{item.value}</strong>
@@ -48,7 +48,7 @@ export default function Hero({ rating }: { rating: number }) {
               {t.rich('title', {
                 primary: (chunks) => <span className="text-primary relative inline-block">
                   {chunks}
-                  <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 -z-10 -rotate-1 skew-x-12 rounded-full" />
+                  {/* <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 -z-10 -rotate-1 skew-x-12 rounded-full" /> */}
                 </span>
               })}
             </h1>

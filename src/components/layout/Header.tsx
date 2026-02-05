@@ -163,7 +163,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-3 group" onClick={(e) => handleScroll(e, '/')}>
-          <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-md flex items-center justify-center text-white shadow-sm group-hover:shadow-md transition-all">
+          <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-md flex items-center justify-center text-white shadow-sm group-hover:shadow-md transition-all">
             <Truck className="w-6 h-6" />
           </div>
           <div className="flex flex-col">

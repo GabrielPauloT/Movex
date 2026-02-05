@@ -37,7 +37,7 @@ export default function Testimonials({ reviews }: { reviews: Review[] }) {
                 </p>
 
                 <div className="flex items-center gap-4 pt-6 border-t border-gray-100 mt-auto">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white font-black text-sm shadow-sm flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center text-white font-black text-sm shadow-sm flex-shrink-0">
                     {getInitials(review.author_name)}
                   </div>
                   <div>

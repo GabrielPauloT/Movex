@@ -189,7 +189,7 @@ export default function VolumeCalculator() {
             <p className="opacity-80 text-sm">{t('summary.itemsSelected', { count: totalItems })}</p>
           </div>
 
-          <div className="bg-gradient-to-br from-primary to-accent p-8 text-center text-white">
+          <div className="bg-gradient-to-br from-primary to-primary-light p-8 text-center text-white">
             <div className="text-sm font-bold uppercase tracking-widest opacity-90 mb-2">{t('summary.totalVolume')}</div>
             <div className="flex items-baseline justify-center gap-1">
               <span className="text-5xl font-black tracking-tight">{totalVolume.toFixed(1)}</span>
