@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/Button';
 import { smoothScrollTo } from '@/lib/scroll';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 export default function Header() {
   const t = useTranslations('Header');
@@ -164,7 +165,8 @@ export default function Header() {
       <nav className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-3 group" onClick={(e) => handleScroll(e, '/')}>
           <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-md flex items-center justify-center text-white shadow-sm group-hover:shadow-md transition-all">
-            <Truck className="w-6 h-6" />
+            {/* <Truck className="w-6 h-6" /> */}
+            <Image src="/logo/logo-header.png" alt="Logo" width={48} height={26} />
           </div>
           <div className="flex flex-col">
             <span className="font-black text-2xl text-secondary leading-none tracking-tight">MoverX</span>
