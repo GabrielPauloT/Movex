@@ -5,8 +5,8 @@ import { useTranslations } from 'next-intl';
 export default function Footer() {
   const t = useTranslations('Footer');
 
-  const serviceKeys = ['interstate', 'local', 'packing', 'storage', 'commercial'];
-  const companyKeys = ['about', 'reviews', 'faq', 'careers', 'payment'];
+  const serviceKeys = ['house', 'commercial', 'office', 'packing', 'storage', 'furniture'];
+  const companyKeys = ['about', 'reviews', 'faq', 'careers'];
 
   return (
     <footer className="bg-gray-900 text-gray-400 pt-16 pb-8">
@@ -64,9 +64,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-extrabold text-[0.9375rem] uppercase tracking-wider mb-6">{t('titles.getInTouch')}</h4>
             <div className="flex flex-col gap-5">
-              <a href="tel:1300480732" className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
+              <a href="tel:0370580073" className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
                 <Phone className="w-6 h-6 fill-current" />
-                1300 480 732
+                03 7058 0073
               </a>
               <div className="flex gap-3 text-[0.9375rem] leading-relaxed">
                 <MapPin className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />

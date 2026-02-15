@@ -256,7 +256,7 @@
         "header": {
             "about": "MoverX Solutions",
             "tagline": "Mudanças e Armazenamento",
-            "description": "Empresa familiar operando desde 2009. Serviços profissionais de mudança e armazenamento em Melbourne, Sydney, Canberra e Adelaide. Três gerações de expertise em mudanças."
+            "description": "Empresa familiar operando desde 2009. Serviços profissionais de mudança e armazenamento. Três gerações de expertise em mudanças."
         },
         "titles": {
             "services": "Serviços",
@@ -264,23 +264,23 @@
             "getInTouch": "Entre em Contato"
         },
         "services": {
-            "interstate": "Mudança Interestadual",
-            "local": "Mudança Local",
+            "house": "Mudança Residencial",
+            "commercial": "Mudança Comercial",
+            "office": "Realocação de Escritório",
             "packing": "Serviços de Embalagem",
             "storage": "Soluções de Armazenamento",
-            "commercial": "Mudanças Comerciais"
+            "furniture": "Entrega de Móveis"
         },
         "company": {
             "about": "Sobre Nós",
             "reviews": "Avaliações",
             "faq": "FAQ",
-            "careers": "Carreiras",
-            "payment": "Fazer Pagamento"
+            "careers": "Carreiras"
         },
         "hours": {
             "title": "Horários",
-            "weekdays": "Seg-Sex: 8h - 17h",
-            "weekend": "Sáb: 9h - 16h | Dom: Fechado"
+            "weekdays": "Seg-Sex: 8h - 21h",
+            "weekend": "Sáb: 8h - 17h | Dom: Fechado"
         },
         "legal": {
             "rights": "© 2024 MoverX Solutions. Todos os direitos reservados. ABN: 55 608 835 794",

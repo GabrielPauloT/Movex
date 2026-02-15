@@ -256,7 +256,7 @@
         "header": {
             "about": "MoverX Solutions",
             "tagline": "Removals & Storage",
-            "description": "Family-owned and operated since 2009. Professional moving and storage services across Melbourne, Sydney, Canberra, and Adelaide. Three generations of moving expertise."
+            "description": "Family-owned and operated since 2009. Professional moving and storage services. Three generations of moving expertise."
         },
         "titles": {
             "services": "Services",
@@ -264,23 +264,23 @@
             "getInTouch": "Get in Touch"
         },
         "services": {
-            "interstate": "Interstate Moving",
-            "local": "Local Moving",
+            "house": "House Moving",
+            "commercial": "Commercial Moving",
+            "office": "Office Relocation",
             "packing": "Packing Services",
             "storage": "Storage Solutions",
-            "commercial": "Commercial Moves"
+            "furniture": "Furniture Delivery"
         },
         "company": {
             "about": "About Us",
             "reviews": "Reviews",
             "faq": "FAQ",
-            "careers": "Careers",
-            "payment": "Make a Payment"
+            "careers": "Careers"
         },
         "hours": {
             "title": "Hours",
-            "weekdays": "Mon-Fri: 8AM - 5PM",
-            "weekend": "Sat: 9AM - 4PM | Sun: Closed"
+            "weekdays": "Mon-Fri: 8AM - 9PM",
+            "weekend": "Sat: 8AM - 5PM | Sun: Closed"
         },
         "legal": {
             "rights": "© 2024 MoverX Solutions. All rights reserved. ABN: 55 608 835 794",
