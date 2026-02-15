@@ -68,7 +68,7 @@
         "items": {
             "house": {
                 "title": "Mudança Residencial",
-                "description": "Serviços completos de mudança residencial para casas de todos os tamanhos. Manuseio profissional do início ao fim."
+                "description": "Serviços profissionais de mudança residencial projetados para tornar sua realocação suave, segura e livre de estresse."
             },
             "commercial": {
                 "title": "Mudança Comercial",
@@ -76,7 +76,7 @@
             },
             "office": {
                 "title": "Realocação de Escritório",
-                "description": "Serviços especializados de mudança de escritório. Disponível fora do horário comercial para minimizar o tempo de inatividade."
+                "description": "Realocações de escritório completas projetadas para manter seu negócio funcionando sem problemas com mínimo tempo de inatividade."
             },
             "packing": {
                 "title": "Embalagem Profissional",
@@ -84,7 +84,7 @@
             },
             "storage": {
                 "title": "Armazenamento",
-                "description": "Soluções de armazenamento seguro com segurança 24/7. Opções flexíveis de curto e longo prazo disponíveis."
+                "description": "Soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que precisam de espaço de curto ou longo prazo."
             },
             "furniture": {
                 "title": "Entrega de Móveis Novos",
@@ -401,19 +401,19 @@
         "house": {
             "title": "Mudança Residencial",
             "subtitle": "Serviços completos de mudança residencial",
-            "description": "Nossos serviços de mudança residencial são projetados para tornar sua realocação livre de estresse. Seja mudando para um novo apartamento, casa geminada ou casa familiar, nossa equipe experiente cuida de tudo com cuidado e profissionalismo. Da embalagem à desembalagem, garantimos que seus pertences cheguem com segurança à sua nova casa.",
+            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua realocação suave, segura e livre de estresse. Da embalagem cuidadosa e transporte seguro à descarga e colocação de móveis, nossa equipe experiente cuida de cada etapa com atenção e eficiência.",
             "features": [
-                "Serviço completo de embalagem e desembalagem",
+                "Equipe de mudança treinada e experiente",
+                "Materiais de embalagem protetores",
                 "Desmontagem e montagem de móveis",
-                "Materiais de proteção para todos os itens",
                 "Manuseio cuidadoso de itens frágeis",
                 "Opções flexíveis de agendamento",
-                "Equipes de mudança experientes"
+                "Preços transparentes sem taxas ocultas"
             ],
             "benefits": [
                 "Experiência de mudança sem estresse",
                 "Manuseio profissional de todos os pertences",
-                "Economia de tempo com serviço completo",
+                "Serviço confiável e pontual do início ao fim",
                 "Tranquilidade com mudanças seguradas"
             ]
         },
@@ -439,14 +439,14 @@
         "office": {
             "title": "Realocação de Escritório",
             "subtitle": "Serviços especializados de mudança de escritório",
-            "description": "Realocações de escritório exigem planejamento e execução cuidadosos. Nossos serviços especializados de mudança de escritório garantem que seu espaço de trabalho seja realocado com eficiência e mínima interrupção para seus negócios. Cuidamos de tudo, desde estações de trabalho até equipamentos de TI, garantindo uma transição suave para seu novo espaço de escritório.",
+            "description": "Gerenciamos realocações de escritório completas projetadas para manter seu negócio funcionando sem problemas durante toda a mudança. Do planejamento e embalagem ao transporte, montagem de móveis e configuração do espaço de trabalho, garantimos uma transição estruturada e eficiente com mínimo tempo de inatividade.",
             "features": [
-                "Planejamento detalhado de realocação",
-                "Configuração e instalação de estações de trabalho",
-                "Manuseio e instalação de equipamentos de TI",
-                "Desmontagem e montagem de móveis",
-                "Mudança fora do horário disponível",
-                "Garantia de tempo mínimo de inatividade"
+                "Planejamento e coordenação pré-mudança",
+                "Manuseio profissional de equipamentos",
+                "Sistemas de embalagem etiquetados",
+                "Mudanças fora do horário disponíveis",
+                "Reinstalação rápida no novo local",
+                "Mínima interrupção dos negócios"
             ],
             "benefits": [
                 "Retorno rápido à produtividade",
@@ -476,15 +476,15 @@
         },
         "storage": {
             "title": "Armazenamento",
-            "subtitle": "Soluções seguras de armazenamento",
-            "description": "Precisa de espaço extra durante sua mudança? Nossas instalações de armazenamento seguro oferecem soluções flexíveis de curto e longo prazo para seus pertences. Com monitoramento de segurança 24/7 e controle de clima, seus itens estão protegidos em nossas instalações modernas e limpas. Oferecemos acesso conveniente e termos flexíveis para atender suas necessidades.",
+            "subtitle": "Soluções seguras de armazenamento em contêineres",
+            "description": "Oferecemos soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que precisam de espaço de curto ou longo prazo. Seus bens são carregados com segurança, selados e armazenados em contêineres dedicados em nossa instalação monitorada, garantindo proteção e fácil acesso quando necessário.",
             "features": [
-                "Monitoramento de segurança 24/7",
-                "Instalações climatizadas",
+                "Contêineres de uso exclusivo",
+                "Instalação monitorada 24/7",
                 "Termos de armazenamento flexíveis",
-                "Acesso fácil aos seus itens",
-                "Instalações limpas e modernas",
-                "Vários tamanhos de unidades disponíveis"
+                "Acesso fácil mediante solicitação",
+                "Equipamento profissional de carga e descarga",
+                "Manuseio seguro de todos os itens"
             ],
             "benefits": [
                 "Tranquilidade com armazenamento seguro",

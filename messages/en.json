@@ -68,7 +68,7 @@
         "items": {
             "house": {
                 "title": "House Moving",
-                "description": "Complete residential moving services for homes of all sizes. Professional handling from start to finish."
+                "description": "Professional residential moving services designed to make your relocation smooth, safe, and stress-free."
             },
             "commercial": {
                 "title": "Commercial Moving",
@@ -76,7 +76,7 @@
             },
             "office": {
                 "title": "Office Relocation",
-                "description": "Specialized office moving services. After-hours available to minimize downtime and maximize productivity."
+                "description": "End-to-end office relocations designed to keep your business running smoothly with minimal downtime."
             },
             "packing": {
                 "title": "Professional Packing",
@@ -84,7 +84,7 @@
             },
             "storage": {
                 "title": "Storage",
-                "description": "Secure storage solutions with 24/7 security. Flexible short and long-term options available."
+                "description": "Secure and flexible container storage solutions for residential and commercial clients needing short or long-term space."
             },
             "furniture": {
                 "title": "New Furniture Delivery",
@@ -401,19 +401,19 @@
         "house": {
             "title": "House Moving",
             "subtitle": "Complete residential moving services",
-            "description": "Our house moving services are designed to make your residential relocation stress-free. Whether you're moving to a new apartment, townhouse, or family home, our experienced team handles everything with care and professionalism. From packing to unpacking, we ensure your belongings arrive safely at your new home.",
+            "description": "We deliver professional residential moving services designed to make your relocation smooth, safe, and stress-free. From careful packing and secure transport to unloading and furniture placement, our experienced team handles every step with attention and efficiency.",
             "features": [
-                "Full-service packing and unpacking",
-                "Furniture disassembly and reassembly",
-                "Protective materials for all items",
+                "Trained and experienced movers",
+                "Protective packing materials",
+                "Disassembly and reassembly of furniture",
                 "Careful handling of fragile items",
                 "Flexible scheduling options",
-                "Experienced moving crews"
+                "Transparent pricing with no hidden fees"
             ],
             "benefits": [
                 "Stress-free moving experience",
                 "Professional handling of all belongings",
-                "Time-saving full-service options",
+                "Reliable, on-time service from start to finish",
                 "Peace of mind with insured moves"
             ]
         },
@@ -439,14 +439,14 @@
         "office": {
             "title": "Office Relocation",
             "subtitle": "Specialized office moving services",
-            "description": "Office relocations require careful planning and execution. Our specialized office moving services ensure your workspace is relocated efficiently with minimal disruption to your business. We handle everything from workstations to IT equipment, ensuring a smooth transition to your new office space.",
+            "description": "We manage end-to-end office relocations designed to keep your business running smoothly throughout the move. From planning and packing to transport, furniture assembly, and workspace setup, we ensure a structured, time-efficient transition with minimal downtime.",
             "features": [
-                "Detailed relocation planning",
-                "Workstation setup and configuration",
-                "IT equipment handling and setup",
-                "Furniture disassembly and reassembly",
-                "After-hours moving available",
-                "Minimal downtime guarantee"
+                "Pre-move planning and coordination",
+                "Professional equipment handling",
+                "Labelled packing systems",
+                "After-hours moves available",
+                "Fast reinstallation at new location",
+                "Minimal business disruption"
             ],
             "benefits": [
                 "Quick return to productivity",
@@ -476,15 +476,15 @@
         },
         "storage": {
             "title": "Storage",
-            "subtitle": "Secure storage solutions",
-            "description": "Need extra space during your move? Our secure storage facilities provide flexible short and long-term solutions for your belongings. With 24/7 security monitoring and climate control, your items are protected in our modern, clean facilities. We offer convenient access and flexible terms to suit your needs.",
+            "subtitle": "Secure container storage solutions",
+            "description": "We offer secure and flexible container storage solutions for residential and commercial clients needing short or long-term space. Your goods are safely loaded, sealed, and stored in dedicated containers at our monitored facility, ensuring protection and easy access when required.",
             "features": [
-                "24/7 security monitoring",
-                "Climate-controlled facilities",
+                "Exclusive-use containers",
+                "24/7 monitored facility",
                 "Flexible storage terms",
-                "Easy access to your items",
-                "Clean and modern facilities",
-                "Various unit sizes available"
+                "Easy access upon request",
+                "Professional loading and unloading equipment",
+                "Safe handling of all items"
             ],
             "benefits": [
                 "Peace of mind with secure storage",
