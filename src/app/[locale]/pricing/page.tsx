@@ -191,7 +191,7 @@ export default async function PricingPage({ params }: Props) {
                                         </div>
 
                                         <Link href={`/${locale}/#quote`}>
-                                            <Button className="w-full" variant={truck.popular ? 'default' : 'outline'}>
+                                            <Button className="w-full" variant={truck.popular ? 'primary' : 'outline'}>
                                                 Get Quote
                                             </Button>
                                         </Link>
