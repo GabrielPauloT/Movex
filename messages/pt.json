@@ -80,7 +80,7 @@
             },
             "packing": {
                 "title": "Embalagem Profissional",
-                "description": "Serviços de embalagem especializada com materiais premium. Especialistas em itens frágeis e caixotes personalizados disponíveis."
+                "description": "Serviço de embalagem profissional garantindo que seus pertences sejam cuidadosamente preparados, protegidos e prontos para transporte ou armazenamento."
             },
             "storage": {
                 "title": "Armazenamento",
@@ -88,7 +88,7 @@
             },
             "furniture": {
                 "title": "Entrega de Móveis Novos",
-                "description": "Entrega e montagem segura de móveis novos. Manuseio profissional garante que seus itens cheguem em perfeitas condições."
+                "description": "Entrega e instalação confiável de móveis novos para residências, escritórios e espaços comerciais com cuidado profissional."
             }
         }
     },
@@ -458,14 +458,14 @@
         "packing": {
             "title": "Embalagem Profissional",
             "subtitle": "Embalagem especializada para proteção máxima",
-            "description": "Nossos serviços de embalagem profissional utilizam materiais premium e técnicas especializadas para garantir que cada item esteja perfeitamente protegido. De louças delicadas a obras de arte valiosas, nossos embaladores experientes cuidam de seus pertences com o máximo cuidado. Oferecemos embalagem completa, parcial ou apenas materiais.",
+            "description": "Nosso serviço de embalagem profissional garante que seus pertences sejam cuidadosamente preparados, protegidos e prontos para transporte ou armazenamento. Usando materiais de alta qualidade e técnicas comprovadas, nossa equipe treinada embala tudo com eficiência, reduzindo o risco de danos e economizando seu tempo e esforço.",
             "features": [
-                "Materiais de embalagem de qualidade premium",
-                "Técnicas especializadas de embalagem",
-                "Caixotes personalizados para objetos de valor",
-                "Especialistas em itens frágeis",
-                "Sistema detalhado de etiquetagem",
-                "Serviços de desembalagem disponíveis"
+                "Materiais de embalagem de alta qualidade",
+                "Embaladores experientes e treinados",
+                "Especialistas em proteção de itens frágeis",
+                "Sistema de etiquetagem organizado",
+                "Opções de embalagem parcial ou completa",
+                "Preparação eficiente para mudanças ou armazenamento"
             ],
             "benefits": [
                 "Proteção máxima para pertences",
@@ -496,14 +496,14 @@
         "furniture": {
             "title": "Entrega de Móveis Novos",
             "subtitle": "Entrega e montagem profissional de móveis",
-            "description": "Comprou móveis novos? Deixe nossa equipe profissional cuidar da entrega e montagem. Garantimos que seus móveis novos cheguem em perfeitas condições e sejam montados corretamente em sua casa. Nossas equipes experientes cuidam de tudo, desde pequenos itens até grandes peças de mobiliário com cuidado e expertise.",
+            "description": "Fornecemos entrega e instalação confiável de móveis novos para residências, escritórios e espaços comerciais. Da coleta e transporte seguro à colocação e montagem, nossa equipe garante que cada item chegue em perfeitas condições e seja instalado exatamente onde você precisa.",
             "features": [
-                "Transporte seguro de móveis",
-                "Serviço profissional de montagem",
-                "Materiais de proteção utilizados",
-                "Colocação no local desejado",
-                "Remoção de detritos e embalagens",
-                "Manuseio cuidadoso garantido"
+                "Manuseio e transporte cuidadoso",
+                "Montagem e colocação profissional",
+                "Remoção e descarte de embalagens",
+                "Agendamento flexível de entrega",
+                "Comunicação e atualizações durante todo o processo",
+                "Apresentação profissional na entrega"
             ],
             "benefits": [
                 "Instalação de móveis sem complicações",

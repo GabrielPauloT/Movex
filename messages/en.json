@@ -80,7 +80,7 @@
             },
             "packing": {
                 "title": "Professional Packing",
-                "description": "Expert packing services with premium materials. Fragile item specialists and custom crating available."
+                "description": "Professional packing service ensuring your belongings are carefully prepared, protected, and ready for transport or storage."
             },
             "storage": {
                 "title": "Storage",
@@ -88,7 +88,7 @@
             },
             "furniture": {
                 "title": "New Furniture Delivery",
-                "description": "Safe delivery and assembly of new furniture. Professional handling ensures your items arrive in perfect condition."
+                "description": "Reliable delivery and setup of new furniture for homes, offices, and commercial spaces with professional care."
             }
         }
     },
@@ -458,14 +458,14 @@
         "packing": {
             "title": "Professional Packing",
             "subtitle": "Expert packing for maximum protection",
-            "description": "Our professional packing services use premium materials and specialized techniques to ensure every item is perfectly protected. From delicate glassware to valuable artwork, our experienced packers handle your belongings with the utmost care. We offer full packing, partial packing, or materials-only options.",
+            "description": "Our professional packing service ensures your belongings are carefully prepared, protected, and ready for transport or storage. Using high-quality materials and proven techniques, our trained team packs everything efficiently, reducing the risk of damage and saving you time and effort.",
             "features": [
-                "Premium quality packing materials",
-                "Specialized packing techniques",
-                "Custom crating for valuables",
-                "Fragile item specialists",
-                "Detailed labeling system",
-                "Unpacking services available"
+                "High-grade packing materials",
+                "Experienced and trained packers",
+                "Fragile-item protection specialists",
+                "Organised labelling system",
+                "Partial or full packing options",
+                "Efficient preparation for moves or storage"
             ],
             "benefits": [
                 "Maximum protection for belongings",
@@ -496,14 +496,14 @@
         "furniture": {
             "title": "New Furniture Delivery",
             "subtitle": "Professional furniture delivery and assembly",
-            "description": "Purchased new furniture? Let our professional team handle the delivery and assembly. We ensure your new furniture arrives in perfect condition and is assembled correctly in your home. Our experienced crews handle everything from small items to large furniture pieces with care and expertise.",
+            "description": "We provide reliable delivery and setup of new furniture for homes, offices, and commercial spaces. From collection and safe transport to placement and assembly, our team ensures every item arrives in perfect condition and is installed exactly where you need it.",
             "features": [
-                "Safe furniture transport",
-                "Professional assembly service",
-                "Protective materials used",
-                "Placement in desired location",
-                "Debris and packaging removal",
-                "Careful handling guaranteed"
+                "Careful handling and transport",
+                "Professional assembly and placement",
+                "Packaging removal and disposal",
+                "Flexible delivery scheduling",
+                "Communication and updates throughout",
+                "Professional presentation at handover"
             ],
             "benefits": [
                 "Hassle-free furniture setup",
