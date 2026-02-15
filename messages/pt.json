@@ -72,7 +72,7 @@
             },
             "commercial": {
                 "title": "Mudança Comercial",
-                "description": "Realocações empresariais com mínima interrupção. Serviço eficiente para escritórios, armazéns e espaços comerciais."
+                "description": "Suporte confiável de mudança comercial e logística para empresas de todos os tamanhos, incluindo varejo, armazéns e operações comerciais."
             },
             "office": {
                 "title": "Realocação de Escritório",
@@ -420,20 +420,20 @@
         "commercial": {
             "title": "Mudança Comercial",
             "subtitle": "Realocações empresariais eficientes",
-            "description": "Entendemos que tempo é dinheiro nos negócios. Nossos serviços de mudança comercial são projetados para minimizar o tempo de inatividade e manter suas operações funcionando sem problemas. De pequenos escritórios a grandes armazéns, lidamos com realocações empresariais de todos os tamanhos com eficiência e profissionalismo.",
+            "description": "Fornecemos suporte confiável de mudança comercial e logística para empresas de todos os tamanhos, incluindo varejo, armazéns e operações comerciais. Nossa equipe cuida da embalagem, transporte, carga/descarga e instalação com forte foco em eficiência, segurança e mínima interrupção de suas operações.",
             "features": [
-                "Mínima interrupção dos negócios",
-                "Disponibilidade fora do horário e fins de semana",
-                "Gerenciamento de equipamentos e inventário",
-                "Transporte seguro de ativos empresariais",
-                "Coordenação profissional de projetos",
-                "Agendamento flexível para atender suas necessidades"
+                "Opções flexíveis de agendamento",
+                "Equipes de mudança experientes",
+                "Equipamento especializado para necessidades comerciais",
+                "Manuseio seguro de ativos empresariais",
+                "Soluções escaláveis adaptadas às suas necessidades",
+                "Mínima interrupção das operações"
             ],
             "benefits": [
                 "Tempo de inatividade operacional reduzido",
                 "Manuseio profissional de ativos empresariais",
                 "Soluções de mudança personalizadas",
-                "Equipes experientes em mudanças comerciais"
+                "Abordagem focada em segurança"
             ]
         },
         "office": {

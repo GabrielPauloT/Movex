@@ -72,7 +72,7 @@
             },
             "commercial": {
                 "title": "Commercial Moving",
-                "description": "Business relocations with minimal disruption. Efficient service for offices, warehouses, and retail spaces."
+                "description": "Reliable commercial moving and logistics support for businesses of all sizes, including retail, warehouses, and trade operations."
             },
             "office": {
                 "title": "Office Relocation",
@@ -420,20 +420,20 @@
         "commercial": {
             "title": "Commercial Moving",
             "subtitle": "Efficient business relocations",
-            "description": "We understand that time is money in business. Our commercial moving services are designed to minimize downtime and keep your operations running smoothly. From small offices to large warehouses, we handle business relocations of all sizes with efficiency and professionalism.",
+            "description": "We provide reliable commercial moving and logistics support for businesses of all sizes, including retail, warehouses, and trade operations. Our team handles packing, transport, loading/unloading, and setup with a strong focus on efficiency, safety, and minimal disruption to your operations.",
             "features": [
-                "Minimal business disruption",
-                "After-hours and weekend availability",
-                "Equipment and inventory management",
-                "Secure transport of business assets",
-                "Professional project coordination",
-                "Flexible scheduling to suit your needs"
+                "Flexible scheduling options",
+                "Experienced moving crews",
+                "Specialised equipment for commercial needs",
+                "Secure handling of business assets",
+                "Scalable solutions tailored to your needs",
+                "Minimal disruption to operations"
             ],
             "benefits": [
                 "Reduced operational downtime",
                 "Professional business asset handling",
                 "Customized moving solutions",
-                "Experienced commercial moving teams"
+                "Safety-focused approach"
             ]
         },
         "office": {
