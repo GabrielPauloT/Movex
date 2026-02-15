@@ -66,29 +66,29 @@
         "title": "Complete Moving Solutions",
         "description": "Whatever your moving needs, we have the expertise and equipment to handle it with care.",
         "items": {
-            "interstate": {
-                "title": "Interstate Moving",
-                "description": "Melbourne to Sydney, Canberra & Adelaide. Full insurance, GPS tracking, and dedicated support throughout your journey."
+            "house": {
+                "title": "House Moving",
+                "description": "Complete residential moving services for homes of all sizes. Professional handling from start to finish."
+            },
+            "commercial": {
+                "title": "Commercial Moving",
+                "description": "Business relocations with minimal disruption. Efficient service for offices, warehouses, and retail spaces."
+            },
+            "office": {
+                "title": "Office Relocation",
+                "description": "Specialized office moving services. After-hours available to minimize downtime and maximize productivity."
             },
             "packing": {
                 "title": "Professional Packing",
                 "description": "Expert packing services with premium materials. Fragile item specialists and custom crating available."
             },
-            "commercial": {
-                "title": "Commercial Moves",
-                "description": "Office and warehouse relocations with minimal disruption. After-hours service and project management included."
-            },
-            "local": {
-                "title": "Local Moving",
-                "description": "Quick and careful moves within Melbourne. Same-day service available for urgent relocations."
-            },
             "storage": {
-                "title": "Secure Storage",
-                "description": "Climate-controlled storage with 24/7 security. Short or long-term options with flexible access."
+                "title": "Storage",
+                "description": "Secure storage solutions with 24/7 security. Flexible short and long-term options available."
             },
-            "specialty": {
-                "title": "Specialty Items",
-                "description": "Pianos, antiques, artwork. Our specialists handle delicate and valuable items with extra care."
+            "furniture": {
+                "title": "New Furniture Delivery",
+                "description": "Safe delivery and assembly of new furniture. Professional handling ensures your items arrive in perfect condition."
             }
         }
     },
@@ -398,118 +398,118 @@
         }
     },
     "ServiceDetails": {
-        "interstate": {
-            "title": "Interstate Removalists",
-            "subtitle": "Safe and efficient transport across Australia",
-            "description": "Our interstate removal services are designed to make your long-distance relocation as smooth as possible. Whether moving from Melbourne to Sydney, Canberra, Brisbane, or Adelaide, our experienced team ensures your belongings arrive safely and on time. We handle all logistics, from route planning to final delivery.",
+        "house": {
+            "title": "House Moving",
+            "subtitle": "Complete residential moving services",
+            "description": "Our house moving services are designed to make your residential relocation stress-free. Whether you're moving to a new apartment, townhouse, or family home, our experienced team handles everything with care and professionalism. From packing to unpacking, we ensure your belongings arrive safely at your new home.",
             "features": [
-                "Real-time GPS tracking",
-                "Detailed inventory of all items",
-                "Specialized long-distance packing",
-                "Full transit insurance included",
-                "Modern trucks with air suspension",
-                "Dedicated team from start to finish"
+                "Full-service packing and unpacking",
+                "Furniture disassembly and reassembly",
+                "Protective materials for all items",
+                "Careful handling of fragile items",
+                "Flexible scheduling options",
+                "Experienced moving crews"
             ],
             "benefits": [
-                "Peace of mind with full tracking",
-                "No truck swapping or unnecessary handling",
-                "Guaranteed delivery windows",
-                "Customer support throughout the journey"
+                "Stress-free moving experience",
+                "Professional handling of all belongings",
+                "Time-saving full-service options",
+                "Peace of mind with insured moves"
+            ]
+        },
+        "commercial": {
+            "title": "Commercial Moving",
+            "subtitle": "Efficient business relocations",
+            "description": "We understand that time is money in business. Our commercial moving services are designed to minimize downtime and keep your operations running smoothly. From small offices to large warehouses, we handle business relocations of all sizes with efficiency and professionalism.",
+            "features": [
+                "Minimal business disruption",
+                "After-hours and weekend availability",
+                "Equipment and inventory management",
+                "Secure transport of business assets",
+                "Professional project coordination",
+                "Flexible scheduling to suit your needs"
+            ],
+            "benefits": [
+                "Reduced operational downtime",
+                "Professional business asset handling",
+                "Customized moving solutions",
+                "Experienced commercial moving teams"
+            ]
+        },
+        "office": {
+            "title": "Office Relocation",
+            "subtitle": "Specialized office moving services",
+            "description": "Office relocations require careful planning and execution. Our specialized office moving services ensure your workspace is relocated efficiently with minimal disruption to your business. We handle everything from workstations to IT equipment, ensuring a smooth transition to your new office space.",
+            "features": [
+                "Detailed relocation planning",
+                "Workstation setup and configuration",
+                "IT equipment handling and setup",
+                "Furniture disassembly and reassembly",
+                "After-hours moving available",
+                "Minimal downtime guarantee"
+            ],
+            "benefits": [
+                "Quick return to productivity",
+                "Professional IT equipment handling",
+                "Organized workspace setup",
+                "Flexible scheduling options"
             ]
         },
         "packing": {
             "title": "Professional Packing",
-            "subtitle": "Maximum protection for your most valuable belongings",
-            "description": "Leave the heavy lifting to us. Our professional packing service uses high-quality materials and specialized techniques to ensure every item, from the most fragile to the most robust, is perfectly protected. We offer full packing, partial packing (fragile items only), or materials-only options.",
+            "subtitle": "Expert packing for maximum protection",
+            "description": "Our professional packing services use premium materials and specialized techniques to ensure every item is perfectly protected. From delicate glassware to valuable artwork, our experienced packers handle your belongings with the utmost care. We offer full packing, partial packing, or materials-only options.",
             "features": [
-                "Triple-layer premium packing materials",
-                "Specialized wardrobe boxes (Porta-Robes)",
-                "Extra padding for china and crystal",
-                "Unpacking and organizing at destination",
-                "Removal of all packing debris",
-                "Detailed labeling of every box"
+                "Premium quality packing materials",
+                "Specialized packing techniques",
+                "Custom crating for valuables",
+                "Fragile item specialists",
+                "Detailed labeling system",
+                "Unpacking services available"
             ],
             "benefits": [
-                "Save days or weeks of labor",
-                "Drastically reduce risk of damage",
-                "Perfect organization in your new home",
-                "Insurance often only covers professionally packed items"
-            ]
-        },
-        "commercial": {
-            "title": "Commercial Relocations",
-            "subtitle": "Efficient moves to minimize downtime",
-            "description": "We understand that time is money. Our commercial moves are meticulously planned to ensure minimum disruption to your business operations. We work after hours and on weekends so your team can get back to work as soon as possible.",
-            "features": [
-                "Dedicated project management",
-                "After-hours and weekend service",
-                "Workstation disassembly and reassembly",
-                "Secure IT equipment transport",
-                "Secure document destruction (if needed)",
-                "Delivery sequencing logistics"
-            ],
-            "benefits": [
-                "Minimal operational impact",
-                "Data and equipment security",
-                "OH&S compliance",
-                "Fixed and transparent quoting"
-            ]
-        },
-        "local": {
-            "title": "Local Removals",
-            "subtitle": "Fast and stress-free moves across Melbourne",
-            "description": "We know Melbourne like the back of our hand. Our local teams are fast, efficient, and know the best routes. Whether it's to the next suburb or across town, we offer the same premium quality as our interstate services, but with the agility you need.",
-            "features": [
-                "Various truck sizes (4T to 10T)",
-                "Hourly rates or fixed price",
-                "Last-minute bookings available",
-                "Floor and elevator protection included",
-                "Experienced local crews",
-                "Furniture assembly service"
-            ],
-            "benefits": [
-                "Speed and efficiency",
-                "Local knowledge of access and parking",
-                "Flexible scheduling",
-                "Excellent value for money"
+                "Maximum protection for belongings",
+                "Time-saving professional service",
+                "Reduced risk of damage",
+                "Insurance compliance assured"
             ]
         },
         "storage": {
-            "title": "Secure Storage",
-            "subtitle": "Flexible short and long-term solutions",
-            "description": "Need extra space? Our storage facilities are modern, secure, and climate-controlled. Unlike traditional self-storage, we handle all the collection, inventory, and storage work for you. Your items are kept in sealed modules, protected from dust and pests.",
+            "title": "Storage",
+            "subtitle": "Secure storage solutions",
+            "description": "Need extra space during your move? Our secure storage facilities provide flexible short and long-term solutions for your belongings. With 24/7 security monitoring and climate control, your items are protected in our modern, clean facilities. We offer convenient access and flexible terms to suit your needs.",
             "features": [
-                "24/7 CCTV monitored facilities",
-                "Climate and humidity control",
-                "Sealed individual storage modules",
-                "Door-to-door collection and delivery",
-                "Digital inventory with photos",
-                "Access by appointment"
+                "24/7 security monitoring",
+                "Climate-controlled facilities",
+                "Flexible storage terms",
+                "Easy access to your items",
+                "Clean and modern facilities",
+                "Various unit sizes available"
             ],
             "benefits": [
-                "Superior security to common self-storage",
-                "You don't have to lift a finger",
-                "Pay only for the space you use",
-                "Full protection against elements"
+                "Peace of mind with secure storage",
+                "Flexible short and long-term options",
+                "Protection from weather and pests",
+                "Convenient access when needed"
             ]
         },
-        "specialty": {
-            "title": "Specialty Items",
-            "subtitle": "Expert care for unique and valuable items",
-            "description": "Some items require more than just strength; they require technique and special equipment. We are experts in moving pianos, pool tables, fine art, antiques, and heavy equipment. We use hydraulic lifts, special dollies, and custom crating to ensure absolute integrity.",
+        "furniture": {
+            "title": "New Furniture Delivery",
+            "subtitle": "Professional furniture delivery and assembly",
+            "description": "Purchased new furniture? Let our professional team handle the delivery and assembly. We ensure your new furniture arrives in perfect condition and is assembled correctly in your home. Our experienced crews handle everything from small items to large furniture pieces with care and expertise.",
             "features": [
-                "Specific equipment for Pianos and Pool Tables",
-                "Custom wood crating",
-                "Fine art handling trained crew",
-                "Air-suspension vehicles with climate control",
-                "High-value specific insurance",
-                "Installation and leveling at destination"
+                "Safe furniture transport",
+                "Professional assembly service",
+                "Protective materials used",
+                "Placement in desired location",
+                "Debris and packaging removal",
+                "Careful handling guaranteed"
             ],
             "benefits": [
-                "Mitigated risks for irreplaceable items",
-                "Appropriate insurance coverage",
-                "Proper conservation techniques",
-                "Full 'white glove' service"
+                "Hassle-free furniture setup",
+                "Professional assembly expertise",
+                "No damage to new furniture",
+                "Time-saving convenience"
             ]
         }
     }

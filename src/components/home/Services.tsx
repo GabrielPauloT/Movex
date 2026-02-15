@@ -8,28 +8,28 @@ export default function Services() {
 
   const services = [
     {
-      id: 'interstate',
+      id: 'house',
       number: '01',
-      title: t('items.interstate.title'),
-      description: t('items.interstate.description'),
-    },
-    {
-      id: 'packing',
-      number: '02',
-      title: t('items.packing.title'),
-      description: t('items.packing.description'),
+      title: t('items.house.title'),
+      description: t('items.house.description'),
     },
     {
       id: 'commercial',
-      number: '03',
+      number: '02',
       title: t('items.commercial.title'),
       description: t('items.commercial.description'),
     },
     {
-      id: 'local',
+      id: 'office',
+      number: '03',
+      title: t('items.office.title'),
+      description: t('items.office.description'),
+    },
+    {
+      id: 'packing',
       number: '04',
-      title: t('items.local.title'),
-      description: t('items.local.description'),
+      title: t('items.packing.title'),
+      description: t('items.packing.description'),
     },
     {
       id: 'storage',
@@ -38,10 +38,10 @@ export default function Services() {
       description: t('items.storage.description'),
     },
     {
-      id: 'specialty',
+      id: 'furniture',
       number: '06',
-      title: t('items.specialty.title'),
-      description: t('items.specialty.description'),
+      title: t('items.furniture.title'),
+      description: t('items.furniture.description'),
     },
   ];
 

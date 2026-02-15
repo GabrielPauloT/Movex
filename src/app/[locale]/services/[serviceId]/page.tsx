@@ -13,7 +13,7 @@ type Props = {
     params: Promise<{ locale: string; serviceId: string }>;
 };
 
-const VALID_SERVICES = ['interstate', 'packing', 'commercial', 'local', 'storage', 'specialty'];
+const VALID_SERVICES = ['house', 'commercial', 'office', 'packing', 'storage', 'furniture'];
 
 export function generateStaticParams() {
     return VALID_SERVICES.map((serviceId) => ({ serviceId }));
@@ -35,15 +35,15 @@ export default async function ServicePage({ params }: Props) {
     const benefits = (t.raw('benefits') || []) as string[];
 
     const SERVICE_IMAGES: Record<string, string> = {
-        interstate: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80', // Moving truck/highway
-        packing: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80', // Boxes/packing
-        commercial: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80', // Office
-        local: 'https://images.unsplash.com/photo-1503951458645-643d536d9ccc?auto=format&fit=crop&q=80', // Melbourne street/moving
-        storage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80', // Warehouse
-        specialty: 'https://images.unsplash.com/photo-1520116468816-95b69f847357?auto=format&fit=crop&q=80', // Piano/art
+        house: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80',
+        commercial: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80',
+        office: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80',
+        packing: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80',
+        storage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80',
+        furniture: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80',
     };
 
-    const heroImage = SERVICE_IMAGES[serviceId] || SERVICE_IMAGES.interstate;
+    const heroImage = SERVICE_IMAGES[serviceId] || SERVICE_IMAGES.house;
 
     return (
         <div className="min-h-screen bg-white">

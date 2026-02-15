@@ -66,29 +66,29 @@
         "title": "Soluções Completas de Mudança",
         "description": "Seja qual for a sua necessidade de mudança, temos a experiência e o equipamento para cuidar disso com cuidado.",
         "items": {
-            "interstate": {
-                "title": "Mudança Interestadual",
-                "description": "Melbourne para Sydney, Canberra e Adelaide. Seguro total, rastreamento GPS e suporte dedicado durante toda a jornada."
+            "house": {
+                "title": "Mudança Residencial",
+                "description": "Serviços completos de mudança residencial para casas de todos os tamanhos. Manuseio profissional do início ao fim."
+            },
+            "commercial": {
+                "title": "Mudança Comercial",
+                "description": "Realocações empresariais com mínima interrupção. Serviço eficiente para escritórios, armazéns e espaços comerciais."
+            },
+            "office": {
+                "title": "Realocação de Escritório",
+                "description": "Serviços especializados de mudança de escritório. Disponível fora do horário comercial para minimizar o tempo de inatividade."
             },
             "packing": {
                 "title": "Embalagem Profissional",
                 "description": "Serviços de embalagem especializada com materiais premium. Especialistas em itens frágeis e caixotes personalizados disponíveis."
             },
-            "commercial": {
-                "title": "Mudanças Comerciais",
-                "description": "Realocações de escritórios e armazéns com o mínimo de interrupção. Serviço fora do horário comercial e gerenciamento de projetos incluídos."
-            },
-            "local": {
-                "title": "Mudança Local",
-                "description": "Mudanças rápidas e cuidadosas dentro de Melbourne. Serviço no mesmo dia disponível para realocações urgentes."
-            },
             "storage": {
-                "title": "Armazenamento Seguro",
-                "description": "Armazenamento climatizado com segurança 24/7. Opções de curto ou longo prazo com acesso flexível."
+                "title": "Armazenamento",
+                "description": "Soluções de armazenamento seguro com segurança 24/7. Opções flexíveis de curto e longo prazo disponíveis."
             },
-            "specialty": {
-                "title": "Itens Especiais",
-                "description": "Pianos, antiguidades, obras de arte. Nossos especialistas lidam com itens delicados e valiosos com cuidado extra."
+            "furniture": {
+                "title": "Entrega de Móveis Novos",
+                "description": "Entrega e montagem segura de móveis novos. Manuseio profissional garante que seus itens cheguem em perfeitas condições."
             }
         }
     },
@@ -398,118 +398,118 @@
         }
     },
     "ServiceDetails": {
-        "interstate": {
-            "title": "Mudanças Interestaduais",
-            "subtitle": "Transporte seguro e eficiente por toda a Austrália",
-            "description": "Nossos serviços de mudanças interestaduais são projetados para tornar sua realocação de longa distância o mais tranquila possível. Seja de Melbourne para Sydney, Canberra, Brisbane ou Adelaide, nossa equipe experiente garante que seus pertences cheguem com segurança e no prazo. Cuidamos de toda a logística, desde o planejamento da rota até a entrega final.",
+        "house": {
+            "title": "Mudança Residencial",
+            "subtitle": "Serviços completos de mudança residencial",
+            "description": "Nossos serviços de mudança residencial são projetados para tornar sua realocação livre de estresse. Seja mudando para um novo apartamento, casa geminada ou casa familiar, nossa equipe experiente cuida de tudo com cuidado e profissionalismo. Da embalagem à desembalagem, garantimos que seus pertences cheguem com segurança à sua nova casa.",
             "features": [
-                "Rastreamento por GPS em tempo real",
-                "Inventário detalhado de todos os itens",
-                "Embalagem especializada para longa distância",
-                "Seguro de trânsito completo incluído",
-                "Caminhões modernos com suspensão a ar",
-                "Equipe dedicada do início ao fim"
+                "Serviço completo de embalagem e desembalagem",
+                "Desmontagem e montagem de móveis",
+                "Materiais de proteção para todos os itens",
+                "Manuseio cuidadoso de itens frágeis",
+                "Opções flexíveis de agendamento",
+                "Equipes de mudança experientes"
             ],
             "benefits": [
-                "Tranquilidade com rastreamento total",
-                "Sem troca de caminhões ou manuseio desnecessário",
-                "Prazos de entrega garantidos",
-                "Suporte ao cliente durante toda a viagem"
+                "Experiência de mudança sem estresse",
+                "Manuseio profissional de todos os pertences",
+                "Economia de tempo com serviço completo",
+                "Tranquilidade com mudanças seguradas"
+            ]
+        },
+        "commercial": {
+            "title": "Mudança Comercial",
+            "subtitle": "Realocações empresariais eficientes",
+            "description": "Entendemos que tempo é dinheiro nos negócios. Nossos serviços de mudança comercial são projetados para minimizar o tempo de inatividade e manter suas operações funcionando sem problemas. De pequenos escritórios a grandes armazéns, lidamos com realocações empresariais de todos os tamanhos com eficiência e profissionalismo.",
+            "features": [
+                "Mínima interrupção dos negócios",
+                "Disponibilidade fora do horário e fins de semana",
+                "Gerenciamento de equipamentos e inventário",
+                "Transporte seguro de ativos empresariais",
+                "Coordenação profissional de projetos",
+                "Agendamento flexível para atender suas necessidades"
+            ],
+            "benefits": [
+                "Tempo de inatividade operacional reduzido",
+                "Manuseio profissional de ativos empresariais",
+                "Soluções de mudança personalizadas",
+                "Equipes experientes em mudanças comerciais"
+            ]
+        },
+        "office": {
+            "title": "Realocação de Escritório",
+            "subtitle": "Serviços especializados de mudança de escritório",
+            "description": "Realocações de escritório exigem planejamento e execução cuidadosos. Nossos serviços especializados de mudança de escritório garantem que seu espaço de trabalho seja realocado com eficiência e mínima interrupção para seus negócios. Cuidamos de tudo, desde estações de trabalho até equipamentos de TI, garantindo uma transição suave para seu novo espaço de escritório.",
+            "features": [
+                "Planejamento detalhado de realocação",
+                "Configuração e instalação de estações de trabalho",
+                "Manuseio e instalação de equipamentos de TI",
+                "Desmontagem e montagem de móveis",
+                "Mudança fora do horário disponível",
+                "Garantia de tempo mínimo de inatividade"
+            ],
+            "benefits": [
+                "Retorno rápido à produtividade",
+                "Manuseio profissional de equipamentos de TI",
+                "Configuração organizada do espaço de trabalho",
+                "Opções flexíveis de agendamento"
             ]
         },
         "packing": {
             "title": "Embalagem Profissional",
-            "subtitle": "Proteção máxima para seus pertences mais valiosos",
-            "description": "Deixe o trabalho pesado conosco. Nosso serviço de embalagem profissional utiliza materiais de alta qualidade e técnicas especializadas para garantir que cada item, do mais frágil ao mais robusto, esteja perfeitamente protegido. Oferecemos opções de embalagem completa, parcial (apenas itens frágeis) ou apenas fornecimento de materiais.",
+            "subtitle": "Embalagem especializada para proteção máxima",
+            "description": "Nossos serviços de embalagem profissional utilizam materiais premium e técnicas especializadas para garantir que cada item esteja perfeitamente protegido. De louças delicadas a obras de arte valiosas, nossos embaladores experientes cuidam de seus pertences com o máximo cuidado. Oferecemos embalagem completa, parcial ou apenas materiais.",
             "features": [
-                "Materiais de embalagem premium de camada tripla",
-                "Caixas especializadas para roupas (Porta-Roupas)",
-                "Isolamento extra para louças e cristais",
-                "Desembalagem e organização no destino",
-                "Remoção de todo o lixo de embalagem",
-                "Etiquetagem detalhada de cada caixa"
+                "Materiais de embalagem de qualidade premium",
+                "Técnicas especializadas de embalagem",
+                "Caixotes personalizados para objetos de valor",
+                "Especialistas em itens frágeis",
+                "Sistema detalhado de etiquetagem",
+                "Serviços de desembalagem disponíveis"
             ],
             "benefits": [
-                "Economize dias ou semanas de trabalho",
-                "Reduza drasticamente o risco de danos",
-                "Organização perfeita na nova casa",
-                "Seguros muitas vezes cobrem apenas itens embalados por profissionais"
-            ]
-        },
-        "commercial": {
-            "title": "Mudanças Comerciais",
-            "subtitle": "Realocações eficientes para minimizar o tempo de inatividade",
-            "description": "Entendemos que tempo é dinheiro. Nossas mudanças comerciais são planejadas meticulosamente para garantir a mínima interrupção nas operações do seu negócio. Trabalhamos fora do horário comercial e nos finais de semana para que sua equipe possa voltar ao trabalho o mais rápido possível.",
-            "features": [
-                "Gerenciamento de projeto dedicado",
-                "Serviço noturno e nos finais de semana",
-                "Desmontagem e montagem de estações de trabalho",
-                "Transporte seguro de equipamentos de TI",
-                "Destruição segura de documentos (se necessário)",
-                "Logística de sequenciamento de entrega"
-            ],
-            "benefits": [
-                "Mínimo impacto operacional",
-                "Segurança de dados e equipamentos",
-                "Conformidade com normas de SST",
-                "Orçamento fixo e transparente"
-            ]
-        },
-        "local": {
-            "title": "Mudança Local",
-            "subtitle": "Mudanças rápidas e sem estresse em Melbourne",
-            "description": "Conhecemos Melbourne como a palma da nossa mão. Nossas equipes locais são rápidas, eficientes e conhecem as melhores rotas. Seja para o bairro vizinho ou para o outro lado da cidade, oferecemos a mesma qualidade premium de nossos serviços interestaduais, mas com a agilidade que você precisa.",
-            "features": [
-                "Caminhões de vários tamanhos (4T a 10T)",
-                "Taxas horárias ou preço fixo",
-                "Reservas de última hora disponíveis",
-                "Proteção de piso e elevador incluída",
-                "Equipes locais experientes",
-                "Serviço de montagem de móveis"
-            ],
-            "benefits": [
-                "Rapidez e eficiência",
-                "Conhecimento local de acessos e estacionamento",
-                "Flexibilidade de horários",
-                "Custo-benefício excelente"
+                "Proteção máxima para pertences",
+                "Serviço profissional que economiza tempo",
+                "Risco reduzido de danos",
+                "Conformidade com seguro garantida"
             ]
         },
         "storage": {
-            "title": "Armazenamento Seguro",
-            "subtitle": "Soluções flexíveis de curto e longo prazo",
-            "description": "Precisa de espaço extra? Nossas instalações de armazenamento são modernas, seguras e climatizadas. Diferente do self-storage tradicional, nós fazemos todo o trabalho de coleta, inventário e armazenamento para você. Seus itens são mantidos em módulos selados, protegidos contra poeira e pragas.",
+            "title": "Armazenamento",
+            "subtitle": "Soluções seguras de armazenamento",
+            "description": "Precisa de espaço extra durante sua mudança? Nossas instalações de armazenamento seguro oferecem soluções flexíveis de curto e longo prazo para seus pertences. Com monitoramento de segurança 24/7 e controle de clima, seus itens estão protegidos em nossas instalações modernas e limpas. Oferecemos acesso conveniente e termos flexíveis para atender suas necessidades.",
             "features": [
-                "Instalações monitoradas 24/7 por CCTV",
-                "Controle de clima e umidade",
-                "Módulos de armazenamento individuais selados",
-                "Serviço de coleta e entrega porta a porta",
-                "Inventário digital com fotos",
-                "Acesso mediante agendamento"
+                "Monitoramento de segurança 24/7",
+                "Instalações climatizadas",
+                "Termos de armazenamento flexíveis",
+                "Acesso fácil aos seus itens",
+                "Instalações limpas e modernas",
+                "Vários tamanhos de unidades disponíveis"
             ],
             "benefits": [
-                "Segurança superior ao self-storage comum",
-                "Você não precisa carregar nada",
-                "Pague apenas pelo espaço que usar",
-                "Proteção total contra elementos externos"
+                "Tranquilidade com armazenamento seguro",
+                "Opções flexíveis de curto e longo prazo",
+                "Proteção contra clima e pragas",
+                "Acesso conveniente quando necessário"
             ]
         },
-        "specialty": {
-            "title": "Itens Especiais",
-            "subtitle": "Cuidado especializado para itens únicos e valiosos",
-            "description": "Alguns itens exigem mais do que apenas força; exigem técnica e equipamentos especiais. Somos especialistas em transportar pianos, mesas de bilhar, obras de arte, antiguidades e equipamentos pesados. Utilizamos elevadores hidráulicos, carrinhos especiais e embalagens personalizadas (crating) para garantir a integridade absoluta.",
+        "furniture": {
+            "title": "Entrega de Móveis Novos",
+            "subtitle": "Entrega e montagem profissional de móveis",
+            "description": "Comprou móveis novos? Deixe nossa equipe profissional cuidar da entrega e montagem. Garantimos que seus móveis novos cheguem em perfeitas condições e sejam montados corretamente em sua casa. Nossas equipes experientes cuidam de tudo, desde pequenos itens até grandes peças de mobiliário com cuidado e expertise.",
             "features": [
-                "Equipamento específico para Pianos e Bilhar",
-                "Caixotes de madeira sob medida (Crating)",
-                "Equipe treinada em manuseio de belas artes",
-                "Veículos com suspensão a ar e controle de temperatura",
-                "Seguro específico para alto valor",
-                "Instalação e nivelamento no destino"
+                "Transporte seguro de móveis",
+                "Serviço profissional de montagem",
+                "Materiais de proteção utilizados",
+                "Colocação no local desejado",
+                "Remoção de detritos e embalagens",
+                "Manuseio cuidadoso garantido"
             ],
             "benefits": [
-                "Riscos mitigados para itens insubstituíveis",
-                "Cobertura de seguro adequada",
-                "Técnicas apropriadas de conservação",
-                "Serviço completo 'luvas brancas'"
+                "Instalação de móveis sem complicações",
+                "Expertise profissional em montagem",
+                "Sem danos aos móveis novos",
+                "Conveniência que economiza tempo"
             ]
         }
     }
