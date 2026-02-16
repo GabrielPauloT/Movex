@@ -23,6 +23,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '19 cubic meters',
             ideal: '1-2 bedroom apartments',
             movers: '2 movers included',
+            image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&q=80&w=800',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
@@ -38,6 +39,7 @@ export default async function PricingPage({ params }: Props) {
             ideal: '2-3 bedroom apartments',
             movers: '2 movers included',
             popular: true,
+            image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80&w=800',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
@@ -52,6 +54,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '46 cubic meters',
             ideal: '3-4 bedroom homes',
             movers: '2 movers included',
+            image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
@@ -66,6 +69,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '55 cubic meters',
             ideal: '4-5 bedroom homes',
             movers: '2 movers included',
+            image: 'https://images.unsplash.com/photo-1566933293069-b55c7f326dd4?auto=format&fit=crop&q=80&w=800',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
@@ -145,56 +149,66 @@ export default async function PricingPage({ params }: Props) {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {trucks.map((truck, index) => (
                                 <FadeIn key={index} direction="up" delay={index * 50}>
-                                    <div className={`relative bg-white rounded-2xl p-8 border-2 ${truck.popular ? 'border-primary shadow-xl' : 'border-gray-200'} hover:shadow-xl transition-all duration-300`}>
+                                    <div className={`relative bg-white rounded-2xl overflow-hidden border-2 ${truck.popular ? 'border-primary shadow-xl' : 'border-gray-200'} hover:shadow-xl transition-all duration-300`}>
                                         {truck.popular && (
-                                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">
+                                            <div className="absolute top-4 right-4 z-10 bg-primary text-white px-4 py-1 rounded-full text-sm font-bold">
                                                 Most Popular
                                             </div>
                                         )}
                                         
-                                        <div className="text-center mb-6">
-                                            <Truck className="w-12 h-12 text-primary mx-auto mb-4" />
-                                            <h3 className="text-2xl font-bold text-secondary mb-2">{truck.name}</h3>
-                                            <div className="text-3xl font-extrabold text-primary mb-2">{truck.price}</div>
-                                            <div className="text-sm text-gray-500">per hour</div>
-                                        </div>
-
-                                        <div className="space-y-3 mb-6">
-                                            <div className="text-sm">
-                                                <div className="font-semibold text-secondary">Dimensions</div>
-                                                <div className="text-gray-600">{truck.dimensions}</div>
-                                            </div>
-                                            <div className="text-sm">
-                                                <div className="font-semibold text-secondary">Capacity</div>
-                                                <div className="text-gray-600">{truck.volume}</div>
-                                            </div>
-                                            <div className="text-sm">
-                                                <div className="font-semibold text-secondary">Ideal For</div>
-                                                <div className="text-gray-600">{truck.ideal}</div>
-                                            </div>
-                                            <div className="text-sm">
-                                                <div className="font-semibold text-secondary">Team</div>
-                                                <div className="text-gray-600">{truck.movers}</div>
+                                        {/* Truck Image */}
+                                        <div className="relative h-48 bg-gray-100 overflow-hidden">
+                                            <img 
+                                                src={truck.image} 
+                                                alt={truck.name}
+                                                className="w-full h-full object-cover"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                                            <div className="absolute bottom-4 left-4 right-4">
+                                                <h3 className="text-2xl font-bold text-white mb-1">{truck.name}</h3>
+                                                <div className="text-sm text-white/90">{truck.volume}</div>
                                             </div>
                                         </div>
 
-                                        <div className="border-t border-gray-200 pt-6 mb-6">
-                                            <div className="text-sm font-semibold text-secondary mb-3">Included:</div>
-                                            <ul className="space-y-2">
-                                                {truck.features.map((feature, i) => (
-                                                    <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
-                                                        <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                                                        <span>{feature}</span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                        <div className="p-6">
+                                            <div className="text-center mb-6 pb-6 border-b border-gray-200">
+                                                <div className="text-3xl font-extrabold text-primary mb-1">{truck.price}</div>
+                                                <div className="text-sm text-gray-500">per hour</div>
+                                            </div>
 
-                                        <Link href={`/${locale}/#quote`}>
-                                            <Button className="w-full" variant={truck.popular ? 'primary' : 'outline'}>
-                                                Get Quote
-                                            </Button>
-                                        </Link>
+                                            <div className="space-y-3 mb-6">
+                                                <div className="flex items-center justify-between text-sm">
+                                                    <span className="text-gray-500">Dimensions</span>
+                                                    <span className="font-semibold text-secondary text-xs">{truck.dimensions}</span>
+                                                </div>
+                                                <div className="flex items-center justify-between text-sm">
+                                                    <span className="text-gray-500">Ideal For</span>
+                                                    <span className="font-semibold text-secondary text-xs text-right">{truck.ideal}</span>
+                                                </div>
+                                                <div className="flex items-center justify-between text-sm">
+                                                    <span className="text-gray-500">Team</span>
+                                                    <span className="font-semibold text-secondary text-xs">{truck.movers}</span>
+                                                </div>
+                                            </div>
+
+                                            <div className="border-t border-gray-200 pt-4 mb-6">
+                                                <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Included:</div>
+                                                <ul className="space-y-2">
+                                                    {truck.features.map((feature, i) => (
+                                                        <li key={i} className="flex items-start gap-2 text-xs text-gray-600">
+                                                            <Check className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                                                            <span>{feature}</span>
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+
+                                            <Link href={`/${locale}/#quote`}>
+                                                <Button className="w-full" variant={truck.popular ? 'primary' : 'outline'}>
+                                                    Get Quote
+                                                </Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </FadeIn>
                             ))}
