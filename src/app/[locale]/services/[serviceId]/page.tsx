@@ -54,10 +54,10 @@ export default async function ServicePage({ params }: Props) {
                 {/* Service Hero */}
                 <section className="relative bg-secondary py-20 lg:py-32 overflow-hidden">
                     <div
-                        className="absolute inset-0 bg-cover bg-center opacity-20 mix-blend-overlay transition-opacity duration-700"
+                        className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay transition-opacity duration-700"
                         style={{ backgroundImage: `url('${heroImage}')` }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 to-secondary" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-secondary/70 to-secondary" />
 
                     <div className="container mx-auto px-6 relative z-10">
                         <FadeIn direction="up">
@@ -85,6 +85,29 @@ export default async function ServicePage({ params }: Props) {
                                 <h2 className="text-3xl font-bold text-secondary mb-6">Overview</h2>
                                 <div className="prose prose-lg text-gray-600 mb-12 leading-relaxed">
                                     <p>{t('description')}</p>
+                                </div>
+                            </FadeIn>
+
+                            {/* Feature Image Section */}
+                            <FadeIn direction="up" delay={150}>
+                                <div className="relative rounded-3xl overflow-hidden mb-16 shadow-2xl">
+                                    <img 
+                                        src={heroImage} 
+                                        alt={t('title')}
+                                        className="w-full h-[400px] object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-secondary/20 to-transparent" />
+                                    <div className="absolute bottom-0 left-0 right-0 p-8">
+                                        <div className="flex items-center gap-3 text-white">
+                                            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                                                <Shield className="w-6 h-6" />
+                                            </div>
+                                            <div>
+                                                <div className="font-bold text-lg">Professional Service</div>
+                                                <div className="text-sm text-white/80">Trusted by hundreds of customers</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </FadeIn>
 
