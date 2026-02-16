@@ -23,7 +23,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '19 cubic meters',
             ideal: '1-2 bedroom apartments',
             movers: '2 movers included',
-            image: '/small truck.jpeg',
+            image: '/small truck.jpg',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
