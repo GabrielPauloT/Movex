@@ -1,18 +1,21 @@
 import ScrollLink from '@/components/ui/ScrollLink';
-import { Check, Minus } from 'lucide-react';
+import { Check, Minus, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import FadeIn from '@/components/ui/FadeIn';
+import Link from 'next/link';
 
 export default function Pricing() {
   const t = useTranslations('Pricing');
+  const locale = useLocale();
 
   const packages = [
     {
       name: t('packages.essential.name'),
       subtitle: t('packages.essential.subtitle'),
-      price: '1,500',
+      price: '129',
+      priceUnit: '/hour',
       description: t('packages.essential.description'),
       features: [
         { text: t('packages.essential.features.loading'), included: true },
@@ -27,7 +30,8 @@ export default function Pricing() {
     {
       name: t('packages.complete.name'),
       subtitle: t('packages.complete.subtitle'),
-      price: '2,500',
+      price: '139',
+      priceUnit: '/hour',
       description: t('packages.complete.description'),
       features: [
         { text: t('packages.complete.features.essential'), included: true },
@@ -42,7 +46,8 @@ export default function Pricing() {
     {
       name: t('packages.premium.name'),
       subtitle: t('packages.premium.subtitle'),
-      price: '4,000',
+      price: '149',
+      priceUnit: '/hour',
       description: t('packages.premium.description'),
       features: [
         { text: t('packages.premium.features.complete'), included: true },
@@ -92,8 +97,9 @@ export default function Pricing() {
                 <p className="text-sm text-gray-500 font-medium mb-6">{pkg.subtitle}</p>
 
                 <div className="flex items-baseline mb-2">
+                  <span className="text-sm text-gray-500 font-medium mr-1">From</span>
                   <span className="text-5xl font-black text-primary tracking-tight">${pkg.price}</span>
-                  <span className="text-xl font-bold text-primary ml-1">+</span>
+                  <span className="text-lg text-gray-500 font-medium ml-1">{pkg.priceUnit}</span>
                 </div>
                 <p className="text-sm text-gray-500 mb-8 pb-8 border-b border-gray-100">{pkg.description}</p>
 
@@ -123,6 +129,15 @@ export default function Pricing() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn direction="up" delay={300}>
+          <div className="mt-12 text-center">
+            <Link href={`/${locale}/pricing`} className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+              View detailed pricing & estimates
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
