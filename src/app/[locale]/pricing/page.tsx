@@ -54,7 +54,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '46 cubic meters',
             ideal: '3-4 bedroom homes',
             movers: '2 movers included',
-            image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=800',
+            image: '/large truck.jpg',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
@@ -69,7 +69,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '55 cubic meters',
             ideal: '4-5 bedroom homes',
             movers: '2 movers included',
-            image: 'https://images.unsplash.com/photo-1566933293069-b55c7f326dd4?auto=format&fit=crop&q=80&w=800',
+            image: '/large truck.jpg',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
