@@ -18,9 +18,9 @@ export default async function PricingPage({ params }: Props) {
     const trucks = [
         {
             name: '4T Truck',
-            price: 'From $129',
+            price: 'From $149',
             dimensions: '4200L x 2050W x 2200H',
-            volume: '19 cubic meters',
+            volume: 'Up to 19m³',
             ideal: '1-2 bedroom apartments',
             movers: '2 movers included',
             image: '/small truck.jpg',
@@ -33,9 +33,9 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '8T Truck',
-            price: 'From $139',
+            price: 'From $169',
             dimensions: '6400L x 2400W x 2500H',
-            volume: '38 cubic meters',
+            volume: 'Up to 35m³',
             ideal: '2-3 bedroom apartments',
             movers: '2 movers included',
             popular: true,
@@ -49,11 +49,11 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '10T Truck',
-            price: 'From $149',
+            price: 'From $179',
             dimensions: '7000L x 2400W x 2700H',
-            volume: '46 cubic meters',
+            volume: 'Up to 47m³',
             ideal: '3-4 bedroom homes',
-            movers: '2 movers included',
+            movers: '3 movers recommended',
             image: '/large truck.jpg',
             features: [
                 'Moving blankets & straps',
@@ -64,17 +64,17 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '12T Truck',
-            price: 'From $169',
+            price: 'From $269',
             dimensions: '8000L x 2400W x 2900H',
-            volume: '55 cubic meters',
+            volume: 'Up to 65m³',
             ideal: '4-5 bedroom homes',
-            movers: '2 movers included',
+            movers: '4 movers required',
             image: '/xlarge.jpg',
             features: [
+                'Small + Large truck combo',
                 'Moving blankets & straps',
                 'Hand trolley included',
-                'Hydraulic tailgate & ramp',
-                'Professional crew'
+                'Hydraulic tailgate & ramp'
             ]
         }
     ];
@@ -215,8 +215,13 @@ export default async function PricingPage({ params }: Props) {
                         </div>
 
                         <FadeIn direction="up" delay={200}>
-                            <div className="mt-8 text-center text-sm text-gray-600">
-                                <strong>Note:</strong> Fuel charges and minimum booking hours apply. Contact us for exact pricing.
+                            <div className="mt-8 text-center">
+                                <p className="text-sm text-gray-600 mb-2">
+                                    <strong>Note:</strong> All prices are per hour + GST. Fuel charges and minimum booking hours apply.
+                                </p>
+                                <p className="text-sm text-gray-500">
+                                    Contact us for exact pricing tailored to your specific move.
+                                </p>
                             </div>
                         </FadeIn>
                     </div>
