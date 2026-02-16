@@ -19,7 +19,7 @@ export default function Testimonials({ reviews }: { reviews: Review[] }) {
         </FadeIn>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {reviews.slice(0, 3).map((review, index) => (
+          {reviews.filter(review => review.rating >= 4).slice(0, 3).map((review, index) => (
             <FadeIn
               key={index}
               delay={index * 100}
