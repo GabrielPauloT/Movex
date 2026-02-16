@@ -17,6 +17,7 @@ export default function Pricing() {
       price: '129',
       priceUnit: '/hour',
       description: t('packages.essential.description'),
+      image: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?auto=format&fit=crop&q=80&w=600',
       features: [
         { text: t('packages.essential.features.loading'), included: true },
         { text: t('packages.essential.features.insurance'), included: true },
@@ -33,6 +34,7 @@ export default function Pricing() {
       price: '139',
       priceUnit: '/hour',
       description: t('packages.complete.description'),
+      image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80&w=600',
       features: [
         { text: t('packages.complete.features.essential'), included: true },
         { text: t('packages.complete.features.packing'), included: true },
@@ -49,6 +51,7 @@ export default function Pricing() {
       price: '149',
       priceUnit: '/hour',
       description: t('packages.premium.description'),
+      image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=600',
       features: [
         { text: t('packages.premium.features.complete'), included: true },
         { text: t('packages.premium.features.coordinator'), included: true },
@@ -81,50 +84,63 @@ export default function Pricing() {
             >
               <div
                 className={cn(
-                  "bg-white rounded-2xl p-8 border-2 transition-all duration-300 relative",
+                  "bg-white rounded-2xl overflow-hidden border-2 transition-all duration-300 relative",
                   pkg.highlight
                     ? "border-primary shadow-xl scale-100 lg:scale-105 z-10"
                     : "border-gray-200 hover:border-primary/50 hover:shadow-lg"
                 )}
               >
                 {pkg.highlight && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-primary-light text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
+                  <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-primary to-primary-light text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
                     {t('mostPopular')}
                   </div>
                 )}
 
-                <h3 className="text-2xl font-black text-secondary mb-1">{pkg.name}</h3>
-                <p className="text-sm text-gray-500 font-medium mb-6">{pkg.subtitle}</p>
-
-                <div className="flex items-baseline mb-2">
-                  <span className="text-sm text-gray-500 font-medium mr-1">From</span>
-                  <span className="text-5xl font-black text-primary tracking-tight">${pkg.price}</span>
-                  <span className="text-lg text-gray-500 font-medium ml-1">{pkg.priceUnit}</span>
+                {/* Image Section */}
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={pkg.image} 
+                    alt={pkg.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute bottom-4 left-6">
+                    <h3 className="text-2xl font-black text-white mb-1">{pkg.name}</h3>
+                    <p className="text-sm text-white/90 font-medium">{pkg.subtitle}</p>
+                  </div>
                 </div>
-                <p className="text-sm text-gray-500 mb-8 pb-8 border-b border-gray-100">{pkg.description}</p>
 
-                <ul className="space-y-4 mb-8">
-                  {pkg.features.map((feature, idx) => (
-                    <li key={idx} className={cn("flex items-start gap-3 text-sm", feature.included ? "text-gray-700" : "text-gray-400")}>
-                      {feature.included ? (
-                        <Check className="w-5 h-5 text-primary shrink-0" />
-                      ) : (
-                        <Minus className="w-5 h-5 text-gray-300 shrink-0" />
-                      )}
-                      <span className="font-medium">{feature.text}</span>
-                    </li>
-                  ))}
-                </ul>
+                <div className="p-6">
+                  <div className="flex items-baseline mb-2">
+                    <span className="text-sm text-gray-500 font-medium mr-1">From</span>
+                    <span className="text-5xl font-black text-primary tracking-tight">${pkg.price}</span>
+                    <span className="text-lg text-gray-500 font-medium ml-1">{pkg.priceUnit}</span>
+                  </div>
+                  <p className="text-sm text-gray-500 mb-8 pb-8 border-b border-gray-100">{pkg.description}</p>
 
-                <ScrollLink href="#quote" className="block">
-                  <Button
-                    variant={pkg.highlight ? 'primary' : 'secondary'}
-                    className="w-full"
-                    size="lg"
-                  >
-                    {t('getQuote')}
-                  </Button>
-                </ScrollLink>
+                  <ul className="space-y-4 mb-8">
+                    {pkg.features.map((feature, idx) => (
+                      <li key={idx} className={cn("flex items-start gap-3 text-sm", feature.included ? "text-gray-700" : "text-gray-400")}>
+                        {feature.included ? (
+                          <Check className="w-5 h-5 text-primary shrink-0" />
+                        ) : (
+                          <Minus className="w-5 h-5 text-gray-300 shrink-0" />
+                        )}
+                        <span className="font-medium">{feature.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <ScrollLink href="#quote" className="block">
+                    <Button
+                      variant={pkg.highlight ? 'primary' : 'secondary'}
+                      className="w-full"
+                      size="lg"
+                    >
+                      {t('getQuote')}
+                    </Button>
+                  </ScrollLink>
+                </div>
               </div>
             </FadeIn>
           ))}
