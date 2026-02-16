@@ -39,7 +39,7 @@ export default async function PricingPage({ params }: Props) {
             ideal: '2-3 bedroom apartments',
             movers: '2 movers included',
             popular: true,
-            image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80&w=800',
+            image: '/medium truck.jpeg',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
