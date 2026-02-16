@@ -69,7 +69,7 @@ export default async function PricingPage({ params }: Props) {
             volume: '55 cubic meters',
             ideal: '4-5 bedroom homes',
             movers: '2 movers included',
-            image: '/large truck.jpg',
+            image: '/xlarge.jpg',
             features: [
                 'Moving blankets & straps',
                 'Hand trolley included',
