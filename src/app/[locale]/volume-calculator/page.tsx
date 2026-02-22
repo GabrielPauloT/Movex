@@ -1,6 +1,7 @@
 import TopBar from '@/components/layout/TopBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import VolumeCalculator from '@/components/volume/VolumeCalculator';
 import { setRequestLocale } from 'next-intl/server';
 
 export default async function VolumeCalculatorPage({
@@ -16,18 +17,8 @@ export default async function VolumeCalculatorPage({
       <TopBar />
       <Header />
 
-      <div className="flex-1 w-full relative min-h-[85vh] overflow-hidden">
-        <iframe
-          src="https://moverxsolutions.move.pro"
-          className="w-full border-0 absolute"
-          style={{
-            top: '-85px', // Adjusted to reveal the title
-            height: 'calc(100% + 128px)',
-          }}
-          title="Movex Solutions Volume Calculator"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+      <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <VolumeCalculator />
       </div>
 
       <Footer />

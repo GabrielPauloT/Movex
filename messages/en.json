@@ -222,30 +222,36 @@
         "title": "Get Instant Quote",
         "subtitle": "No hidden fees, no surprises",
         "labels": {
-            "from": "Moving From",
-            "to": "Moving To",
-            "size": "Property Size",
-            "date": "Preferred Date"
+            "name": "Full Name",
+            "from": "Leaving",
+            "to": "Going to",
+            "date": "Preferred Date",
+            "phone": "Phone",
+            "email": "Email",
+            "inventory": "Inventory"
         },
         "placeholders": {
+            "name": "e.g. John Smith",
             "city": "Select city",
-            "size": "Select size"
+            "phone": "e.g. 0412 345 678",
+            "email": "your@email.com",
+            "inventory": "e.g. 2x beds, 1x sofa, 5x boxes..."
         },
-        "button": "Calculate Estimate",
+        "button": {
+            "submit": "Request Quote",
+            "submitting": "Sending..."
+        },
         "errors": {
-            "fields": "Please fill in all fields",
-            "sameCity": "Pickup and delivery cities cannot be the same"
+            "required": "This field is required",
+            "sameCity": "Pickup and delivery cities cannot be the same",
+            "invalidPhone": "Please enter a valid phone number",
+            "invalidEmail": "Please enter a valid email address",
+            "submitFailed": "Something went wrong. Please try again or call us directly."
         },
-        "result": {
-            "title": "Your Estimated Cost",
-            "call": "Call to Confirm Booking",
-            "note": "Includes insurance & premium packing materials. Final price confirmed after assessment."
-        },
-        "sizes": {
-            "1bed": "1 Bedroom",
-            "2bed": "2 Bedrooms",
-            "3bed": "3 Bedrooms",
-            "4bed": "4+ Bedrooms"
+        "success": {
+            "title": "Quote Requested!",
+            "description": "We received your request and will get back to you shortly. Check your email for confirmation.",
+            "newQuote": "Submit Another Quote"
         }
     },
     "Home": {
@@ -390,11 +396,24 @@
                 "name": "Full Name",
                 "email": "Email",
                 "phone": "Phone",
+                "date": "Preferred Date",
                 "pickup": "Pickup",
                 "delivery": "Delivery",
-                "submit": "Send Request"
+                "inventory": "Inventory",
+                "submit": "Send Request",
+                "submitting": "Sending..."
             },
-            "success": "Quote request submitted! (Demo)"
+            "errors": {
+                "required": "This field is required",
+                "invalidPhone": "Please enter a valid phone number",
+                "invalidEmail": "Please enter a valid email address",
+                "submitFailed": "Something went wrong. Please try again or call us directly."
+            },
+            "success": {
+                "title": "Quote Requested!",
+                "description": "We received your request and will get back to you shortly. Check your email for confirmation.",
+                "close": "Close"
+            }
         }
     },
     "ServiceDetails": {

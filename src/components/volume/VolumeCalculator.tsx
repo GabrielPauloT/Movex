@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { Search, Package, Plus, Minus, X } from 'lucide-react';
+import { Search, Package, Plus, Minus, X, AlertCircle, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 import { CATEGORIES, ITEMS_DATA, TRUCKS, CategoryKey, VolumeItem } from '@/data/volume-items';
 import { useTranslations } from 'next-intl';
+import { volumeQuoteFormSchema, type VolumeQuoteFormErrors } from '@/lib/schemas/volumeQuoteForm';
+import { submitVolumeQuote } from '@/lib/api/submitVolumeQuote';
 
 export default function VolumeCalculator() {
   const t = useTranslations('VolumeCalculator');
@@ -13,6 +15,18 @@ export default function VolumeCalculator() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedItems, setSelectedItems] = useState<Record<string, number>>({});
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Modal form state
+  const [formName, setFormName] = useState('');
+  const [formEmail, setFormEmail] = useState('');
+  const [formPhone, setFormPhone] = useState('');
+  const [formDate, setFormDate] = useState('');
+  const [formPickup, setFormPickup] = useState('');
+  const [formDelivery, setFormDelivery] = useState('');
+  const [fieldErrors, setFieldErrors] = useState<VolumeQuoteFormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   // Filter items based on search or category
   const displayedItems = useMemo(() => {
@@ -62,6 +76,97 @@ export default function VolumeCalculator() {
   }, [totalVolume]);
 
   const progress = Math.min((totalVolume / 50) * 100, 100);
+
+  // Build inventory string from selected items — each item on its own line
+  const buildInventory = (): string => {
+    const allItems: Record<string, VolumeItem> = {};
+    Object.values(ITEMS_DATA).forEach(list => list.forEach(item => allItems[item.id] = item));
+
+    return Object.entries(selectedItems)
+      .map(([id, qty]) => {
+        const name = t(`items.${id}`);
+        return `${qty}x ${name}`;
+      })
+      .join('\n');
+  };
+
+  const getErrorMessage = (errorKey: string): string => {
+    const errorMap: Record<string, string> = {
+      required: t('modal.errors.required'),
+      invalidPhone: t('modal.errors.invalidPhone'),
+      invalidEmail: t('modal.errors.invalidEmail'),
+    };
+    return errorMap[errorKey] || errorKey;
+  };
+
+  const handleModalOpen = () => {
+    setSubmitSuccess(false);
+    setSubmitError('');
+    setFieldErrors({});
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+    setSubmitError('');
+    setFieldErrors({});
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFieldErrors({});
+    setSubmitError('');
+
+    const inventory = buildInventory();
+    const formData = {
+      name: formName,
+      email: formEmail,
+      phone: formPhone,
+      date: formDate,
+      pickup: formPickup,
+      delivery: formDelivery,
+      inventory,
+    };
+
+    const result = volumeQuoteFormSchema.safeParse(formData);
+
+    if (!result.success) {
+      const errors: VolumeQuoteFormErrors = {};
+      for (const issue of result.error.issues) {
+        const field = issue.path[0] as keyof VolumeQuoteFormErrors;
+        if (!errors[field]) {
+          errors[field] = issue.message;
+        }
+      }
+      setFieldErrors(errors);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await submitVolumeQuote(result.data);
+      setSubmitSuccess(true);
+      setFormName('');
+      setFormEmail('');
+      setFormPhone('');
+      setFormDate('');
+      setFormPickup('');
+      setFormDelivery('');
+    } catch {
+      setSubmitError(t('modal.errors.submitFailed'));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const modalInputClass = (field: keyof VolumeQuoteFormErrors) =>
+    cn(
+      'w-full px-4 py-2 border-2 rounded-md text-gray-900 focus:outline-none transition-all',
+      fieldErrors[field]
+        ? 'border-red-400 focus:border-red-500'
+        : 'border-gray-200 focus:border-primary'
+    );
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-8 items-start">
@@ -239,7 +344,7 @@ export default function VolumeCalculator() {
             <Button
               className="w-full text-lg h-14"
               disabled={totalItems === 0}
-              onClick={() => setModalOpen(true)}
+              onClick={handleModalOpen}
             >
               {t('summary.getQuote')}
             </Button>
@@ -253,48 +358,171 @@ export default function VolumeCalculator() {
           <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="bg-secondary p-6 flex justify-between items-center text-white">
               <h2 className="text-xl font-extrabold">{t('modal.title')}</h2>
-              <button onClick={() => setModalOpen(false)} className="hover:bg-white/10 p-2 rounded-full transition-colors">
+              <button onClick={handleModalClose} className="hover:bg-white/10 p-2 rounded-full transition-colors">
                 <X className="w-6 h-6" />
               </button>
             </div>
 
             <div className="p-8">
-              <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-200 flex justify-between text-sm">
-                <div>
-                  <span className="block text-gray-500 mb-1">{t('modal.totalVolume')}</span>
-                  <strong className="text-lg text-secondary">{totalVolume.toFixed(1)} m³</strong>
+              {submitSuccess ? (
+                <div className="text-center py-8 animate-in fade-in zoom-in-95 duration-300">
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-8 h-8 text-green-600" />
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-secondary mb-2">
+                    {t('modal.success.title')}
+                  </h3>
+                  <p className="text-base text-gray-600 mb-6">
+                    {t('modal.success.description')}
+                  </p>
+                  <Button type="button" variant="secondary" onClick={handleModalClose}>
+                    {t('modal.success.close')}
+                  </Button>
                 </div>
-                <div className="text-right">
-                  <span className="block text-gray-500 mb-1">{t('modal.recommended')}</span>
-                  <strong className="text-lg text-primary">{recommendedTruck.name}</strong>
-                </div>
-              </div>
+              ) : (
+                <>
+                  <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-200 flex justify-between text-sm">
+                    <div>
+                      <span className="block text-gray-500 mb-1">{t('modal.totalVolume')}</span>
+                      <strong className="text-lg text-secondary">{totalVolume.toFixed(1)} m³</strong>
+                    </div>
+                    <div className="text-right">
+                      <span className="block text-gray-500 mb-1">{t('modal.recommended')}</span>
+                      <strong className="text-lg text-primary">{recommendedTruck.name}</strong>
+                    </div>
+                  </div>
 
-              <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert(t('modal.success')); setModalOpen(false); }}>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-1">{t('modal.form.name')}</label>
-                  <input required className="w-full px-4 py-2 border-2 border-gray-200 rounded-md focus:border-primary focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-1">{t('modal.form.email')}</label>
-                  <input required type="email" className="w-full px-4 py-2 border-2 border-gray-200 rounded-md focus:border-primary focus:outline-none" />
-                </div>
-                <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-1">{t('modal.form.phone')}</label>
-                  <input required type="tel" className="w-full px-4 py-2 border-2 border-gray-200 rounded-md focus:border-primary focus:outline-none" />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">{t('modal.form.pickup')}</label>
-                    <input required className="w-full px-4 py-2 border-2 border-gray-200 rounded-md focus:border-primary focus:outline-none" placeholder="" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-bold text-gray-700 mb-1">{t('modal.form.delivery')}</label>
-                    <input required className="w-full px-4 py-2 border-2 border-gray-200 rounded-md focus:border-primary focus:outline-none" placeholder="" />
-                  </div>
-                </div>
-                <Button type="submit" className="w-full mt-4" size="lg">{t('modal.form.submit')}</Button>
-              </form>
+                  <form className="space-y-4" onSubmit={handleFormSubmit} noValidate>
+                    {/* Name */}
+                    <div>
+                      <label className="block text-sm font-bold text-gray-700 mb-1">
+                        {t('modal.form.name')} <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value={formName}
+                        onChange={(e) => { setFormName(e.target.value); setFieldErrors(p => ({ ...p, name: undefined })); }}
+                        className={modalInputClass('name')}
+                      />
+                      {fieldErrors.name && (
+                        <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.name)}</p>
+                      )}
+                    </div>
+
+                    {/* Email */}
+                    <div>
+                      <label className="block text-sm font-bold text-gray-700 mb-1">
+                        {t('modal.form.email')} <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        value={formEmail}
+                        onChange={(e) => { setFormEmail(e.target.value); setFieldErrors(p => ({ ...p, email: undefined })); }}
+                        className={modalInputClass('email')}
+                      />
+                      {fieldErrors.email && (
+                        <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.email)}</p>
+                      )}
+                    </div>
+
+                    {/* Phone */}
+                    <div>
+                      <label className="block text-sm font-bold text-gray-700 mb-1">
+                        {t('modal.form.phone')} <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="tel"
+                        value={formPhone}
+                        onChange={(e) => { setFormPhone(e.target.value); setFieldErrors(p => ({ ...p, phone: undefined })); }}
+                        className={modalInputClass('phone')}
+                      />
+                      {fieldErrors.phone && (
+                        <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.phone)}</p>
+                      )}
+                    </div>
+
+                    {/* Date */}
+                    <div>
+                      <label className="block text-sm font-bold text-gray-700 mb-1">
+                        {t('modal.form.date')} <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="date"
+                        min={new Date().toISOString().split('T')[0]}
+                        value={formDate}
+                        onChange={(e) => { setFormDate(e.target.value); setFieldErrors(p => ({ ...p, date: undefined })); }}
+                        className={modalInputClass('date')}
+                      />
+                      {fieldErrors.date && (
+                        <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.date)}</p>
+                      )}
+                    </div>
+
+                    {/* Pickup / Delivery */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-bold text-gray-700 mb-1">
+                          {t('modal.form.pickup')} <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          value={formPickup}
+                          onChange={(e) => { setFormPickup(e.target.value); setFieldErrors(p => ({ ...p, pickup: undefined })); }}
+                          className={modalInputClass('pickup')}
+                        />
+                        {fieldErrors.pickup && (
+                          <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.pickup)}</p>
+                        )}
+                      </div>
+                      <div>
+                        <label className="block text-sm font-bold text-gray-700 mb-1">
+                          {t('modal.form.delivery')} <span className="text-red-500">*</span>
+                        </label>
+                        <input
+                          type="text"
+                          value={formDelivery}
+                          onChange={(e) => { setFormDelivery(e.target.value); setFieldErrors(p => ({ ...p, delivery: undefined })); }}
+                          className={modalInputClass('delivery')}
+                        />
+                        {fieldErrors.delivery && (
+                          <p className="text-red-500 text-xs font-medium mt-1">{getErrorMessage(fieldErrors.delivery)}</p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Inventory (read-only, auto-built from selected items) */}
+                    <div>
+                      <label className="block text-sm font-bold text-gray-700 mb-1">
+                        {t('modal.form.inventory')}
+                      </label>
+                      <textarea
+                        readOnly
+                        rows={4}
+                        value={buildInventory()}
+                        className="w-full px-4 py-2 border-2 border-gray-200 rounded-md bg-gray-50 text-gray-700 text-sm resize-none cursor-default focus:outline-none"
+                      />
+                    </div>
+
+                    {/* Submit Error */}
+                    {submitError && (
+                      <div className="flex items-center gap-2 text-red-600 text-sm font-medium bg-red-50 border border-red-200 rounded-md p-3">
+                        <AlertCircle className="w-4 h-4 shrink-0" />
+                        {submitError}
+                      </div>
+                    )}
+
+                    <Button
+                      type="submit"
+                      className="w-full mt-4"
+                      size="lg"
+                      isLoading={isSubmitting}
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? t('modal.form.submitting') : t('modal.form.submit')}
+                    </Button>
+                  </form>
+                </>
+              )}
             </div>
           </div>
         </div>

@@ -222,30 +222,36 @@
         "title": "Orçamento Instantâneo",
         "subtitle": "Sem taxas ocultas, sem surpresas",
         "labels": {
+            "name": "Nome Completo",
             "from": "Saindo de",
             "to": "Indo para",
-            "size": "Tamanho do Imóvel",
-            "date": "Data Preferida"
+            "date": "Data Preferida",
+            "phone": "Telefone",
+            "email": "E-mail",
+            "inventory": "Inventário"
         },
         "placeholders": {
+            "name": "ex: João da Silva",
             "city": "Selecione a cidade",
-            "size": "Selecione o tamanho"
+            "phone": "ex: 0412 345 678",
+            "email": "seu@email.com",
+            "inventory": "ex: 2x camas, 1x sofá, 5x caixas..."
         },
-        "button": "Calcular Estimativa",
+        "button": {
+            "submit": "Solicitar Orçamento",
+            "submitting": "Enviando..."
+        },
         "errors": {
-            "fields": "Por favor, preencha todos os campos",
-            "sameCity": "Cidades de origem e destino não podem ser as mesmas"
+            "required": "Este campo é obrigatório",
+            "sameCity": "Cidades de origem e destino não podem ser as mesmas",
+            "invalidPhone": "Por favor, insira um número de telefone válido",
+            "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+            "submitFailed": "Algo deu errado. Tente novamente ou ligue diretamente para nós."
         },
-        "result": {
-            "title": "Seu Custo Estimado",
-            "call": "Ligar para Confirmar Reserva",
-            "note": "Inclui seguro e materiais de embalagem premium. Preço final confirmado após avaliação."
-        },
-        "sizes": {
-            "1bed": "1 Quarto",
-            "2bed": "2 Quartos",
-            "3bed": "3 Quartos",
-            "4bed": "4+ Quartos"
+        "success": {
+            "title": "Orçamento Solicitado!",
+            "description": "Recebemos sua solicitação e entraremos em contato em breve. Verifique seu e-mail para confirmação.",
+            "newQuote": "Enviar Outro Orçamento"
         }
     },
     "Home": {
@@ -390,11 +396,24 @@
                 "name": "Nome Completo",
                 "email": "E-mail",
                 "phone": "Telefone",
-                "pickup": "Retirada (Bairro/CEP)",
-                "delivery": "Entrega (Bairro/CEP)",
-                "submit": "Enviar Solicitação"
+                "date": "Data Preferida",
+                "pickup": "Retirada",
+                "delivery": "Entrega",
+                "inventory": "Inventário",
+                "submit": "Enviar Solicitação",
+                "submitting": "Enviando..."
             },
-            "success": "Solicitação enviada! (Demo)"
+            "errors": {
+                "required": "Este campo é obrigatório",
+                "invalidPhone": "Por favor, insira um número de telefone válido",
+                "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+                "submitFailed": "Algo deu errado. Tente novamente ou ligue diretamente para nós."
+            },
+            "success": {
+                "title": "Cotação Solicitada!",
+                "description": "Recebemos sua solicitação e entraremos em contato em breve. Verifique seu e-mail para confirmação.",
+                "close": "Fechar"
+            }
         }
     },
     "ServiceDetails": {
