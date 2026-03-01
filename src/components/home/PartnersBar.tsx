@@ -1,9 +1,13 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import FadeIn from '@/components/ui/FadeIn';
 
 const PARTNERS = [
-  { name: 'Dominion Group', logo: '/partners/partners-1.png' },
-  { name: 'RP Global Logistics', logo: '/partners/partners-2.png' },
+  { name: 'Dominion Group', logo: '/partners/dominion-group.png', width: 484, height: 79 },
+  { name: 'Find a Mover', logo: '/partners/find-a-mover.png', width: 1066, height: 525 },
+  { name: 'RP Global Logistics', logo: '/partners/rp-global.png', width: 458, height: 226 },
+  { name: 'Muval', logo: '/partners/muval.png', width: 896, height: 187 },
+  { name: 'MovePro', logo: '/partners/movepro.png', width: 800, height: 123 },
 ];
 
 export default function PartnersBar() {
@@ -16,13 +20,18 @@ export default function PartnersBar() {
           <p className="text-center text-white/70 text-sm font-semibold uppercase tracking-widest mb-6">
             {t('title')}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-10 lg:gap-16">
+          <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-6">
             {PARTNERS.map((partner) => (
-              <div key={partner.name} className="flex items-center">
-                <img
+              <div
+                key={partner.name}
+                className="w-36 h-14 lg:w-44 lg:h-16 bg-white rounded-lg flex items-center justify-center p-3"
+              >
+                <Image
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-12 lg:h-16 w-auto object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
+                  width={partner.width}
+                  height={partner.height}
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             ))}
