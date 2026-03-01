@@ -73,10 +73,10 @@ export default async function ServicePage({ params }: Props) {
 
                     <div className="container mx-auto px-6 relative z-10">
                         <FadeIn direction="up">
-                            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-white/90 mb-6 border border-white/20">
-                                <Link href={`/${locale}`} className="hover:text-primary transition-colors">Home</Link>
-                                <span className="text-white/40">/</span>
-                                <span className="text-primary">{t('title')}</span>
+                            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
+                                <Link href={`/${locale}`} className="text-white hover:text-accent transition-colors">Home</Link>
+                                <span className="text-white/60">/</span>
+                                <span className="text-accent font-semibold">{t('title')}</span>
                             </div>
 
                             <h1 className="text-4xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight max-w-4xl">
