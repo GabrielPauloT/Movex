@@ -1,68 +1,31 @@
-import ScrollLink from '@/components/ui/ScrollLink';
-import { Check, Minus, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import FadeIn from '@/components/ui/FadeIn';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+
+const TRUCK_IMAGES = [
+  '/small truck.jpg',
+  '/medium truck.jpeg',
+  '/large truck.jpg',
+  '/xlarge.jpg',
+];
+
+const TRUCK_KEYS = ['4_5T', '8T', '12T', '16T'] as const;
 
 export default function Pricing() {
   const t = useTranslations('Pricing');
-  const locale = useLocale();
 
-  const packages = [
-    {
-      name: t('packages.essential.name'),
-      subtitle: t('packages.essential.subtitle'),
-      price: '129',
-      priceUnit: '/hour',
-      description: t('packages.essential.description'),
-      image: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?auto=format&fit=crop&q=80&w=600',
-      features: [
-        { text: t('packages.essential.features.loading'), included: true },
-        { text: t('packages.essential.features.insurance'), included: true },
-        { text: t('packages.essential.features.materials'), included: true },
-        { text: t('packages.essential.features.gps'), included: true },
-        { text: t('packages.essential.features.packing'), included: false },
-        { text: t('packages.essential.features.assembly'), included: false },
-      ],
-      highlight: false,
-    },
-    {
-      name: t('packages.complete.name'),
-      subtitle: t('packages.complete.subtitle'),
-      price: '139',
-      priceUnit: '/hour',
-      description: t('packages.complete.description'),
-      image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&q=80&w=600',
-      features: [
-        { text: t('packages.complete.features.essential'), included: true },
-        { text: t('packages.complete.features.packing'), included: true },
-        { text: t('packages.complete.features.insurance'), included: true },
-        { text: t('packages.complete.features.assembly'), included: true },
-        { text: t('packages.complete.features.storage'), included: true },
-        { text: t('packages.complete.features.scheduling'), included: true },
-      ],
-      highlight: true,
-    },
-    {
-      name: t('packages.premium.name'),
-      subtitle: t('packages.premium.subtitle'),
-      price: '149',
-      priceUnit: '/hour',
-      description: t('packages.premium.description'),
-      image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=600',
-      features: [
-        { text: t('packages.premium.features.complete'), included: true },
-        { text: t('packages.premium.features.coordinator'), included: true },
-        { text: t('packages.premium.features.crating'), included: true },
-        { text: t('packages.premium.features.storage'), included: true },
-        { text: t('packages.premium.features.sameday'), included: true },
-        { text: t('packages.premium.features.cleaning'), included: true },
-      ],
-      highlight: false,
-    },
-  ];
+  const trucks = TRUCK_KEYS.map((key, index) => ({
+    key,
+    name: t(`trucks.${key}.name`),
+    volume: t(`trucks.${key}.volume`),
+    price: t(`trucks.${key}.price`),
+    ideal: t(`trucks.${key}.ideal`),
+    image: TRUCK_IMAGES[index],
+    popular: key === '8T',
+  }));
 
   return (
     <section className="py-20 lg:py-24 bg-gray-50" id="pricing">
@@ -75,71 +38,59 @@ export default function Pricing() {
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {packages.map((pkg, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {trucks.map((truck, index) => (
             <FadeIn
-              key={index}
+              key={truck.key}
               delay={index * 100}
               direction="up"
             >
               <div
                 className={cn(
-                  "bg-white rounded-2xl overflow-hidden border-2 transition-all duration-300 relative",
-                  pkg.highlight
-                    ? "border-primary shadow-xl scale-100 lg:scale-105 z-10"
+                  "bg-white rounded-2xl overflow-hidden border-2 transition-all duration-300 relative h-full flex flex-col",
+                  truck.popular
+                    ? "border-primary shadow-xl"
                     : "border-gray-200 hover:border-primary/50 hover:shadow-lg"
                 )}
               >
-                {pkg.highlight && (
+                {truck.popular && (
                   <div className="absolute top-4 right-4 z-10 bg-gradient-to-r from-primary to-primary-light text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
                     {t('mostPopular')}
                   </div>
                 )}
 
                 {/* Image Section */}
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={pkg.image} 
-                    alt={pkg.name}
+                <div className="relative h-44 overflow-hidden">
+                  <img
+                    src={truck.image}
+                    alt={truck.name}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                  <div className="absolute bottom-4 left-6">
-                    <h3 className="text-2xl font-black text-white mb-1">{pkg.name}</h3>
-                    <p className="text-sm text-white/90 font-medium">{pkg.subtitle}</p>
+                  <div className="absolute bottom-4 left-5">
+                    <h3 className="text-xl font-black text-white mb-0.5">{truck.name}</h3>
+                    <p className="text-sm text-white/90 font-medium">{truck.volume}</p>
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-baseline mb-2">
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-baseline mb-1">
                     <span className="text-sm text-gray-500 font-medium mr-1">From</span>
-                    <span className="text-5xl font-black text-primary tracking-tight">${pkg.price}</span>
-                    <span className="text-lg text-gray-500 font-medium ml-1">{pkg.priceUnit}</span>
+                    <span className="text-4xl font-black text-primary tracking-tight">${truck.price}</span>
+                    <span className="text-base text-gray-500 font-medium ml-1">/h</span>
                   </div>
-                  <p className="text-sm text-gray-500 mb-8 pb-8 border-b border-gray-100">{pkg.description}</p>
+                  <p className="text-xs text-gray-400 mb-4">+ GST</p>
 
-                  <ul className="space-y-4 mb-8">
-                    {pkg.features.map((feature, idx) => (
-                      <li key={idx} className={cn("flex items-start gap-3 text-sm", feature.included ? "text-gray-700" : "text-gray-400")}>
-                        {feature.included ? (
-                          <Check className="w-5 h-5 text-primary shrink-0" />
-                        ) : (
-                          <Minus className="w-5 h-5 text-gray-300 shrink-0" />
-                        )}
-                        <span className="font-medium">{feature.text}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="text-sm text-gray-600 mb-6 flex-grow">{truck.ideal}</p>
 
-                  <ScrollLink href="#quote" className="block">
+                  <Link href="/pricing" className="block">
                     <Button
-                      variant={pkg.highlight ? 'primary' : 'secondary'}
+                      variant={truck.popular ? 'primary' : 'outline'}
                       className="w-full"
-                      size="lg"
                     >
-                      {t('getQuote')}
+                      {t('learnMore')}
                     </Button>
-                  </ScrollLink>
+                  </Link>
                 </div>
               </div>
             </FadeIn>
@@ -148,8 +99,8 @@ export default function Pricing() {
 
         <FadeIn direction="up" delay={300}>
           <div className="mt-12 text-center">
-            <Link href={`/${locale}/pricing`} className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
-              View detailed pricing & estimates
+            <Link href="/pricing" className="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+              {t('viewDetailed')}
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>

@@ -3,6 +3,7 @@ import { Check, Shield, Star, Users, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import QuoteCalculator from './QuoteCalculator';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function Hero({ rating }: { rating: number }) {
   const t = useTranslations('Hero');
@@ -62,9 +63,9 @@ export default function Hero({ rating }: { rating: number }) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
-              <ScrollLink href="#quote">
+              <Link href="/volume-calculator">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
-              </ScrollLink>
+              </Link>
               <a href="tel:1300480732">
                 <Button variant="secondary" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg border-2 border-transparent hover:border-secondary/10 hover:bg-white text-secondary">
                   <Phone className="w-5 h-5 mr-2" />

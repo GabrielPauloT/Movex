@@ -1,12 +1,19 @@
+import { Link } from '@/i18n/routing';
 import ScrollLink from '@/components/ui/ScrollLink';
 import { Facebook, Instagram, Linkedin, Phone, MapPin, Mail, Clock } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+
+// TODO: Update phone number when client provides new number
 
 export default function Footer() {
   const t = useTranslations('Footer');
 
   const serviceKeys = ['house', 'commercial', 'office', 'packing', 'storage', 'furniture'];
-  const companyKeys = ['about', 'reviews', 'faq', 'careers'];
+  const companyLinks = [
+    { key: 'about', href: '/about' },
+    { key: 'reviews', href: '/#testimonials' },
+    { key: 'faq', href: '/#faq' },
+  ];
 
   return (
     <footer className="bg-gray-900 text-gray-400 pt-16 pb-8">
@@ -38,9 +45,9 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {serviceKeys.map((key) => (
                 <li key={key}>
-                  <ScrollLink href="#services" className="text-[0.9375rem] hover:text-primary transition-colors">
+                  <Link href={`/services/${key}`} className="text-[0.9375rem] hover:text-primary transition-colors">
                     {t(`services.${key}`)}
-                  </ScrollLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -50,11 +57,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-extrabold text-[0.9375rem] uppercase tracking-wider mb-6">{t('titles.company')}</h4>
             <ul className="flex flex-col gap-3">
-              {companyKeys.map((key) => (
+              {companyLinks.map(({ key, href }) => (
                 <li key={key}>
-                  <ScrollLink href="#" className="text-[0.9375rem] hover:text-primary transition-colors">
+                  <Link href={href} className="text-[0.9375rem] hover:text-primary transition-colors">
                     {t(`company.${key}`)}
-                  </ScrollLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -97,8 +104,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 text-center md:text-left">
           <div>{t('legal.rights')}</div>
           <div className="flex gap-6">
-            <ScrollLink href="#" className="hover:text-white transition-colors">{t('legal.privacy')}</ScrollLink>
-            <ScrollLink href="#" className="hover:text-white transition-colors">{t('legal.terms')}</ScrollLink>
+            <Link href="/policy" className="hover:text-white transition-colors">{t('legal.privacy')}</Link>
+            <Link href="/policy" className="hover:text-white transition-colors">{t('legal.terms')}</Link>
           </div>
         </div>
       </div>

@@ -7,8 +7,7 @@ import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { quoteFormSchema, type QuoteFormErrors } from '@/lib/schemas/quoteForm';
 import { submitQuote } from '@/lib/api/submitQuote';
-
-const CITIES = ['Melbourne', 'Sydney', 'Canberra', 'Adelaide'];
+import AddressAutocomplete from '@/components/ui/AddressAutocomplete';
 
 export default function QuoteCalculator() {
   const t = useTranslations('QuoteCalculator');
@@ -138,43 +137,35 @@ export default function QuoteCalculator() {
           )}
         </div>
 
-        {/* Leaving (From) */}
+        {/* Pick-up Location (From) */}
         <div className="space-y-1.5">
           <label htmlFor="from" className="block text-sm font-bold text-secondary tracking-tight">
             {t('labels.from')} <span className="text-red-500">*</span>
           </label>
-          <select
+          <AddressAutocomplete
             id="from"
             value={from}
-            onChange={(e) => { setFrom(e.target.value); setFieldErrors((p) => ({ ...p, from: undefined })); }}
+            onChange={(val) => { setFrom(val); setFieldErrors((p) => ({ ...p, from: undefined })); }}
+            placeholder={t('placeholders.from')}
             className={inputClass('from')}
-          >
-            <option value="">{t('placeholders.city')}</option>
-            {CITIES.map((city) => (
-              <option key={city} value={city}>{city}</option>
-            ))}
-          </select>
+          />
           {fieldErrors.from && (
             <p className="text-red-500 text-xs font-medium">{getErrorMessage(fieldErrors.from)}</p>
           )}
         </div>
 
-        {/* Going to (To) */}
+        {/* Destination (To) */}
         <div className="space-y-1.5">
           <label htmlFor="to" className="block text-sm font-bold text-secondary tracking-tight">
             {t('labels.to')} <span className="text-red-500">*</span>
           </label>
-          <select
+          <AddressAutocomplete
             id="to"
             value={to}
-            onChange={(e) => { setTo(e.target.value); setFieldErrors((p) => ({ ...p, to: undefined })); }}
+            onChange={(val) => { setTo(val); setFieldErrors((p) => ({ ...p, to: undefined })); }}
+            placeholder={t('placeholders.to')}
             className={inputClass('to')}
-          >
-            <option value="">{t('placeholders.city')}</option>
-            {CITIES.map((city) => (
-              <option key={city} value={city}>{city}</option>
-            ))}
-          </select>
+          />
           {fieldErrors.to && (
             <p className="text-red-500 text-xs font-medium">{getErrorMessage(fieldErrors.to)}</p>
           )}

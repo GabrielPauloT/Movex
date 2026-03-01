@@ -33,7 +33,7 @@ export default function Process() {
   ];
 
   return (
-    <section className="py-20 lg:py-24 bg-gray-50" id="process">
+    <section className="py-20 lg:py-24 bg-gray-200" id="process">
       <div className="container mx-auto px-6">
         <FadeIn direction="up" className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block text-sm font-extrabold text-primary uppercase tracking-widest mb-3">{t('sectionTitle')}</div>

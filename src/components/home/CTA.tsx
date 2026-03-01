@@ -1,8 +1,8 @@
 import { Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import ScrollLink from '@/components/ui/ScrollLink';
 import { useTranslations } from 'next-intl';
 import FadeIn from '@/components/ui/FadeIn';
+import { Link } from '@/i18n/routing';
 
 export default function CTA() {
   const t = useTranslations('CTA');
@@ -26,11 +26,11 @@ export default function CTA() {
                 {t('call')}
               </Button>
             </a>
-            <ScrollLink href="#quote">
+            <Link href="/volume-calculator">
               <Button variant="primary" size="lg" className="w-full sm:w-auto font-extrabold text-lg bg-primary hover:bg-primary-light border-0">
                 {t('calculate')}
               </Button>
-            </ScrollLink>
+            </Link>
           </div>
         </FadeIn>
       </div>

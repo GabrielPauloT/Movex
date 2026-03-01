@@ -4,7 +4,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import TopBar from '@/components/layout/TopBar';
 import CTA from '@/components/home/CTA';
-import { Check, ArrowRight, Phone, Calendar, Shield } from 'lucide-react';
+import { Check, ArrowRight, Phone, Calendar, Shield, Users, Package, Clock, Truck, MapPin, Wrench, Lock, Box, ClipboardList, Tag, Star } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import FadeIn from '@/components/ui/FadeIn';
@@ -44,6 +44,18 @@ export default async function ServicePage({ params }: Props) {
     };
 
     const heroImage = SERVICE_IMAGES[serviceId] || SERVICE_IMAGES.house;
+
+    // Icons for key features per service type
+    const FEATURE_ICONS: Record<string, typeof Check[]> = {
+        house: [Users, Package, Wrench, Shield, Clock, Tag],
+        commercial: [Clock, Users, Truck, Lock, Star, Shield],
+        office: [ClipboardList, Wrench, Tag, Clock, MapPin, Shield],
+        packing: [Box, Users, Shield, Tag, Package, Clock],
+        storage: [Lock, Shield, Clock, MapPin, Truck, Package],
+        furniture: [Package, Wrench, Box, Clock, Phone, Star],
+    };
+
+    const featureIcons = FEATURE_ICONS[serviceId] || features.map(() => Check);
 
     return (
         <div className="min-h-screen bg-white">
@@ -119,14 +131,17 @@ export default async function ServicePage({ params }: Props) {
                                     Key Features
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-                                    {features.map((feature, idx) => (
-                                        <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/20 hover:bg-white hover:shadow-lg transition-all duration-300 group">
-                                            <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary shadow-sm border border-gray-100 group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <Check className="w-4 h-4 stroke-[3]" />
+                                    {features.map((feature, idx) => {
+                                        const Icon = featureIcons[idx] || Check;
+                                        return (
+                                            <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/20 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                                                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center text-white shadow-sm group-hover:scale-110 transition-transform flex-shrink-0">
+                                                    <Icon className="w-5 h-5" />
+                                                </div>
+                                                <span className="font-medium text-gray-700 pt-2 group-hover:text-secondary transition-colors">{feature}</span>
                                             </div>
-                                            <span className="font-medium text-gray-700 pt-1 group-hover:text-secondary transition-colors">{feature}</span>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </FadeIn>
 

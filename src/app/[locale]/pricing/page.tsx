@@ -4,7 +4,7 @@ import Footer from '@/components/layout/Footer';
 import TopBar from '@/components/layout/TopBar';
 import FadeIn from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { Check, Truck, Package, Clock, Phone } from 'lucide-react';
+import { Check, Package, Phone } from 'lucide-react';
 import Link from 'next/link';
 
 type Props = {
@@ -17,77 +17,91 @@ export default async function PricingPage({ params }: Props) {
 
     const trucks = [
         {
-            name: '4T Truck',
-            price: 'From $149',
-            dimensions: '4200L x 2050W x 2200H',
-            volume: 'Up to 19m³',
-            ideal: '1-2 bedroom apartments',
+            name: '4.5T Truck',
+            price: 'From $139',
+            volume: 'Up to 20m³',
+            ideal: 'Studio / 1 bedroom apartment',
             movers: '2 movers included',
             image: '/small truck.jpg',
             features: [
                 'Moving blankets & straps',
-                'Hand trolley included',
-                'Hydraulic tailgate lift',
+                'Hand trolleys',
+                'Shrink wrap',
+                'Mattress protector',
+                'Hydraulic tailgate',
                 'Professional crew'
             ]
         },
         {
             name: '8T Truck',
-            price: 'From $169',
-            dimensions: '6400L x 2400W x 2500H',
-            volume: 'Up to 35m³',
-            ideal: '2-3 bedroom apartments',
+            price: 'From $149',
+            volume: 'Up to 40m³',
+            ideal: '2-3 bedroom houses',
             movers: '2 movers included',
             popular: true,
             image: '/medium truck.jpeg',
             features: [
                 'Moving blankets & straps',
-                'Hand trolley included',
-                'Hydraulic tailgate lift',
-                'Professional crew'
-            ]
-        },
-        {
-            name: '10T Truck',
-            price: 'From $179',
-            dimensions: '7000L x 2400W x 2700H',
-            volume: 'Up to 47m³',
-            ideal: '3-4 bedroom homes',
-            movers: '3 movers recommended',
-            image: '/large truck.jpg',
-            features: [
-                'Moving blankets & straps',
-                'Hand trolley included',
-                'Hydraulic tailgate & ramp',
+                'Hand trolleys',
+                'Shrink wrap',
+                'Mattress protector',
+                'Hydraulic tailgate',
                 'Professional crew'
             ]
         },
         {
             name: '12T Truck',
-            price: 'From $269',
-            dimensions: '8000L x 2400W x 2900H',
-            volume: 'Up to 65m³',
-            ideal: '4-5 bedroom homes',
+            price: 'From $169',
+            volume: 'Up to 50m³',
+            ideal: '4 bedroom houses',
+            movers: '3 movers recommended',
+            image: '/large truck.jpg',
+            features: [
+                'Moving blankets & straps',
+                'Hand trolleys',
+                'Shrink wrap',
+                'Mattress protector',
+                'Hydraulic tailgate',
+                'Professional crew'
+            ]
+        },
+        {
+            name: '16T Truck',
+            price: 'From $249',
+            volume: 'Up to 70m³',
+            ideal: '5+ bedroom homes',
             movers: '4 movers required',
             image: '/xlarge.jpg',
             features: [
-                'Small + Large truck combo',
                 'Moving blankets & straps',
-                'Hand trolley included',
-                'Hydraulic tailgate & ramp'
+                'Hand trolleys',
+                'Shrink wrap',
+                'Mattress protector',
+                'Hydraulic tailgate',
+                'Professional crew'
             ]
         }
     ];
 
     const estimates = [
-        { size: 'Studio Apartment', volume: '7-9 m³', time: '1.5-2.5 hrs', rate: '$129', total: '$193-$322' },
-        { size: '1 Bedroom Apartment', volume: '14-16 m³', time: '2-3 hrs', rate: '$129', total: '$258-$387' },
-        { size: '2 Bedroom Apartment', volume: '22-24 m³', time: '3-4 hrs', rate: '$129', total: '$387-$516' },
-        { size: '3 Bedroom Apartment', volume: '31-33 m³', time: '5-6 hrs', rate: '$129', total: '$516-$774' },
-        { size: '2 Bedroom House', volume: '25-27 m³', time: '3.5-5.5 hrs', rate: '$129', total: '$452-$710' },
-        { size: '3 Bedroom House', volume: '34-36 m³', time: '6-8 hrs', rate: '$149', total: '$894-$1192' },
-        { size: '4 Bedroom House', volume: '47-49 m³', time: '7-9 hrs', rate: '$149', total: '$1043-$1341' },
-        { size: '5 Bedroom House', volume: '55+ m³', time: '8-10 hrs', rate: '$149', total: '$1192-$1490' }
+        { size: 'Studio Apartment', volume: '8-10 m³', time: '1.5-2.5 hrs', rate: '$139', total: '$208-$347' },
+        { size: '1 Bedroom Apartment', volume: '10-15 m³', time: '2-3 hrs', rate: '$139', total: '$278-$417' },
+        { size: '2 Bedroom Apartment', volume: '20-24 m³', time: '3-4 hrs', rate: '$139', total: '$417-$556' },
+        { size: '3 Bedroom Apartment', volume: '25-30 m³', time: '5-6 hrs', rate: '$149', total: '$745-$894' },
+        { size: '2 Bedroom House', volume: '20-25 m³', time: '4-5 hrs', rate: '$139', total: '$556-$695' },
+        { size: '3 Bedroom House', volume: '25-35 m³', time: '5-7 hrs', rate: '$149', total: '$745-$894' },
+        { size: '4 Bedroom House', volume: '35-50 m³', time: '8-9 hrs', rate: '$169', total: '$1352-$1521' },
+        { size: '5 Bedroom House', volume: '55+ m³', time: '10-12 hrs', rate: '$249', total: '$2490-$2988' }
+    ];
+
+    const included = [
+        'Moving blankets + straps',
+        'Hand trolleys',
+        'Shrink wrap',
+        'Mattress protector',
+        'Hydraulic Tailgate',
+        'Tool box with portable drill',
+        'Professional crew'
     ];
 
     const factors = [
@@ -155,11 +169,11 @@ export default async function PricingPage({ params }: Props) {
                                                 Most Popular
                                             </div>
                                         )}
-                                        
+
                                         {/* Truck Image */}
                                         <div className="relative h-48 bg-gray-100 overflow-hidden">
-                                            <img 
-                                                src={truck.image} 
+                                            <img
+                                                src={truck.image}
                                                 alt={truck.name}
                                                 className="w-full h-full object-cover"
                                             />
@@ -173,14 +187,10 @@ export default async function PricingPage({ params }: Props) {
                                         <div className="p-6">
                                             <div className="text-center mb-6 pb-6 border-b border-gray-200">
                                                 <div className="text-3xl font-extrabold text-primary mb-1">{truck.price}</div>
-                                                <div className="text-sm text-gray-500">per hour</div>
+                                                <div className="text-sm text-gray-500">per hour + GST</div>
                                             </div>
 
                                             <div className="space-y-3 mb-6">
-                                                <div className="flex items-center justify-between text-sm">
-                                                    <span className="text-gray-500">Dimensions</span>
-                                                    <span className="font-semibold text-secondary text-xs">{truck.dimensions}</span>
-                                                </div>
                                                 <div className="flex items-center justify-between text-sm">
                                                     <span className="text-gray-500">Ideal For</span>
                                                     <span className="font-semibold text-secondary text-xs text-right">{truck.ideal}</span>
@@ -216,9 +226,6 @@ export default async function PricingPage({ params }: Props) {
 
                         <FadeIn direction="up" delay={200}>
                             <div className="mt-8 text-center">
-                                <p className="text-sm text-gray-600 mb-2">
-                                    <strong>Note:</strong> All prices are per hour + GST. Fuel charges and minimum booking hours apply.
-                                </p>
                                 <p className="text-sm text-gray-500">
                                     Contact us for exact pricing tailored to your specific move.
                                 </p>
@@ -227,14 +234,42 @@ export default async function PricingPage({ params }: Props) {
                     </div>
                 </section>
 
-                {/* Price Estimates Table */}
+                {/* What's Included */}
                 <section className="py-20 bg-white">
+                    <div className="container mx-auto px-6">
+                        <FadeIn direction="up">
+                            <div className="text-center mb-12">
+                                <div className="inline-block text-sm font-extrabold text-primary uppercase tracking-widest mb-3">Included</div>
+                                <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-4 tracking-tight">
+                                    What&apos;s Included With Every Move
+                                </h2>
+                                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                                    Every booking comes fully equipped — no extra charges for standard equipment.
+                                </p>
+                            </div>
+                        </FadeIn>
+
+                        <FadeIn direction="up" delay={100}>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                                {included.map((item, index) => (
+                                    <div key={index} className="flex items-center gap-3 bg-gray-50 rounded-xl p-4 border border-gray-200">
+                                        <Check className="w-5 h-5 text-primary shrink-0" />
+                                        <span className="text-sm font-medium text-secondary">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </FadeIn>
+                    </div>
+                </section>
+
+                {/* Price Estimates Table */}
+                <section className="py-20 bg-gray-50">
                     <div className="container mx-auto px-6">
                         <FadeIn direction="up">
                             <div className="text-center mb-16">
                                 <div className="inline-block text-sm font-extrabold text-primary uppercase tracking-widest mb-3">Estimates</div>
                                 <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-4 tracking-tight">
-                                    How Much Does It Cost?
+                                    Moving Price Guide
                                 </h2>
                                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                                     Average pricing based on property size. Final cost depends on distance and specific requirements.
@@ -270,9 +305,9 @@ export default async function PricingPage({ params }: Props) {
                         </FadeIn>
 
                         <FadeIn direction="up" delay={200}>
-                            <div className="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+                            <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    <strong>Important:</strong> These estimates are based on average conditions. Your actual cost may vary depending on factors such as distance, access difficulty, stairs, parking availability, and additional services required. For an accurate quote tailored to your specific move, please contact our team.
+                                    <strong>Important:</strong> These estimates are based on average conditions. Your actual cost may vary depending on factors such as distance, access difficulty, stairs, parking availability, and additional services required. All prices are per hour + GST. For an accurate quote tailored to your specific move, please contact our team.
                                 </p>
                             </div>
                         </FadeIn>
@@ -280,7 +315,7 @@ export default async function PricingPage({ params }: Props) {
                 </section>
 
                 {/* Factors Affecting Cost */}
-                <section className="py-20 bg-gray-50">
+                <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
                         <FadeIn direction="up">
                             <div className="text-center mb-16">
@@ -294,7 +329,7 @@ export default async function PricingPage({ params }: Props) {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {factors.map((factor, index) => (
                                 <FadeIn key={index} direction="up" delay={index * 50}>
-                                    <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all duration-300">
+                                    <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all duration-300">
                                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                                             <Package className="w-6 h-6 text-primary" />
                                         </div>
@@ -319,6 +354,7 @@ export default async function PricingPage({ params }: Props) {
                                     Contact us today for a free, no-obligation quote tailored to your specific moving needs.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                    {/* TODO: Update phone number when client provides new number */}
                                     <a href="tel:0370580073">
                                         <Button variant="outline" className="bg-white text-secondary hover:bg-gray-100 border-0 h-14 px-8 text-lg">
                                             <Phone className="w-5 h-5 mr-2" />

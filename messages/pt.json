@@ -18,9 +18,9 @@
     },
     "Hero": {
         "trustedSince": "CONFIÁVEL DESDE 2009",
-        "title": "Profissionais de <primary>Mudanças Interestaduais</primary> em quem Você Pode Confiar",
-        "description": "Empresa familiar atendendo de Melbourne a Sydney, Canberra e Adelaide. Totalmente segurada, preços transparentes e cuidado excepcional por mais de 15 anos.",
-        "quote": "\"Mudar não precisa ser estressante. Deixe nossa equipe experiente cuidar de tudo.\"",
+        "title": "Profissionais em <primary>Mudanças Locais</primary> em quem Você Pode Confiar",
+        "description": "Especialistas em mudanças locais oferecendo precisão, cuidado e discrição em toda Melbourne — totalmente segurados e confiáveis por mais de 15 anos.",
+        "quote": "\"Mudanças impecáveis e cuidadosamente gerenciadas do início ao fim.\"",
         "buttons": {
             "calculate": "Calcular Custo",
             "call": "Ligar Agora"
@@ -117,49 +117,35 @@
     },
     "Pricing": {
         "sectionTitle": "Preços",
-        "title": "Pacotes Honestos e Transparentes",
-        "description": "Todos os pacotes incluem seguro total. Escolha o nível de serviço ideal para você.",
+        "title": "Preços Honestos e Transparentes",
+        "description": "Todos os preços são por hora + GST. Cada caminhão vem com equipe profissional e equipamento completo.",
         "mostPopular": "Mais Popular",
-        "getQuote": "Fazer Orçamento",
-        "packages": {
-            "essential": {
-                "name": "Essencial",
-                "subtitle": "Serviços básicos de mudança",
-                "description": "Perfeito para mudanças de 1-2 quartos",
-                "features": {
-                    "loading": "Carregamento e descarregamento profissional",
-                    "insurance": "Cobertura básica de seguro",
-                    "materials": "Materiais de embalagem padrão",
-                    "gps": "Rastreamento GPS",
-                    "packing": "Serviço completo de embalagem",
-                    "assembly": "Montagem de móveis"
-                }
+        "learnMore": "Saiba mais",
+        "viewDetailed": "Ver preços detalhados e estimativas",
+        "trucks": {
+            "4_5T": {
+                "name": "Caminhão 4.5T",
+                "volume": "Até 20m³",
+                "price": "139",
+                "ideal": "Perfeito para 1 quarto / apartamento studio"
             },
-            "complete": {
-                "name": "Completo",
-                "subtitle": "Mudança completa",
-                "description": "Ideal para casas de 3-4 quartos",
-                "features": {
-                    "essential": "Tudo no Essencial",
-                    "packing": "Serviço completo de embalagem",
-                    "insurance": "Seguro premium",
-                    "assembly": "Desmontagem e montagem de móveis",
-                    "storage": "30 dias de armazenamento gratuito",
-                    "scheduling": "Agendamento prioritário"
-                }
+            "8T": {
+                "name": "Caminhão 8T",
+                "volume": "Até 40m³",
+                "price": "149",
+                "ideal": "Ideal para casas de 2-3 quartos"
             },
-            "premium": {
-                "name": "Premium",
-                "subtitle": "Serviço de luxo",
-                "description": "Para 4+ quartos ou mudanças de luxo",
-                "features": {
-                    "complete": "Tudo no Completo",
-                    "coordinator": "Coordenador de mudança dedicado",
-                    "crating": "Caixotes personalizados para valores",
-                    "storage": "90 dias de armazenamento gratuito",
-                    "sameday": "Serviço no mesmo dia disponível",
-                    "cleaning": "Limpeza pós-mudança"
-                }
+            "12T": {
+                "name": "Caminhão 12T",
+                "volume": "Até 50m³",
+                "price": "169",
+                "ideal": "Melhor para casas de 4 quartos — 3 homens recomendados"
+            },
+            "16T": {
+                "name": "Caminhão 16T",
+                "volume": "Até 70m³",
+                "price": "249",
+                "ideal": "Ideal para 5+ quartos — 4 homens necessários"
             }
         }
     },
@@ -192,23 +178,23 @@
         "items": [
             {
                 "question": "Com que antecedência devo reservar?",
-                "answer": "Recomendamos reservar com 2-4 semanas de antecedência para mudanças interestaduais, especialmente durante a alta temporada (verão e final de mês). No entanto, muitas vezes podemos acomodar mudanças de última hora — basta nos ligar!"
+                "answer": "Recomendamos reservar com pelo menos 1-2 semanas de antecedência, especialmente durante períodos de pico (final de mês e fins de semana). No entanto, frequentemente conseguimos acomodar mudanças de última hora em Melbourne — basta nos ligar!"
             },
             {
                 "question": "Que seguro vocês oferecem?",
-                "answer": "Todas as nossas mudanças incluem seguro total de trânsito e responsabilidade civil. A cobertura básica está incluída em todos os pacotes, com opções de cobertura adicional para itens de alto valor. Somos totalmente licenciados e segurados para sua tranquilidade."
+                "answer": "Todas as nossas mudanças incluem seguro completo de trânsito e responsabilidade civil. A cobertura está incluída em todas as reservas, com opções de proteção adicional para itens de alto valor. Somos totalmente licenciados e segurados para sua tranquilidade."
             },
             {
-                "question": "Posso rastrear meus pertences?",
-                "answer": "Sim! Todas as mudanças interestaduais incluem rastreamento por GPS. Você receberá atualizações em tempo real sobre a localização da sua carga e a estimativa de chegada. Nossa equipe também está disponível por telefone para atualizações a qualquer momento."
+                "question": "O que está incluído na taxa por hora?",
+                "answer": "Nossa taxa por hora inclui equipe profissional, caminhão, cobertores e cintas, carrinhos de mão, filme stretch, protetores de colchão e plataforma hidráulica. Sem taxas ocultas — o que cotamos é o que você paga."
             },
             {
-                "question": "O que vocês não podem transportar?",
-                "answer": "Por razões legais e de segurança, não podemos transportar materiais perigosos, alimentos perecíveis, plantas (interestaduais), animais de estimação ou itens ilegais. Ficaremos felizes em aconselhar sobre alternativas para plantas e animais de estimação, se necessário."
+                "question": "Quais itens vocês não podem transportar?",
+                "answer": "Por razões de segurança e legais, não podemos transportar materiais perigosos, alimentos perecíveis, animais de estimação ou itens ilegais. Se tiver dúvidas sobre algum item específico, consulte nossa equipe antes do dia da mudança."
             },
             {
                 "question": "Quais são os termos de pagamento?",
-                "answer": "Exigimos um depósito de 25% para garantir sua reserva, com o saldo devido na conclusão. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Planos de pagamento disponíveis para mudanças maiores."
+                "answer": "O pagamento é devido na conclusão da mudança. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Para mudanças maiores, planos de pagamento podem estar disponíveis — entre em contato para discutir opções."
             }
         ]
     },
@@ -223,8 +209,8 @@
         "subtitle": "Sem taxas ocultas, sem surpresas",
         "labels": {
             "name": "Nome Completo",
-            "from": "Saindo de",
-            "to": "Indo para",
+            "from": "Local de Retirada",
+            "to": "Destino",
             "date": "Data Preferida",
             "phone": "Telefone",
             "email": "E-mail",
@@ -232,7 +218,8 @@
         },
         "placeholders": {
             "name": "ex: João da Silva",
-            "city": "Selecione a cidade",
+            "from": "Digite o endereço de retirada",
+            "to": "Digite o endereço de destino",
             "phone": "ex: 0412 345 678",
             "email": "seu@email.com",
             "inventory": "ex: 2x camas, 1x sofá, 5x caixas..."
@@ -280,8 +267,7 @@
         "company": {
             "about": "Sobre Nós",
             "reviews": "Avaliações",
-            "faq": "FAQ",
-            "careers": "Carreiras"
+            "faq": "FAQ"
         },
         "hours": {
             "title": "Horários",
@@ -413,6 +399,35 @@
                 "title": "Cotação Solicitada!",
                 "description": "Recebemos sua solicitação e entraremos em contato em breve. Verifique seu e-mail para confirmação.",
                 "close": "Fechar"
+            }
+        }
+    },
+    "About": {
+        "title": "Sobre Nós",
+        "subtitle": "Empresa familiar. Sediada em Melbourne. Confiável por mais de 15 anos.",
+        "story": {
+            "title": "Nossa História",
+            "p1": "A MoverX Solutions é uma empresa de mudanças familiar, sediada em Melbourne. Desde 2009, ajudamos famílias, profissionais e empresas a se mudarem com confiança — entregando precisão, cuidado e discrição em cada trabalho.",
+            "p2": "O que começou como uma pequena operação familiar cresceu e se tornou uma das empresas de mudanças locais mais confiáveis de Melbourne. Após mais de 15 anos e 6.000+ mudanças bem-sucedidas, nosso compromisso permanece o mesmo: tratar cada pertence como se fosse nosso.",
+            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias — e esse toque pessoal é o que nos diferencia."
+        },
+        "values": {
+            "title": "O Que Defendemos",
+            "care": {
+                "title": "Cuidado e Precisão",
+                "description": "Cada item é manuseado com o mesmo cuidado que daríamos aos nossos próprios pertences. Embalagem cuidadosa, transporte seguro, colocação precisa."
+            },
+            "transparency": {
+                "title": "Transparência",
+                "description": "Sem taxas ocultas, sem surpresas. Oferecemos preços claros e diretos para que você saiba exatamente o que esperar."
+            },
+            "reliability": {
+                "title": "Confiabilidade",
+                "description": "Pontuais, sempre. Chegamos quando dizemos que vamos e cumprimos nossas promessas."
+            },
+            "community": {
+                "title": "Comunidade",
+                "description": "Temos orgulho de servir Melbourne e seus subúrbios. Esta é nossa casa, e tratamos cada cliente como um vizinho."
             }
         }
     },

@@ -21,9 +21,9 @@ export default function Header() {
     { name: t('nav.services'), href: '/#services' },
     { name: t('nav.howItWorks'), href: '/#process' },
     { name: t('nav.pricing'), href: '/#pricing' },
+    { name: t('nav.volumeCalculator'), href: '/volume-calculator' },
     { name: t('nav.reviews'), href: '/#testimonials' },
     { name: t('nav.contact'), href: '/#contact' },
-    { name: t('nav.volumeCalculator'), href: '/volume-calculator' },
   ];
 
   useEffect(() => {
@@ -169,7 +169,7 @@ export default function Header() {
             <Image src="/logo/logo-header.png" alt="Logo" width={48} height={26} />
           </div>
           <div className="flex flex-col">
-            <span className="font-black text-2xl text-secondary leading-none tracking-tight">MoverX</span>
+            <span className="font-black text-lg sm:text-xl text-secondary leading-none tracking-tight">MOVERX SOLUTIONS</span>
             <span className="text-xs text-gray-600 font-semibold tracking-wider">{t('tagline')}</span>
           </div>
         </Link>

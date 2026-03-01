@@ -2,6 +2,7 @@ import { Link } from '@/i18n/routing';
 import { Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
+// TODO: Update phone number when client provides new number
 export default function TopBar() {
   const t = useTranslations('TopBar');
 
