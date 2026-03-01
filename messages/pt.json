@@ -32,6 +32,9 @@
             "owned": "Propriedade e Operação"
         }
     },
+    "PartnersBar": {
+        "title": "Parceiros de Confiança"
+    },
     "StatsBar": {
         "years": "Anos de Negócio",
         "moves": "Mudanças Realizadas",

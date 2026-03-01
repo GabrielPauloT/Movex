@@ -32,6 +32,9 @@
             "owned": "Owned & Operated"
         }
     },
+    "PartnersBar": {
+        "title": "Trusted Partners"
+    },
     "StatsBar": {
         "years": "Years in Business",
         "moves": "Successful Moves",

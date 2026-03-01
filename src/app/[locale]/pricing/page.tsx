@@ -22,7 +22,7 @@ export default async function PricingPage({ params }: Props) {
             volume: 'Up to 20m³',
             ideal: 'Studio / 1 bedroom apartment',
             movers: '2 movers included',
-            image: '/small truck.jpg',
+            image: '/trucks/truck-4_5t.png',
             features: [
                 'Moving blankets & straps',
                 'Hand trolleys',
@@ -39,7 +39,7 @@ export default async function PricingPage({ params }: Props) {
             ideal: '2-3 bedroom houses',
             movers: '2 movers included',
             popular: true,
-            image: '/medium truck.jpeg',
+            image: '/trucks/truck-8t.png',
             features: [
                 'Moving blankets & straps',
                 'Hand trolleys',
@@ -55,7 +55,7 @@ export default async function PricingPage({ params }: Props) {
             volume: 'Up to 50m³',
             ideal: '4 bedroom houses',
             movers: '3 movers recommended',
-            image: '/large truck.jpg',
+            image: '/trucks/truck-12t.png',
             features: [
                 'Moving blankets & straps',
                 'Hand trolleys',
@@ -71,7 +71,7 @@ export default async function PricingPage({ params }: Props) {
             volume: 'Up to 70m³',
             ideal: '5+ bedroom homes',
             movers: '4 movers required',
-            image: '/xlarge.jpg',
+            image: '/trucks/truck-16t.png',
             features: [
                 'Moving blankets & straps',
                 'Hand trolleys',

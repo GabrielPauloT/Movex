@@ -6,10 +6,10 @@ import FadeIn from '@/components/ui/FadeIn';
 import { Link } from '@/i18n/routing';
 
 const TRUCK_IMAGES = [
-  '/small truck.jpg',
-  '/medium truck.jpeg',
-  '/large truck.jpg',
-  '/xlarge.jpg',
+  '/trucks/truck-4_5t.png',
+  '/trucks/truck-8t.png',
+  '/trucks/truck-12t.png',
+  '/trucks/truck-16t.png',
 ];
 
 const TRUCK_KEYS = ['4_5T', '8T', '12T', '16T'] as const;

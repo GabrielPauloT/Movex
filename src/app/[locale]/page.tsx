@@ -2,6 +2,7 @@ import TopBar from '@/components/layout/TopBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
+import PartnersBar from '@/components/home/PartnersBar';
 import StatsBar from '@/components/home/StatsBar';
 import Features from '@/components/home/Features';
 import Process from '@/components/home/Process';
@@ -35,6 +36,7 @@ export default async function Home({
 
       <main className="overflow-hidden pb-24 lg:pb-0">
         <Hero rating={googleData.rating} />
+        <PartnersBar />
 
         <StatsBar
           rating={googleData.rating}

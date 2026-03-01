@@ -14,11 +14,11 @@ MUDANCAS NO SITE MOVERX SOLUTIONS
 		- Phone
 		- Email
 		- Inventory
-- [ ] Na faixa azul logo abaixo colocar os nossos partners, logo estao no drive!
+- [x] Na faixa azul logo abaixo colocar os nossos partners, logo estao no drive!
 - [x] Why choose MoverX: Colocar um fundo cinza claro pra dar um contraste na pagina..
 - [ ] Services:
-		- Trocar a foto do Packing para uma foto mais relacionada a packing ex. Caixas, materiais etc.
-		- Fotos dos containers na parte de Storage.
+		- [ ] Trocar a foto do Packing para uma foto mais relacionada a packing ex. Caixas, materiais etc.
+		- [x] Fotos dos containers na parte de Storage.
 - [x] How it works:
 		- Deixar o fundo um pouco mais escuro.
 - [x] Pricing na pagina inicial, deixar com as fotos dos trucks e essas informacoes abaixo e ao inves de ter o botao 'get a quote' embaixo de cada um..substituir por 'Learn more' que aii job para a pagina de pricing. Mas tambem manter o botao ' view detailed pricing…'
