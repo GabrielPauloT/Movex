@@ -1,4 +1,5 @@
-// TODO: Add email notification to sales@moverxsolutions.com.au (subject: 'New instant quote request')
+import { sendNotification } from './sendNotification';
+
 const API_BASE_URL = 'https://api.movepro.com.au/moverxsolutions/api/v1';
 const FORM_ID = 'a1248b51-bfde-44c8-87f0-3d8be6f28778';
 const AUTH_TOKEN = 'Bearer 32876|yL3qrsf7Kz1xLipxahuVXPiuyfY6Hb0q5jVmd1X9acdc0978';
@@ -57,6 +58,18 @@ export async function submitQuote(
   if (!response.ok) {
     throw new Error(`Submission failed: ${response.status}`);
   }
+
+  // Fire-and-forget email notification
+  sendNotification({
+    type: 'instant',
+    name: data.name,
+    email: data.email,
+    phone: data.phone,
+    date: data.date,
+    from: data.from,
+    to: data.to,
+    inventory: data.inventory,
+  });
 
   return response.json();
 }

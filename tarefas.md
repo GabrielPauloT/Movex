@@ -54,6 +54,6 @@ Studio Apartment	8-10 m³	1.5-2.5 hrs	$139	$208-$347
 - [x] Falta criar o "about us" page
 - [x] O careers pode tirar…
 - [ ] Atualizar o numero de telefone no site todo para o numero novo da MoverX.
-- [ ] Quando um cliente preencher o formulario que vai para o Forms do MovePro, precisamos tambem receber uma notificação no email sales@moverxsolutions.com.au
+- [x] Quando um cliente preencher o formulario que vai para o Forms do MovePro, precisamos tambem receber uma notificação no email sales@moverxsolutions.com.au
 		- Se for pelo formulario Instant quote, colocar no assunto do email 'New instant quote request'
 		- Se for pelo volume calculator quote, colocar no assunto do email 'New detailed quote request'

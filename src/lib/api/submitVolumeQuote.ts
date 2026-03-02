@@ -1,4 +1,5 @@
-// TODO: Add email notification to sales@moverxsolutions.com.au (subject: 'New detailed quote request')
+import { sendNotification } from './sendNotification';
+
 const API_BASE_URL = 'https://api.movepro.com.au/moverxsolutions/api/v1';
 const FORM_ID = 'a124b8fd-16db-4ea1-ba02-4aec2bcd89fa';
 const AUTH_TOKEN = 'Bearer 32889|ulRseZOXD8hIN37TNI0VJmOWH2y1jVBoODK9N9nsc9a6cfc1';
@@ -57,6 +58,18 @@ export async function submitVolumeQuote(
   if (!response.ok) {
     throw new Error(`Submission failed: ${response.status}`);
   }
+
+  // Fire-and-forget email notification
+  sendNotification({
+    type: 'detailed',
+    name: data.name,
+    email: data.email,
+    phone: data.phone,
+    date: data.date,
+    from: data.pickup,
+    to: data.delivery,
+    inventory: data.inventory,
+  });
 
   return response.json();
 }
