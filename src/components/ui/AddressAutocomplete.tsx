@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface AddressAutocompleteProps {
   id: string;
@@ -48,13 +48,10 @@ export default function AddressAutocomplete({
 }: AddressAutocompleteProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const autocompleteRef = useRef<google.maps.places.Autocomplete | null>(null);
+  const onChangeRef = useRef(onChange);
 
-  const handlePlaceSelect = useCallback(() => {
-    const place = autocompleteRef.current?.getPlace();
-    if (place?.formatted_address) {
-      onChange(place.formatted_address);
-    }
-  }, [onChange]);
+  // Keep ref in sync with latest onChange prop
+  onChangeRef.current = onChange;
 
   useEffect(() => {
     if (!inputRef.current) return;
@@ -68,7 +65,12 @@ export default function AddressAutocomplete({
         types: ['address'],
       });
 
-      autocompleteRef.current.addListener('place_changed', handlePlaceSelect);
+      autocompleteRef.current.addListener('place_changed', () => {
+        const place = autocompleteRef.current?.getPlace();
+        if (place?.formatted_address) {
+          onChangeRef.current(place.formatted_address);
+        }
+      });
     });
 
     return () => {
@@ -77,7 +79,8 @@ export default function AddressAutocomplete({
         autocompleteRef.current = null;
       }
     };
-  }, [handlePlaceSelect]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only initialize once on mount
 
   return (
     <input
