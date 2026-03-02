@@ -174,10 +174,10 @@ export default async function ServicePage({ params }: Props) {
                                         <Link href="/#quote" className="block w-full">
                                             <Button className="w-full text-lg h-12">Get Free Quote</Button>
                                         </Link>
-                                        <a href="tel:1300480732" className="block w-full">
+                                        <a href="tel:0370580073" className="block w-full">
                                             <Button variant="outline" className="w-full text-lg h-12 border-2">
                                                 <Phone className="w-4 h-4 mr-2" />
-                                                1300 480 732
+                                                03 7058 0073
                                             </Button>
                                         </a>
                                     </div>

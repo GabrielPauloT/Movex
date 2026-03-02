@@ -13,8 +13,8 @@ import ScrollOrchestrator from "@/components/layout/ScrollOrchestrator";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
 export const metadata: Metadata = {
-  title: "MoverX Solutions - Trusted Interstate Removalists Since 2009",
-  description: "Family-owned interstate removalists from Melbourne to Sydney, Canberra & Adelaide.",
+  title: "MoverX Solutions - Trusted Removalists Since 2009",
+  description: "Family-owned removalists. Professional moving and storage services.",
 };
 
 export function generateStaticParams() {

@@ -3,8 +3,6 @@ import ScrollLink from '@/components/ui/ScrollLink';
 import { Facebook, Instagram, Linkedin, Phone, MapPin, Mail, Clock } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-// TODO: Update phone number when client provides new number
-
 export default function Footer() {
   const t = useTranslations('Footer');
 

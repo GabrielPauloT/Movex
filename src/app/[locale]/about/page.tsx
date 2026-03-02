@@ -116,11 +116,10 @@ export default async function AboutPage({ params }: Props) {
                                     Get in touch today for a free, no-obligation quote.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    {/* TODO: Update phone number when client provides new number */}
-                                    <a href="tel:1300480732">
+                                    <a href="tel:0370580073">
                                         <Button variant="outline" className="bg-white text-secondary hover:bg-gray-100 border-0 h-14 px-8 text-lg">
                                             <Phone className="w-5 h-5 mr-2" />
-                                            1300 480 732
+                                            03 7058 0073
                                         </Button>
                                     </a>
                                     <Link href={`/${locale}/#quote`}>
