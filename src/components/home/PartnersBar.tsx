@@ -24,7 +24,7 @@ export default function PartnersBar() {
             {PARTNERS.map((partner) => (
               <div
                 key={partner.name}
-                className="w-36 h-14 lg:w-44 lg:h-16 bg-white rounded-lg flex items-center justify-center p-3"
+                className="w-36 h-14 lg:w-44 lg:h-16 bg-white rounded-lg flex items-center justify-center p-3 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-white/20"
               >
                 <Image
                   src={partner.logo}
