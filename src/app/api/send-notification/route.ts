@@ -83,7 +83,7 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     await resend.emails.send({
-      from: 'MoverX Notifications <notifications@moverxsolutions.com.au>',
+      from: process.env.RESEND_FROM_EMAIL || 'MoverX Notifications <onboarding@resend.dev>',
       to: notificationEmail,
       subject,
       html,
