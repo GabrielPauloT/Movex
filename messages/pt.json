@@ -417,7 +417,15 @@
             "title": "Nossa História",
             "p1": "A MoverX Solutions é uma empresa de mudanças familiar, sediada em Melbourne. Desde 2009, ajudamos famílias, profissionais e empresas a se mudarem com confiança — entregando precisão, cuidado e discrição em cada trabalho.",
             "p2": "O que começou como uma pequena operação familiar cresceu e se tornou uma das empresas de mudanças locais mais confiáveis de Melbourne. Após mais de 15 anos e 6.000+ mudanças bem-sucedidas, nosso compromisso permanece o mesmo: tratar cada pertence como se fosse nosso.",
-            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias — e esse toque pessoal é o que nos diferencia."
+            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias — e esse toque pessoal é o que nos diferencia.",
+            "mission": {
+                "title": "Nossa Missão",
+                "description": "Fornecer serviços de mudança confiáveis e sem estresse que colocam nossos clientes em primeiro lugar. Nosso objetivo é lidar com cada mudança com cuidado, atenção e profissionalismo, tornando cada transição o mais suave possível."
+            },
+            "vision": {
+                "title": "Nossa Visão",
+                "description": "Ser a empresa de mudanças mais confiável e recomendada de Melbourne, conhecida por serviços excepcionais, valores familiares e o compromisso de tornar cada mudança uma experiência positiva."
+            }
         },
         "values": {
             "title": "O Que Defendemos",

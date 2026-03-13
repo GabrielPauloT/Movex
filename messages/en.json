@@ -417,7 +417,15 @@
             "title": "Our Story",
             "p1": "MoverX Solutions is a family-owned and operated removalist company based in Melbourne. Since 2009, we've been helping families, professionals, and businesses move with confidence — delivering precision, care, and discretion on every job.",
             "p2": "What started as a small family operation has grown into one of Melbourne's most trusted local moving companies. Over 15 years and 6,000+ successful moves later, our commitment remains the same: treat every belonging as if it were our own.",
-            "p3": "We're not a faceless corporation. We're a family serving families — and that personal touch is what sets us apart."
+            "p3": "We're not a faceless corporation. We're a family serving families — and that personal touch is what sets us apart.",
+            "mission": {
+                "title": "Our Mission",
+                "description": "To provide stress-free, reliable moving services that put our customers first. We aim to handle every move with care, attention, and professionalism, making each transition as smooth as possible."
+            },
+            "vision": {
+                "title": "Our Vision",
+                "description": "To be Melbourne's most trusted and recommended removalist company, known for exceptional service, family values, and a commitment to making every move a positive experience."
+            }
         },
         "values": {
             "title": "What We Stand For",
