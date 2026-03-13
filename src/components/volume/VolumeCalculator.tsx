@@ -207,7 +207,7 @@ export default function VolumeCalculator() {
                 key={key}
                 onClick={() => setActiveCategory(key as CategoryKey)}
                 className={cn(
-                  "px-6 py-4 whitespace-nowrap font-bold text-[0.9375rem] transition-colors relative",
+                  "px-6 py-4 whitespace-nowrap font-bold text-[0.9375rem] transition-colors relative cursor-pointer",
                   activeCategory === key
                     ? "text-primary bg-white border-b-2 border-primary"
                     : "text-gray-600 hover:text-primary hover:bg-white"
@@ -259,14 +259,14 @@ export default function VolumeCalculator() {
                   <div className="flex items-center justify-center gap-3 mt-3 animate-in fade-in zoom-in duration-200" onClick={(e) => e.stopPropagation()}>
                     <button
                       onClick={() => updateQuantity(item.id, -1)}
-                      className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-dark transition-colors"
+                      className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-dark transition-colors cursor-pointer"
                     >
                       <Minus className="w-4 h-4" />
                     </button>
                     <span className="font-extrabold text-primary text-lg w-4 text-center">{selectedItems[item.id]}</span>
                     <button
                       onClick={() => updateQuantity(item.id, 1)}
-                      className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-dark transition-colors"
+                      className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center hover:bg-primary-dark transition-colors cursor-pointer"
                     >
                       <Plus className="w-4 h-4" />
                     </button>
@@ -356,15 +356,15 @@ export default function VolumeCalculator() {
       {/* Modal */}
       {modalOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
-            <div className="bg-secondary p-6 flex justify-between items-center text-white">
+          <div className="bg-white rounded-2xl w-full max-w-lg max-h-[calc(100vh-2rem)] shadow-2xl overflow-hidden flex flex-col animate-in zoom-in-95 duration-200">
+            <div className="bg-secondary p-6 flex justify-between items-center text-white shrink-0">
               <h2 className="text-xl font-extrabold">{t('modal.title')}</h2>
-              <button onClick={handleModalClose} className="hover:bg-white/10 p-2 rounded-full transition-colors">
+              <button onClick={handleModalClose} className="hover:bg-white/10 p-2 rounded-full transition-colors cursor-pointer">
                 <X className="w-6 h-6" />
               </button>
             </div>
 
-            <div className="p-8">
+            <div className="p-8 overflow-y-auto">
               {submitSuccess ? (
                 <div className="text-center py-8 animate-in fade-in zoom-in-95 duration-300">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
