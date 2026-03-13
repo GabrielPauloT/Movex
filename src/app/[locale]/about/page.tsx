@@ -156,7 +156,7 @@ export default async function AboutPage({ params }: Props) {
                 </section>
 
                 {/* CTA */}
-                <section className="py-20 bg-secondary">
+                <section className="py-20 bg-secondary mb-[-80px]">
                     <div className="container mx-auto px-6">
                         <FadeIn direction="up">
                             <div className="max-w-3xl mx-auto text-center">
