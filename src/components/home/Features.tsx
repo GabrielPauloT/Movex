@@ -48,7 +48,7 @@ export default function Features() {
               className="h-full"
             >
               <div
-                className="group h-full bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                className="group h-full bg-white p-8 rounded-xl border border-gray-100 shadow-md hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:shadow-primary/30 transition-shadow flex-shrink-0">
                   <feature.icon className="w-8 h-8" />

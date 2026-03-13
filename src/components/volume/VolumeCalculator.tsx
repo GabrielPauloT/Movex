@@ -8,6 +8,7 @@ import { CATEGORIES, ITEMS_DATA, TRUCKS, CategoryKey, VolumeItem } from '@/data/
 import { useTranslations } from 'next-intl';
 import { volumeQuoteFormSchema, type VolumeQuoteFormErrors } from '@/lib/schemas/volumeQuoteForm';
 import { submitVolumeQuote } from '@/lib/api/submitVolumeQuote';
+import AddressAutocomplete from '@/components/ui/AddressAutocomplete';
 
 export default function VolumeCalculator() {
   const t = useTranslations('VolumeCalculator');
@@ -75,7 +76,7 @@ export default function VolumeCalculator() {
     return { ...truck, key: truckKey };
   }, [totalVolume]);
 
-  const progress = Math.min((totalVolume / 50) * 100, 100);
+  const progress = Math.min((totalVolume / 70) * 100, 100);
 
   // Build inventory string from selected items — each item on its own line
   const buildInventory = (): string => {
@@ -464,10 +465,11 @@ export default function VolumeCalculator() {
                         <label className="block text-sm font-bold text-gray-700 mb-1">
                           {t('modal.form.pickup')} <span className="text-red-500">*</span>
                         </label>
-                        <input
-                          type="text"
+                        <AddressAutocomplete
+                          id="modal-pickup"
                           value={formPickup}
-                          onChange={(e) => { setFormPickup(e.target.value); setFieldErrors(p => ({ ...p, pickup: undefined })); }}
+                          onChange={(val) => { setFormPickup(val); setFieldErrors(p => ({ ...p, pickup: undefined })); }}
+                          placeholder={t('modal.form.pickupPlaceholder')}
                           className={modalInputClass('pickup')}
                         />
                         {fieldErrors.pickup && (
@@ -478,10 +480,11 @@ export default function VolumeCalculator() {
                         <label className="block text-sm font-bold text-gray-700 mb-1">
                           {t('modal.form.delivery')} <span className="text-red-500">*</span>
                         </label>
-                        <input
-                          type="text"
+                        <AddressAutocomplete
+                          id="modal-delivery"
                           value={formDelivery}
-                          onChange={(e) => { setFormDelivery(e.target.value); setFieldErrors(p => ({ ...p, delivery: undefined })); }}
+                          onChange={(val) => { setFormDelivery(val); setFieldErrors(p => ({ ...p, delivery: undefined })); }}
+                          placeholder={t('modal.form.deliveryPlaceholder')}
                           className={modalInputClass('delivery')}
                         />
                         {fieldErrors.delivery && (

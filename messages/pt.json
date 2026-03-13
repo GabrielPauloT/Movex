@@ -375,6 +375,9 @@
             },
             "10T": {
                 "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+            },
+            "COMBO": {
+                "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
             }
         },
         "modal": {
@@ -387,7 +390,9 @@
                 "phone": "Telefone",
                 "date": "Data Preferida",
                 "pickup": "Retirada",
+                "pickupPlaceholder": "Endereço de retirada",
                 "delivery": "Entrega",
+                "deliveryPlaceholder": "Endereço de entrega",
                 "inventory": "Inventário",
                 "submit": "Enviar Solicitação",
                 "submitting": "Enviando..."

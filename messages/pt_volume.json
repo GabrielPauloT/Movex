@@ -90,6 +90,9 @@
         },
         "10T": {
             "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+        },
+        "COMBO": {
+            "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
         }
     },
     "modal": {
@@ -100,8 +103,10 @@
             "name": "Nome Completo",
             "email": "E-mail",
             "phone": "Telefone",
-            "pickup": "Retirada (Bairro/CEP)",
-            "delivery": "Entrega (Bairro/CEP)",
+            "pickup": "Retirada",
+            "pickupPlaceholder": "Endereço de retirada",
+            "delivery": "Entrega",
+            "deliveryPlaceholder": "Endereço de entrega",
             "submit": "Enviar Solicitação"
         },
         "success": "Solicitação enviada! (Demo)"

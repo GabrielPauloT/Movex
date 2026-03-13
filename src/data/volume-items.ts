@@ -92,6 +92,7 @@ export const ITEMS_DATA: Record<CategoryKey, VolumeItem[]> = {
 
 export const TRUCKS = {
   '4T': { name: '4T Truck', capacity: 19, min: 0, max: 23, price: '$129/hr', description: 'Perfect for 1-2 bedroom apartments', icon: '🚚' },
-  '8T': { name: '8T Truck', capacity: 38, min: 24, max: 40, price: '$139/hr', description: 'Ideal for 2-3 bedroom homes', icon: '🚛' },
-  '10T': { name: '10T Truck', capacity: 46, min: 41, max: 999, price: '$149/hr', description: 'Best for 3+ bedroom homes or large moves', icon: '🚜' },
+  '8T': { name: '8T Truck', capacity: 38, min: 23.01, max: 40, price: '$139/hr', description: 'Ideal for 2-3 bedroom homes', icon: '🚛' },
+  '10T': { name: '10T Truck', capacity: 46, min: 40.01, max: 50, price: '$149/hr', description: 'Best for 3+ bedroom homes or large moves', icon: '🚛' },
+  'COMBO': { name: 'Two Trucks', capacity: 70, min: 50.01, max: 9999, price: 'Custom Quote', description: 'For extra-large moves requiring two trucks', icon: '🚚🚛' },
 };

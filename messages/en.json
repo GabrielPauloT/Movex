@@ -375,6 +375,9 @@
             },
             "10T": {
                 "description": "Best for 3+ bedroom homes or large moves"
+            },
+            "COMBO": {
+                "description": "For extra-large moves requiring two trucks"
             }
         },
         "modal": {
@@ -387,7 +390,9 @@
                 "phone": "Phone",
                 "date": "Preferred Date",
                 "pickup": "Pickup",
+                "pickupPlaceholder": "Pickup address",
                 "delivery": "Delivery",
+                "deliveryPlaceholder": "Delivery address",
                 "inventory": "Inventory",
                 "submit": "Send Request",
                 "submitting": "Sending..."
