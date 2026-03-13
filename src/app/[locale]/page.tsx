@@ -34,7 +34,6 @@ export default async function Home({
 
       <main className="overflow-hidden pb-24 lg:pb-0">
         <Hero rating={googleData.rating} />
-        <PartnersBar />
 
         {/* <StatsBar
           rating={googleData.rating}
@@ -45,6 +44,7 @@ export default async function Home({
         <Process />
         <Pricing />
         <Testimonials reviews={googleData.reviews} />
+        <PartnersBar />
         <FAQ />
         <CTA />
       </main>

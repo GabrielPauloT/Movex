@@ -443,7 +443,7 @@
         "house": {
             "title": "Mudança Residencial",
             "subtitle": "Serviços completos de mudança residencial",
-            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua realocação suave, segura e livre de estresse. Da embalagem cuidadosa e transporte seguro à descarga e colocação de móveis, nossa equipe experiente cuida de cada etapa com atenção e eficiência.",
+            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua mudança tranquila, segura e completamente livre de estresse. Desde embalagem cuidadosa e transporte protegido até descarga precisa e colocação de móveis, nossa equipe experiente gerencia cada detalhe com cuidado, eficiência e profissionalismo — para que você possa se concentrar em se instalar em sua nova casa.",
             "features": [
                 "Equipe de mudança treinada e experiente",
                 "Materiais de embalagem protetores",
@@ -462,7 +462,7 @@
         "commercial": {
             "title": "Mudança Comercial",
             "subtitle": "Realocações empresariais eficientes",
-            "description": "Fornecemos suporte confiável de mudança comercial e logística para empresas de todos os tamanhos, incluindo varejo, armazéns e operações comerciais. Nossa equipe cuida da embalagem, transporte, carga/descarga e instalação com forte foco em eficiência, segurança e mínima interrupção de suas operações.",
+            "description": "Oferecemos suporte completo de mudança comercial e logística para empresas que exigem confiabilidade e eficiência. Seja na realocação de espaços de varejo, armazéns ou operações comerciais, nossa equipe entrega planejamento estruturado, manuseio seguro e execução otimizada — minimizando o tempo de inatividade e protegendo seus ativos em cada etapa.",
             "features": [
                 "Opções flexíveis de agendamento",
                 "Equipes de mudança experientes",
@@ -481,7 +481,7 @@
         "office": {
             "title": "Realocação de Escritório",
             "subtitle": "Serviços especializados de mudança de escritório",
-            "description": "Gerenciamos realocações de escritório completas projetadas para manter seu negócio funcionando sem problemas durante toda a mudança. Do planejamento e embalagem ao transporte, montagem de móveis e configuração do espaço de trabalho, garantimos uma transição estruturada e eficiente com mínimo tempo de inatividade.",
+            "description": "Oferecemos soluções completas de realocação de escritório com foco em eficiência, organização e continuidade dos negócios. Do planejamento inicial e embalagem segura ao transporte, remontagem e configuração do espaço de trabalho, nossa equipe experiente garante uma transição tranquila com mínimo tempo de inatividade e máxima produtividade.",
             "features": [
                 "Planejamento e coordenação pré-mudança",
                 "Manuseio profissional de equipamentos",
@@ -500,7 +500,7 @@
         "packing": {
             "title": "Embalagem Profissional",
             "subtitle": "Embalagem especializada para proteção máxima",
-            "description": "Nosso serviço de embalagem profissional garante que seus pertences sejam cuidadosamente preparados, protegidos e prontos para transporte ou armazenamento. Usando materiais de alta qualidade e técnicas comprovadas, nossa equipe treinada embala tudo com eficiência, reduzindo o risco de danos e economizando seu tempo e esforço.",
+            "description": "A embalagem é uma das etapas mais críticas de qualquer mudança. Nosso serviço profissional de embalagem garante que cada item seja envolvido, protegido e organizado com segurança, utilizando materiais de alta qualidade e técnicas especializadas. O resultado? Transporte mais seguro, menos estresse e uma experiência de mudança mais tranquila do início ao fim.",
             "features": [
                 "Materiais de embalagem de alta qualidade",
                 "Embaladores experientes e treinados",
@@ -519,7 +519,7 @@
         "storage": {
             "title": "Armazenamento",
             "subtitle": "Soluções seguras de armazenamento em contêineres",
-            "description": "Oferecemos soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que precisam de espaço de curto ou longo prazo. Seus bens são carregados com segurança, selados e armazenados em contêineres dedicados em nossa instalação monitorada, garantindo proteção e fácil acesso quando necessário.",
+            "description": "Oferecemos soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que necessitam de espaço de curto ou longo prazo. Seus bens são carregados profissionalmente, selados e armazenados em contêineres dedicados em nossa instalação monitorada, garantindo máxima proteção e acesso conveniente sempre que necessário.",
             "features": [
                 "Contêineres de uso exclusivo",
                 "Instalação monitorada 24/7",
@@ -538,7 +538,7 @@
         "furniture": {
             "title": "Entrega de Móveis Novos",
             "subtitle": "Entrega e montagem profissional de móveis",
-            "description": "Fornecemos entrega e instalação confiável de móveis novos para residências, escritórios e espaços comerciais. Da coleta e transporte seguro à colocação e montagem, nossa equipe garante que cada item chegue em perfeitas condições e seja instalado exatamente onde você precisa.",
+            "description": "Trabalhamos em parceria com lojas de móveis e fornecedores para oferecer serviços profissionais de entrega e instalação que estendem a experiência da sua marca além do showroom. Da coleta no armazém à entrega e montagem na residência, nossa equipe treinada garante manuseio seguro, agendamento eficiente e apresentação impecável, elevando a satisfação do cliente e a eficiência operacional.",
             "features": [
                 "Manuseio e transporte cuidadoso",
                 "Montagem e colocação profissional",

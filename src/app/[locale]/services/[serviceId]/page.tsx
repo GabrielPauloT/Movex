@@ -139,7 +139,7 @@ export default async function ServicePage({ params }: Props) {
                                     {features.map((feature, idx) => {
                                         const Icon = featureIcons[idx] || Check;
                                         return (
-                                            <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/20 hover:bg-white hover:shadow-lg transition-all duration-300 group">
+                                            <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-100 border border-gray-200 shadow-md hover:border-primary/30 hover:bg-white hover:shadow-xl transition-all duration-300 group">
                                                 <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center text-white shadow-sm group-hover:scale-110 transition-transform flex-shrink-0">
                                                     <Icon className="w-5 h-5" />
                                                 </div>

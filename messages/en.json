@@ -443,7 +443,7 @@
         "house": {
             "title": "House Moving",
             "subtitle": "Complete residential moving services",
-            "description": "We deliver professional residential moving services designed to make your relocation smooth, safe, and stress-free. From careful packing and secure transport to unloading and furniture placement, our experienced team handles every step with attention and efficiency.",
+            "description": "We provide professional residential moving services designed to make your relocation smooth, secure, and completely stress-free. From careful packing and protected transport to precise unloading and furniture placement, our experienced team manages every detail with care, efficiency, and professionalism — so you can focus on settling into your new home.",
             "features": [
                 "Trained and experienced movers",
                 "Protective packing materials",
@@ -462,7 +462,7 @@
         "commercial": {
             "title": "Commercial Moving",
             "subtitle": "Efficient business relocations",
-            "description": "We provide reliable commercial moving and logistics support for businesses of all sizes, including retail, warehouses, and trade operations. Our team handles packing, transport, loading/unloading, and setup with a strong focus on efficiency, safety, and minimal disruption to your operations.",
+            "description": "We provide end-to-end commercial moving and logistics support for businesses that require reliability and efficiency. Whether relocating retail spaces, warehouses, or trade operations, our team delivers structured planning, secure handling, and streamlined execution — minimising downtime and protecting your assets every step of the way.",
             "features": [
                 "Flexible scheduling options",
                 "Experienced moving crews",
@@ -481,7 +481,7 @@
         "office": {
             "title": "Office Relocation",
             "subtitle": "Specialized office moving services",
-            "description": "We manage end-to-end office relocations designed to keep your business running smoothly throughout the move. From planning and packing to transport, furniture assembly, and workspace setup, we ensure a structured, time-efficient transition with minimal downtime.",
+            "description": "We deliver comprehensive office relocation solutions focused on efficiency, organisation, and business continuity. From initial planning and secure packing to transport, reassembly, and workspace configuration, our experienced team ensures a smooth transition with minimal downtime and maximum productivity.",
             "features": [
                 "Pre-move planning and coordination",
                 "Professional equipment handling",
@@ -500,7 +500,7 @@
         "packing": {
             "title": "Professional Packing",
             "subtitle": "Expert packing for maximum protection",
-            "description": "Our professional packing service ensures your belongings are carefully prepared, protected, and ready for transport or storage. Using high-quality materials and proven techniques, our trained team packs everything efficiently, reducing the risk of damage and saving you time and effort.",
+            "description": "Packing is one of the most critical stages of any move. Our professional packing service ensures every item is securely wrapped, protected, and organised using high-quality materials and expert techniques. The result? Safer transport, less stress, and a smoother moving experience from start to finish.",
             "features": [
                 "High-grade packing materials",
                 "Experienced and trained packers",
@@ -519,7 +519,7 @@
         "storage": {
             "title": "Storage",
             "subtitle": "Secure container storage solutions",
-            "description": "We offer secure and flexible container storage solutions for residential and commercial clients needing short or long-term space. Your goods are safely loaded, sealed, and stored in dedicated containers at our monitored facility, ensuring protection and easy access when required.",
+            "description": "We provide secure and flexible container storage solutions for both residential and commercial clients requiring short or long-term space. Your goods are professionally loaded, sealed, and stored in dedicated containers within our monitored facility, ensuring maximum protection and convenient access whenever needed.",
             "features": [
                 "Exclusive-use containers",
                 "24/7 monitored facility",
@@ -538,7 +538,7 @@
         "furniture": {
             "title": "New Furniture Delivery",
             "subtitle": "Professional furniture delivery and assembly",
-            "description": "We provide reliable delivery and setup of new furniture for homes, offices, and commercial spaces. From collection and safe transport to placement and assembly, our team ensures every item arrives in perfect condition and is installed exactly where you need it.",
+            "description": "We partner with furniture stores and suppliers to provide professional delivery and installation services that extend your brand experience beyond the showroom. From warehouse collection to in-home delivery and setup, our trained team ensures safe handling, efficient scheduling, and flawless presentation, enhancing customer satisfaction and operational efficiency.",
             "features": [
                 "Careful handling and transport",
                 "Professional assembly and placement",
