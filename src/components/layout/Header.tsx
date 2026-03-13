@@ -170,20 +170,20 @@ export default function Header() {
               <Image src="/logo/logo-header.png" alt="Logo" width={48} height={26} />
             </div>
             <div className="flex flex-col">
-              <span className="font-black text-lg sm:text-xl text-secondary leading-none tracking-tight">MOVERX SOLUTIONS</span>
+              <span className="font-black text-lg xl:text-xl text-secondary leading-none tracking-tight">MOVERX SOLUTIONS</span>
               <span className="text-xs text-gray-600 font-semibold tracking-wider">{t('tagline')}</span>
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-4 xl:gap-8">
             {navigation.map((item) => (
               <li key={item.name}>
                 <Link
                   href={item.href}
                   onClick={(e) => handleScroll(e, item.href)}
                   className={cn(
-                    'text-[0.9375rem] font-semibold transition-colors hover:text-primary',
+                    'text-[0.8125rem] xl:text-[0.9375rem] font-semibold transition-colors hover:text-primary whitespace-nowrap',
                     isActive(item) ? 'text-primary' : 'text-gray-700'
                   )}
                 >
