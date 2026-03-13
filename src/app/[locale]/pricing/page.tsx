@@ -1,10 +1,9 @@
 import { setRequestLocale } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import TopBar from '@/components/layout/TopBar';
 import FadeIn from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { Check, Package, Phone } from 'lucide-react';
+import { Check, Package, Phone, Shield, Truck, Wrench, BedDouble, ArrowUpDown, Users, type LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 
 type Props = {
@@ -89,19 +88,19 @@ export default async function PricingPage({ params }: Props) {
         { size: '2 Bedroom Apartment', volume: '20-24 m³', time: '3-4 hrs', rate: '$139', total: '$417-$556' },
         { size: '3 Bedroom Apartment', volume: '25-30 m³', time: '5-6 hrs', rate: '$149', total: '$745-$894' },
         { size: '2 Bedroom House', volume: '20-25 m³', time: '4-5 hrs', rate: '$139', total: '$556-$695' },
-        { size: '3 Bedroom House', volume: '25-35 m³', time: '5-7 hrs', rate: '$149', total: '$745-$894' },
+        { size: '3 Bedroom House', volume: '25-35 m³', time: '5-7 hrs', rate: '$149', total: '$745-$1043' },
         { size: '4 Bedroom House', volume: '35-50 m³', time: '8-9 hrs', rate: '$169', total: '$1352-$1521' },
         { size: '5 Bedroom House', volume: '55+ m³', time: '10-12 hrs', rate: '$249', total: '$2490-$2988' }
     ];
 
-    const included = [
-        'Moving blankets + straps',
-        'Hand trolleys',
-        'Shrink wrap',
-        'Mattress protector',
-        'Hydraulic Tailgate',
-        'Tool box with portable drill',
-        'Professional crew'
+    const included: { label: string; icon: LucideIcon }[] = [
+        { label: 'Moving blankets + straps', icon: Shield },
+        { label: 'Hand trolleys', icon: ArrowUpDown },
+        { label: 'Shrink wrap', icon: Package },
+        { label: 'Mattress protector', icon: BedDouble },
+        { label: 'Hydraulic Tailgate', icon: Truck },
+        { label: 'Tool box with portable drill', icon: Wrench },
+        { label: 'Professional crew', icon: Users },
     ];
 
     const factors = [
@@ -125,7 +124,6 @@ export default async function PricingPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
-            <TopBar />
             <Header />
 
             <main className="pb-20">
@@ -253,8 +251,10 @@ export default async function PricingPage({ params }: Props) {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
                                 {included.map((item, index) => (
                                     <div key={index} className="flex items-center gap-3 bg-gray-50 rounded-xl p-4 border border-gray-200">
-                                        <Check className="w-5 h-5 text-primary shrink-0" />
-                                        <span className="text-sm font-medium text-secondary">{item}</span>
+                                        <div className="w-9 h-9 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center text-white shrink-0">
+                                            <item.icon className="w-4.5 h-4.5" />
+                                        </div>
+                                        <span className="text-sm font-medium text-secondary">{item.label}</span>
                                     </div>
                                 ))}
                             </div>

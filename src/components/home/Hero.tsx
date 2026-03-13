@@ -38,7 +38,7 @@ export default function Hero({ rating }: { rating: number }) {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-start">
           <div className="hero-content text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-secondary/5 backdrop-blur-sm px-4 py-2 rounded-full text-[0.8125rem] font-bold text-secondary mb-6 shadow-sm border border-secondary/10 animate-in fade-in slide-in-from-bottom-4 duration-700">
               <Check className="w-4 h-4 stroke-[3] text-primary" />

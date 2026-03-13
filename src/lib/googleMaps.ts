@@ -93,6 +93,25 @@ const FALLBACK_DATA_EN: GooglePlaceDetails = {
     ]
 };
 
+async function fetchPlaceReviews(sort: string, languageCode: string): Promise<{ rating: number; user_ratings_total: number; reviews: Review[] }> {
+    const response = await fetch(
+        `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=rating,user_ratings_total,reviews&reviews_sort=${sort}&key=${GOOGLE_PLACES_API_KEY}&language=${languageCode}`,
+        { next: { revalidate: 3600 * 24 } }
+    );
+
+    if (!response.ok) {
+        throw new Error(`Google Places API error: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    if (data.status !== 'OK') {
+        throw new Error(`Google Places API error status: ${data.status}`);
+    }
+
+    return data.result;
+}
+
 export async function getGooglePlaceDetails(locale: string = 'pt'): Promise<GooglePlaceDetails> {
     const languageCode = locale === 'pt' ? 'pt-BR' : 'en';
     const fallbackData = locale === 'pt' ? FALLBACK_DATA_PT : FALLBACK_DATA_EN;
@@ -105,28 +124,33 @@ export async function getGooglePlaceDetails(locale: string = 'pt'): Promise<Goog
     return await unstable_cache(
         async () => {
             try {
-                const response = await fetch(
-                    `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=rating,user_ratings_total,reviews&key=${GOOGLE_PLACES_API_KEY}&language=${languageCode}`,
-                    { next: { revalidate: 3600 * 24 } } // Cache for 24 hours
-                );
+                // Fetch with both sort orders to maximize unique reviews (API returns max 5 per request)
+                const [relevant, newest] = await Promise.all([
+                    fetchPlaceReviews('most_relevant', languageCode),
+                    fetchPlaceReviews('newest', languageCode),
+                ]);
 
-                if (!response.ok) {
-                    throw new Error(`Google Places API error: ${response.statusText}`);
+                // Deduplicate reviews by author_name
+                const seen = new Set<string>();
+                const allReviews: Review[] = [];
+                for (const review of [...newest.reviews, ...relevant.reviews]) {
+                    if (!seen.has(review.author_name)) {
+                        seen.add(review.author_name);
+                        allReviews.push(review);
+                    }
                 }
 
-                const data = await response.json();
-
-                if (data.status !== 'OK') {
-                    throw new Error(`Google Places API error status: ${data.status}`);
-                }
-
-                return data.result as GooglePlaceDetails;
+                return {
+                    rating: relevant.rating,
+                    user_ratings_total: relevant.user_ratings_total,
+                    reviews: allReviews,
+                };
             } catch (error) {
                 console.warn('Failed to fetch Google Place details (using fallback data). Error:', error instanceof Error ? error.message : error);
                 return fallbackData;
             }
         },
-        ['google-place-details', locale], // Include locale in cache key
+        ['google-place-details', locale],
         { revalidate: 3600 * 24 }
     )();
 }

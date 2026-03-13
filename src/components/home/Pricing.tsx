@@ -74,12 +74,12 @@ export default function Pricing() {
                 </div>
 
                 <div className="p-5 flex flex-col flex-grow">
-                  <div className="flex items-baseline mb-1">
+                  <div className="flex items-baseline mb-4">
                     <span className="text-sm text-gray-500 font-medium mr-1">From</span>
                     <span className="text-4xl font-black text-primary tracking-tight">${truck.price}</span>
                     <span className="text-base text-gray-500 font-medium ml-1">/h</span>
+                    <span className="text-xs text-gray-400 font-medium ml-1">+ GST</span>
                   </div>
-                  <p className="text-xs text-gray-400 mb-4">+ GST</p>
 
                   <p className="text-sm text-gray-600 mb-6 flex-grow">{truck.ideal}</p>
 

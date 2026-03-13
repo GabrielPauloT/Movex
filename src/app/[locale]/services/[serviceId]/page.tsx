@@ -2,7 +2,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import TopBar from '@/components/layout/TopBar';
 import CTA from '@/components/home/CTA';
 import { Check, ArrowRight, Phone, Calendar, Shield, Users, Package, Clock, Truck, MapPin, Wrench, Lock, Box, ClipboardList, Tag, Star } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
@@ -59,7 +58,6 @@ export default async function ServicePage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
-            <TopBar />
             <Header />
 
             <main className="pb-24 lg:pb-0">

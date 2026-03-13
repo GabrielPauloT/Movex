@@ -22,7 +22,7 @@
         "description": "Local moving specialists delivering precision, care, and discretion across Melbourne — fully insured and trusted for over 15 years.",
         "quote": "\"Seamless, carefully managed moves from start to finish.\"",
         "buttons": {
-            "calculate": "Calculate Your Cost",
+            "calculate": "Get a detailed Quote",
             "call": "Call Now"
         },
         "trust": {
@@ -203,8 +203,8 @@
     },
     "CTA": {
         "title": "Ready to Make Your Move?",
-        "description": "Let our family help your family. Get your free quote today—no obligations, no pressure, just honest advice.",
-        "call": "Call 1300 480 732",
+        "description": "Let our family help your family. Get your free quote today with no obligations, no pressure, just honest advice.",
+        "call": "Call 03 7058 0073",
         "calculate": "Calculate Online"
     },
     "QuoteCalculator": {

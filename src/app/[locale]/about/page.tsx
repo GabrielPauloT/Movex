@@ -1,7 +1,6 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import TopBar from '@/components/layout/TopBar';
 import FadeIn from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { Heart, Eye, Clock, Users, Phone } from 'lucide-react';
@@ -25,7 +24,6 @@ export default async function AboutPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
-            <TopBar />
             <Header />
 
             <main className="pb-20">

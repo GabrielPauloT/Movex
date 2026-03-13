@@ -1,4 +1,3 @@
-import TopBar from '@/components/layout/TopBar';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/home/Hero';
@@ -31,17 +30,16 @@ export default async function Home({
 
   return (
     <div className="min-h-screen bg-white">
-      <TopBar />
       <Header />
 
       <main className="overflow-hidden pb-24 lg:pb-0">
         <Hero rating={googleData.rating} />
         <PartnersBar />
 
-        <StatsBar
+        {/* <StatsBar
           rating={googleData.rating}
           reviewCount={googleData.user_ratings_total}
-        />
+        /> */}
         <Features />
         <Services />
         <Process />

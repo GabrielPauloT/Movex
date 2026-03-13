@@ -102,8 +102,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 text-center md:text-left">
           <div>{t('legal.rights')}</div>
           <div className="flex gap-6">
-            <Link href="/policy" className="hover:text-white transition-colors">{t('legal.privacy')}</Link>
-            <Link href="/policy" className="hover:text-white transition-colors">{t('legal.terms')}</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">{t('legal.privacy')}</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">{t('legal.terms')}</Link>
           </div>
         </div>
       </div>
