@@ -62,7 +62,7 @@ export default async function ServicePage({ params }: Props) {
 
             <main className="pb-24 lg:pb-0">
                 {/* Service Hero */}
-                <section className="relative bg-secondary py-20 lg:py-32 overflow-hidden">
+                <section className="relative bg-secondary pb-32 lg:pb-40 pt-20 lg:pt-32 overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay transition-opacity duration-700"
                         style={{ backgroundImage: `url('${heroImage}')` }}
@@ -85,9 +85,16 @@ export default async function ServicePage({ params }: Props) {
                             </p>
                         </FadeIn>
                     </div>
+
+                    {/* Wave separator */}
+                    <div className="absolute bottom-0 left-0 right-0 z-10">
+                        <svg viewBox="0 0 1440 150" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-[80px] lg:h-[120px] block">
+                            <path d="M0 150L0 70C240 60 480 0 650 12C960 20 1200 100 1440 50L1440 150L0 150Z" fill="white" />
+                        </svg>
+                    </div>
                 </section>
 
-                <div className="container mx-auto px-6 py-20">
+                <div className="container mx-auto px-6 py-5">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-16">
                         {/* Main Content */}
                         <div>
