@@ -3,8 +3,9 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FadeIn from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
-import { Heart, Eye, Clock, Users, Phone } from 'lucide-react';
+import { Heart, Eye, Clock, Users, Phone, CheckSquare } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -44,28 +45,80 @@ export default async function AboutPage({ params }: Props) {
                 </section>
 
                 {/* Our Story */}
-                <section className="py-20">
+                <section className="py-20 lg:py-24">
                     <div className="container mx-auto px-6">
-                        <div className="max-w-3xl mx-auto">
-                            <FadeIn direction="up">
-                                <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-8 tracking-tight">
-                                    {t('story.title')}
-                                </h2>
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                            <div className="lg:col-span-7">
+                                <FadeIn direction="up">
+                                    <h2 className="text-3xl lg:text-4xl font-extrabold text-secondary mb-8 tracking-tight">
+                                        {t('story.title')}
+                                    </h2>
+                                </FadeIn>
+                                <FadeIn direction="up" delay={100}>
+                                    <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                                        {t('story.p1')}
+                                    </p>
+                                </FadeIn>
+                                <FadeIn direction="up" delay={200}>
+                                    <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                                        {t('story.p2')}
+                                    </p>
+                                </FadeIn>
+                            </div>
+                            <div className="lg:col-span-5">
+                                <FadeIn direction="left" delay={200}>
+                                    <div className="rounded-2xl overflow-hidden shadow-xl">
+                                        <Image
+                                            src="/moverx_contents/about-our-story.png"
+                                            alt="MoverX Solutions team"
+                                            width={800}
+                                            height={1000}
+                                            className="w-full h-auto object-cover"
+                                        />
+                                    </div>
+                                </FadeIn>
+                            </div>
+                        </div>
+
+                        <FadeIn direction="up" delay={300}>
+                            <p className="text-lg text-gray-600 leading-relaxed mt-10 mb-10 w-full text-left">
+                                {t('story.p3')}
+                            </p>
+                        </FadeIn>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <FadeIn direction="up" delay={400}>
+                                <div className="bg-white p-8 lg:p-10 rounded-2xl border border-gray-100 shadow-[0_4px_30px_rgb(0,0,0,0.03)] h-full">
+                                    <div className="flex items-center gap-4 mb-5">
+                                        <div className="text-secondary shrink-0">
+                                            <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/>
+                                            </svg>
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-secondary">{t('story.mission.title')}</h3>
+                                    </div>
+                                    <p className="text-gray-600 text-[1.05rem] leading-relaxed">
+                                        {t('story.mission.description')}
+                                    </p>
+                                </div>
                             </FadeIn>
-                            <FadeIn direction="up" delay={100}>
-                                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                                    {t('story.p1')}
-                                </p>
-                            </FadeIn>
-                            <FadeIn direction="up" delay={200}>
-                                <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                                    {t('story.p2')}
-                                </p>
-                            </FadeIn>
-                            <FadeIn direction="up" delay={300}>
-                                <p className="text-lg text-gray-600 leading-relaxed">
-                                    {t('story.p3')}
-                                </p>
+                            <FadeIn direction="up" delay={500}>
+                                <div className="bg-white p-8 lg:p-10 rounded-2xl border border-gray-100 shadow-[0_4px_30px_rgb(0,0,0,0.03)] h-full">
+                                    <div className="flex items-center gap-4 mb-5">
+                                        <div className="text-secondary shrink-0 relative flex items-center justify-center">
+                                            <Eye className="w-10 h-10" strokeWidth={2.5} />
+                                            <div className="absolute -top-1 -right-2 text-secondary">
+                                                <svg className="w-5 h-5 bg-white rounded-full p-0.5" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-secondary">{t('story.vision.title')}</h3>
+                                    </div>
+                                    <p className="text-gray-600 text-[1.05rem] leading-relaxed">
+                                        {t('story.vision.description')}
+                                    </p>
+                                </div>
                             </FadeIn>
                         </div>
                     </div>
