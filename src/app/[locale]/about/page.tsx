@@ -81,7 +81,7 @@ export default async function AboutPage({ params }: Props) {
                         </div>
 
                         <FadeIn direction="up" delay={300}>
-                            <p className="text-lg text-gray-600 leading-relaxed mt-10 mb-10 w-full text-left">
+                            <p className="text-lg text-gray-600 leading-relaxed mt-10 mb-10 w-full text-center">
                                 {t('story.p3')}
                             </p>
                         </FadeIn>

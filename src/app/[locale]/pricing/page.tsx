@@ -331,7 +331,7 @@ export default async function PricingPage({ params }: Props) {
                                 <FadeIn key={index} direction="up" delay={index * 50}>
                                     <div className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all duration-300">
                                         <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                                            <Package className="w-6 h-6 text-primary" />
+                                            <span className="text-lg font-extrabold text-primary">{index + 1}</span>
                                         </div>
                                         <h3 className="text-lg font-bold text-secondary mb-2">{factor.title}</h3>
                                         <p className="text-sm text-gray-600 leading-relaxed">{factor.description}</p>

@@ -67,7 +67,7 @@ export default function Hero({ rating }: { rating: number }) {
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
               </Link>
               <a href="tel:1300480732">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg border-2 border-transparent hover:border-secondary/10 hover:bg-white text-secondary">
+                <Button variant="accent" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg">
                   <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}
                 </Button>
