@@ -88,10 +88,10 @@
         "8T": {
             "description": "Ideal para casas de 2-3 quartos"
         },
-        "10T": {
-            "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+        "12T": {
+            "description": "Melhor para casas de 4 quartos — 3 homens recomendados"
         },
-        "COMBO": {
+        "16T": {
             "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
         }
     },

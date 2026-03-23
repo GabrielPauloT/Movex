@@ -88,10 +88,10 @@
         "8T": {
             "description": "Ideal for 2-3 bedroom homes"
         },
-        "10T": {
-            "description": "Best for 3+ bedroom homes or large moves"
+        "12T": {
+            "description": "Best for 4 bedroom houses — 3 men recommended"
         },
-        "COMBO": {
+        "16T": {
             "description": "For extra-large moves requiring two trucks"
         }
     },
