@@ -25,15 +25,12 @@ export default function Footer() {
               {t('header.description')}
             </p>
             <div className="flex gap-4">
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+              <a href="https://www.facebook.com/share/1FLgEEjj6L/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                 <Facebook className="w-4 h-4" />
-              </ScrollLink>
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                <Linkedin className="w-4 h-4" />
-              </ScrollLink>
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+              </a>
+              <a href="https://www.instagram.com/moverxsolutions?igsh=MTFxZWo3cG5zdW8zbw==" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                 <Instagram className="w-4 h-4" />
-              </ScrollLink>
+              </a>
             </div>
           </div>
 

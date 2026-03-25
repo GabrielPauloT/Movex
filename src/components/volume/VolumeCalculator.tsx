@@ -308,7 +308,7 @@ export default function VolumeCalculator() {
               <div className="text-5xl mb-4">{recommendedTruck.icon}</div>
               <h3 className="text-xl font-black text-secondary mb-1">{recommendedTruck.name}</h3>
               <div className="text-sm font-medium text-gray-600 mb-2">{recommendedTruck.capacity} m³ {t('summary.capacity')}</div>
-              <div className="text-2xl font-black text-primary mb-2">{recommendedTruck.price}</div>
+              <div className="text-2xl font-black text-primary mb-2">{totalVolume >= 70 ? 'Custom Price' : recommendedTruck.price}</div>
               <p className="text-xs text-gray-500 leading-relaxed">{t(`trucks.${recommendedTruck.key}.description`)}</p>
             </div>
           </div>
