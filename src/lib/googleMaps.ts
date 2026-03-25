@@ -112,9 +112,9 @@ async function fetchPlaceReviews(sort: string, languageCode: string): Promise<{ 
     return data.result;
 }
 
-export async function getGooglePlaceDetails(locale: string = 'pt'): Promise<GooglePlaceDetails> {
-    const languageCode = locale === 'pt' ? 'pt-BR' : 'en';
-    const fallbackData = locale === 'pt' ? FALLBACK_DATA_PT : FALLBACK_DATA_EN;
+export async function getGooglePlaceDetails(locale: string = 'en'): Promise<GooglePlaceDetails> {
+    const languageCode = 'en';
+    const fallbackData = FALLBACK_DATA_EN;
 
     if (!GOOGLE_PLACES_API_KEY) {
         console.warn('GOOGLE_PLACES_API_KEY is not set. Using fallback data.');

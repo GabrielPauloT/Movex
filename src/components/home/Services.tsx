@@ -40,7 +40,7 @@ export default function Services() {
       number: '05',
       title: t('items.storage.title'),
       description: t('items.storage.description'),
-      image: '/storage/container.png',
+      image: '/storage/container.jpeg',
     },
     {
       id: 'furniture',

@@ -240,7 +240,7 @@
         },
         "success": {
             "title": "Quote Requested!",
-            "description": "We received your request and will get back to you shortly. Check your email for confirmation.",
+            "description": "We received your request and will get back to you shortly.",
             "newQuote": "Submit Another Quote"
         }
     },
@@ -405,7 +405,7 @@
             },
             "success": {
                 "title": "Quote Requested!",
-                "description": "We received your request and will get back to you shortly. Check your email for confirmation.",
+                "description": "We received your request and will get back to you shortly.",
                 "close": "Close"
             }
         }

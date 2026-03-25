@@ -69,10 +69,10 @@ export default async function AboutPage({ params }: Props) {
                                 <FadeIn direction="left" delay={200}>
                                     <div className="rounded-2xl overflow-hidden shadow-xl">
                                         <Image
-                                            src="/moverx_contents/about-our-story.png"
+                                            src="/moverx_contents/about-our-story.JPG"
                                             alt="MoverX Solutions team"
-                                            width={800}
-                                            height={1000}
+                                            width={1000}
+                                            height={1200}
                                             className="w-full h-auto object-cover"
                                         />
                                     </div>

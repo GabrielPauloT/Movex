@@ -4,6 +4,7 @@ import Footer from '@/components/layout/Footer';
 import FadeIn from '@/components/ui/FadeIn';
 import { Button } from '@/components/ui/Button';
 import { Check, Package, Phone, Shield, Truck, Wrench, BedDouble, ArrowUpDown, Users, type LucideIcon } from 'lucide-react';
+import { GiBeltBuckles } from 'react-icons/gi';
 import Link from 'next/link';
 
 type Props = {
@@ -93,14 +94,15 @@ export default async function PricingPage({ params }: Props) {
         { size: '5 Bedroom House', volume: '55+ m³', time: '10-12 hrs', rate: '$249', total: '$2490-$2988' }
     ];
 
-    const included: { label: string; icon: LucideIcon }[] = [
-        { label: 'Moving blankets + straps', icon: Shield },
+    const included: { label: string; icon: React.ComponentType<{ className?: string }> }[] = [
+        { label: 'Moving blankets', icon: Shield },
         { label: 'Hand trolleys', icon: ArrowUpDown },
         { label: 'Shrink wrap', icon: Package },
         { label: 'Mattress protector', icon: BedDouble },
         { label: 'Hydraulic Tailgate', icon: Truck },
         { label: 'Tool box with portable drill', icon: Wrench },
         { label: 'Professional crew', icon: Users },
+        { label: 'Straps', icon: GiBeltBuckles },
     ];
 
     const factors = [

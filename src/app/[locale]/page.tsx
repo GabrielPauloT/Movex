@@ -67,7 +67,7 @@ export default async function Home({
         </a>
       </div>
 
-      {/* WhatsApp Floating Button - Adjusted for mobile sticky bar */}
+      {/* WhatsApp Floating Button - Temporarily disabled
       <a
         href="https://wa.me/61390127145"
         target="_blank"
@@ -76,6 +76,7 @@ export default async function Home({
       >
         <MessageCircle className="w-7 h-7 lg:w-8 lg:h-8 fill-current" />
       </a>
+      */}
     </div>
   );
 }

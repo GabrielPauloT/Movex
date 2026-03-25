@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 const PARTNERS = [
   { name: 'Dominion Group', logo: '/partners/dominion-group.png', width: 484, height: 79 },
   { name: 'Find a Mover', logo: '/partners/find-a-mover.png', width: 1066, height: 525 },
-  { name: 'RP Global Logistics', logo: '/partners/logo-rp-global.jpeg', width: 458, height: 226 },
+  { name: 'RP Global Logistics', logo: '/partners/logo-rp-global-new.jpeg', width: 1080, height: 1080 },
   { name: 'Muval', logo: '/partners/muval.png', width: 896, height: 187 },
   { name: 'MovePro', logo: '/partners/movepro.png', width: 800, height: 123 },
   { name: 'Moving24', logo: '/partners/moving24.png', width: 800, height: 800 },
@@ -39,7 +39,7 @@ export default function PartnersBar() {
                   height={partner.height}
                   className={cn(
                     "max-h-full object-contain rounded-sm",
-                    partner.name === 'RP Global Logistics' ? "max-w-none w-full object-cover" : "max-w-full",
+                    partner.name === 'RP Global Logistics' ? "max-w-none w-full object-cover object-[center_44%]" : "max-w-full",
                     partner.name === 'Moving24' && "scale-[1.8]"
                   )}
                 />
