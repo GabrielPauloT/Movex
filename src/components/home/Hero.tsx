@@ -28,7 +28,7 @@ export default function Hero({ rating }: { rating: number }) {
   );
 
   return (
-    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden bg-white" id="quote">
+    <section className="relative pt-6 pb-20 lg:pt-10 lg:pb-28 overflow-hidden bg-white" id="quote">
       {/* Background Image with Gradient Fade */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply pointer-events-none"
