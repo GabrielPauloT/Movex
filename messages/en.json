@@ -19,7 +19,7 @@
     "Hero": {
         "trustedSince": "TRUSTED SINCE 2009",
         "title": "Professional <primary>Local Removalist</primary> You Can Trust",
-        "description": "Local moving specialists delivering precision, care, and discretion across Melbourne — fully insured and trusted for over 15 years.",
+        "description": "Local moving specialists delivering precision, care, and discretion across Melbourne. Fully insured and trusted for over 15 years.",
         "quote": "\"Seamless, carefully managed moves from start to finish.\"",
         "buttons": {
             "calculate": "Get a detailed Quote",
@@ -52,7 +52,7 @@
             },
             "family": {
                 "title": "Family-Owned Since 2009",
-                "description": "Three generations of moving expertise. We're not a corporation—we're a family serving families."
+                "description": "Three generations of moving expertise. We're not a corporation. We're a family serving families."
             },
             "fees": {
                 "title": "No Hidden Fees",
@@ -121,7 +121,7 @@
     "Pricing": {
         "sectionTitle": "Pricing",
         "title": "Honest, Transparent Pricing",
-        "description": "All prices are per hour + GST. Every truck comes with a professional crew and full equipment.",
+        "description": "All prices are per hour + GST included. Every truck comes with a professional crew and full equipment.",
         "mostPopular": "Most Popular",
         "learnMore": "Learn more",
         "viewDetailed": "View detailed pricing & estimates",
@@ -142,13 +142,13 @@
                 "name": "12T Truck",
                 "volume": "Up to 50m³",
                 "price": "169",
-                "ideal": "Best for 4 bedroom houses — 3 men recommended"
+                "ideal": "Best for 4 bedroom houses. 3 men recommended"
             },
             "16T": {
                 "name": "16T Truck",
                 "volume": "Up to 70m³",
                 "price": "249",
-                "ideal": "Ideal for 5+ bedrooms — 4 men required"
+                "ideal": "Ideal for 5+ bedrooms. 4 men required"
             }
         }
     },
@@ -181,7 +181,7 @@
         "items": [
             {
                 "question": "How far in advance should I book?",
-                "answer": "We recommend booking at least 1-2 weeks in advance, especially during peak periods (end of month and weekends). However, we can often accommodate short-notice and same-week moves across Melbourne — just give us a call!"
+                "answer": "We recommend booking at least 1-2 weeks in advance, especially during peak periods (end of month and weekends). However, we can often accommodate short-notice and same-week moves across Melbourne. Just give us a call!"
             },
             {
                 "question": "What insurance do you provide?",
@@ -189,7 +189,7 @@
             },
             {
                 "question": "What's included in the hourly rate?",
-                "answer": "Our hourly rate includes a professional crew, the truck, moving blankets & straps, hand trolleys, shrink wrap, mattress protectors, and a hydraulic tailgate. No hidden charges — what we quote is what you pay."
+                "answer": "Our hourly rate includes a professional crew, the truck, moving blankets & straps, hand trolleys, shrink wrap, mattress protectors, and a hydraulic tailgate. No hidden charges. What we quote is what you pay."
             },
             {
                 "question": "What items can't you move?",
@@ -197,7 +197,7 @@
             },
             {
                 "question": "What are your payment terms?",
-                "answer": "Payment is due upon completion of the move. We accept all major credit cards, bank transfers, and cash. For larger moves, payment plans may be available — contact us to discuss options."
+                "answer": "Payment is due upon completion of the move. We accept all major credit cards, bank transfers, and cash. For larger moves, payment plans may be available. Contact us to discuss options."
             }
         ]
     },
@@ -374,7 +374,7 @@
                 "description": "Ideal for 2-3 bedroom homes"
             },
             "12T": {
-                "description": "Best for 4 bedroom houses — 3 men recommended"
+                "description": "Best for 4 bedroom houses. 3 men recommended"
             },
             "16T": {
                 "description": "For extra-large moves requiring two trucks"
@@ -415,9 +415,9 @@
         "subtitle": "Family-owned. Melbourne-based. Trusted for over 15 years.",
         "story": {
             "title": "Our Story",
-            "p1": "MoverX Solutions is a family-owned and operated removalist company based in Melbourne. Since 2009, we've been helping families, professionals, and businesses move with confidence — delivering precision, care, and discretion on every job.",
+            "p1": "MoverX Solutions is a family-owned and operated removalist company based in Melbourne. Since 2009, we've been helping families, professionals, and businesses move with confidence. Delivering precision, care, and discretion on every job.",
             "p2": "What started as a small family operation has grown into one of Melbourne's most trusted local moving companies. Over 15 years and 6,000+ successful moves later, our commitment remains the same: treat every belonging as if it were our own.",
-            "p3": "We're not a faceless corporation. We're a family serving families — and that personal touch is what sets us apart.",
+            "p3": "We're not a faceless corporation. We're a family serving families. And that personal touch is what sets us apart.",
             "mission": {
                 "title": "Our Mission",
                 "description": "To provide stress-free, reliable moving services that put our customers first. We aim to handle every move with care, attention, and professionalism, making each transition as smooth as possible."
@@ -451,7 +451,7 @@
         "house": {
             "title": "House Moving",
             "subtitle": "Complete residential moving services",
-            "description": "We provide professional residential moving services designed to make your relocation smooth, secure, and completely stress-free. From careful packing and protected transport to precise unloading and furniture placement, our experienced team manages every detail with care, efficiency, and professionalism — so you can focus on settling into your new home.",
+            "description": "We provide professional residential moving services designed to make your relocation smooth, secure, and completely stress-free. From careful packing and protected transport to precise unloading and furniture placement, our experienced team manages every detail with care, efficiency, and professionalism. So you can focus on settling into your new home.",
             "features": [
                 "Trained and experienced movers",
                 "Protective packing materials",
@@ -470,7 +470,7 @@
         "commercial": {
             "title": "Commercial Moving",
             "subtitle": "Efficient business relocations",
-            "description": "We provide end-to-end commercial moving and logistics support for businesses that require reliability and efficiency. Whether relocating retail spaces, warehouses, or trade operations, our team delivers structured planning, secure handling, and streamlined execution — minimising downtime and protecting your assets every step of the way.",
+            "description": "We provide end-to-end commercial moving and logistics support for businesses that require reliability and efficiency. Whether relocating retail spaces, warehouses, or trade operations, our team delivers structured planning, secure handling, and streamlined execution. Minimising downtime and protecting your assets every step of the way.",
             "features": [
                 "Flexible scheduling options",
                 "Experienced moving crews",

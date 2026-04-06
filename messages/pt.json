@@ -19,7 +19,7 @@
     "Hero": {
         "trustedSince": "CONFIÁVEL DESDE 2009",
         "title": "Profissionais em <primary>Mudanças Locais</primary> em quem Você Pode Confiar",
-        "description": "Especialistas em mudanças locais oferecendo precisão, cuidado e discrição em toda Melbourne — totalmente segurados e confiáveis por mais de 15 anos.",
+        "description": "Especialistas em mudanças locais oferecendo precisão, cuidado e discrição em toda Melbourne. Totalmente segurados e confiáveis por mais de 15 anos.",
         "quote": "\"Mudanças impecáveis e cuidadosamente gerenciadas do início ao fim.\"",
         "buttons": {
             "calculate": "Calcular Custo",
@@ -52,7 +52,7 @@
             },
             "family": {
                 "title": "Familiar desde 2009",
-                "description": "Três gerações de experiência em mudanças. Não somos uma empresa qualquer — somos uma família servindo famílias."
+                "description": "Três gerações de experiência em mudanças. Não somos uma empresa qualquer. Somos uma família servindo famílias."
             },
             "fees": {
                 "title": "Sem Taxas Ocultas",
@@ -121,7 +121,7 @@
     "Pricing": {
         "sectionTitle": "Preços",
         "title": "Preços Honestos e Transparentes",
-        "description": "Todos os preços são por hora + GST. Cada caminhão vem com equipe profissional e equipamento completo.",
+        "description": "Todos os preços são por hora + GST included. Cada caminhão vem com equipe profissional e equipamento completo.",
         "mostPopular": "Mais Popular",
         "learnMore": "Saiba mais",
         "viewDetailed": "Ver preços detalhados e estimativas",
@@ -142,13 +142,13 @@
                 "name": "Caminhão 12T",
                 "volume": "Até 50m³",
                 "price": "169",
-                "ideal": "Melhor para casas de 4 quartos — 3 homens recomendados"
+                "ideal": "Melhor para casas de 4 quartos. 3 homens recomendados"
             },
             "16T": {
                 "name": "Caminhão 16T",
                 "volume": "Até 70m³",
                 "price": "249",
-                "ideal": "Ideal para 5+ quartos — 4 homens necessários"
+                "ideal": "Ideal para 5+ quartos. 4 homens necessários"
             }
         }
     },
@@ -181,7 +181,7 @@
         "items": [
             {
                 "question": "Com que antecedência devo reservar?",
-                "answer": "Recomendamos reservar com pelo menos 1-2 semanas de antecedência, especialmente durante períodos de pico (final de mês e fins de semana). No entanto, frequentemente conseguimos acomodar mudanças de última hora em Melbourne — basta nos ligar!"
+                "answer": "Recomendamos reservar com pelo menos 1-2 semanas de antecedência, especialmente durante períodos de pico (final de mês e fins de semana). No entanto, frequentemente conseguimos acomodar mudanças de última hora em Melbourne. Basta nos ligar!"
             },
             {
                 "question": "Que seguro vocês oferecem?",
@@ -189,7 +189,7 @@
             },
             {
                 "question": "O que está incluído na taxa por hora?",
-                "answer": "Nossa taxa por hora inclui equipe profissional, caminhão, cobertores e cintas, carrinhos de mão, filme stretch, protetores de colchão e plataforma hidráulica. Sem taxas ocultas — o que cotamos é o que você paga."
+                "answer": "Nossa taxa por hora inclui equipe profissional, caminhão, cobertores e cintas, carrinhos de mão, filme stretch, protetores de colchão e plataforma hidráulica. Sem taxas ocultas. O que cotamos é o que você paga."
             },
             {
                 "question": "Quais itens vocês não podem transportar?",
@@ -197,7 +197,7 @@
             },
             {
                 "question": "Quais são os termos de pagamento?",
-                "answer": "O pagamento é devido na conclusão da mudança. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Para mudanças maiores, planos de pagamento podem estar disponíveis — entre em contato para discutir opções."
+                "answer": "O pagamento é devido na conclusão da mudança. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Para mudanças maiores, planos de pagamento podem estar disponíveis. Entre em contato para discutir opções."
             }
         ]
     },
@@ -374,7 +374,7 @@
                 "description": "Ideal para casas de 2-3 quartos"
             },
             "12T": {
-                "description": "Melhor para casas de 4 quartos — 3 homens recomendados"
+                "description": "Melhor para casas de 4 quartos. 3 homens recomendados"
             },
             "16T": {
                 "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
@@ -415,9 +415,9 @@
         "subtitle": "Empresa familiar. Sediada em Melbourne. Confiável por mais de 15 anos.",
         "story": {
             "title": "Nossa História",
-            "p1": "A MoverX Solutions é uma empresa de mudanças familiar, sediada em Melbourne. Desde 2009, ajudamos famílias, profissionais e empresas a se mudarem com confiança — entregando precisão, cuidado e discrição em cada trabalho.",
+            "p1": "A MoverX Solutions é uma empresa de mudanças familiar, sediada em Melbourne. Desde 2009, ajudamos famílias, profissionais e empresas a se mudarem com confiança. Entregando precisão, cuidado e discrição em cada trabalho.",
             "p2": "O que começou como uma pequena operação familiar cresceu e se tornou uma das empresas de mudanças locais mais confiáveis de Melbourne. Após mais de 15 anos e 6.000+ mudanças bem-sucedidas, nosso compromisso permanece o mesmo: tratar cada pertence como se fosse nosso.",
-            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias — e esse toque pessoal é o que nos diferencia.",
+            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias. E esse toque pessoal é o que nos diferencia.",
             "mission": {
                 "title": "Nossa Missão",
                 "description": "Fornecer serviços de mudança confiáveis e sem estresse que colocam nossos clientes em primeiro lugar. Nosso objetivo é lidar com cada mudança com cuidado, atenção e profissionalismo, tornando cada transição o mais suave possível."
@@ -451,7 +451,7 @@
         "house": {
             "title": "Mudança Residencial",
             "subtitle": "Serviços completos de mudança residencial",
-            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua mudança tranquila, segura e completamente livre de estresse. Desde embalagem cuidadosa e transporte protegido até descarga precisa e colocação de móveis, nossa equipe experiente gerencia cada detalhe com cuidado, eficiência e profissionalismo — para que você possa se concentrar em se instalar em sua nova casa.",
+            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua mudança tranquila, segura e completamente livre de estresse. Desde embalagem cuidadosa e transporte protegido até descarga precisa e colocação de móveis, nossa equipe experiente gerencia cada detalhe com cuidado, eficiência e profissionalismo. Para que você possa se concentrar em se instalar em sua nova casa.",
             "features": [
                 "Equipe de mudança treinada e experiente",
                 "Materiais de embalagem protetores",
@@ -470,7 +470,7 @@
         "commercial": {
             "title": "Mudança Comercial",
             "subtitle": "Realocações empresariais eficientes",
-            "description": "Oferecemos suporte completo de mudança comercial e logística para empresas que exigem confiabilidade e eficiência. Seja na realocação de espaços de varejo, armazéns ou operações comerciais, nossa equipe entrega planejamento estruturado, manuseio seguro e execução otimizada — minimizando o tempo de inatividade e protegendo seus ativos em cada etapa.",
+            "description": "Oferecemos suporte completo de mudança comercial e logística para empresas que exigem confiabilidade e eficiência. Seja na realocação de espaços de varejo, armazéns ou operações comerciais, nossa equipe entrega planejamento estruturado, manuseio seguro e execução otimizada. Minimizando o tempo de inatividade e protegendo seus ativos em cada etapa.",
             "features": [
                 "Opções flexíveis de agendamento",
                 "Equipes de mudança experientes",

@@ -187,7 +187,7 @@ export default async function PricingPage({ params }: Props) {
                                         <div className="p-6">
                                             <div className="text-center mb-6 pb-6 border-b border-gray-200">
                                                 <div className="text-3xl font-extrabold text-primary mb-1">{truck.price}</div>
-                                                <div className="text-sm text-gray-500">per hour + GST</div>
+                                                <div className="text-sm text-gray-500">per hour + GST included</div>
                                             </div>
 
                                             <div className="space-y-3 mb-6">
@@ -244,7 +244,7 @@ export default async function PricingPage({ params }: Props) {
                                     What&apos;s Included With Every Move
                                 </h2>
                                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                    Every booking comes fully equipped — no extra charges for standard equipment.
+                                    Every booking comes fully equipped. No extra charges for standard equipment.
                                 </p>
                             </div>
                         </FadeIn>
@@ -309,7 +309,7 @@ export default async function PricingPage({ params }: Props) {
                         <FadeIn direction="up" delay={200}>
                             <div className="mt-8 p-6 bg-white rounded-xl border border-gray-200">
                                 <p className="text-sm text-gray-600 leading-relaxed">
-                                    <strong>Important:</strong> These estimates are based on average conditions. Your actual cost may vary depending on factors such as distance, access difficulty, stairs, parking availability, and additional services required. All prices are per hour + GST. For an accurate quote tailored to your specific move, please contact our team.
+                                    <strong>Important:</strong> These estimates are based on average conditions. Your actual cost may vary depending on factors such as distance, access difficulty, stairs, parking availability, and additional services required. All prices are per hour + GST included. For an accurate quote tailored to your specific move, please contact our team.
                                 </p>
                             </div>
                         </FadeIn>
