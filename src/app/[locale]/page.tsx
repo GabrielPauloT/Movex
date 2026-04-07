@@ -55,14 +55,14 @@ export default async function Home({
       {/* Sticky Mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 lg:hidden z-40 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
         <a href="tel:1300480732" className="flex-1">
-          <Button variant="outline" className="w-full h-12 text-base font-bold border-2 border-secondary text-secondary hover:bg-secondary hover:text-white">
+          <Button variant="accent" className="w-full h-12 text-base font-bold">
             <Phone className="w-5 h-5 mr-2" />
-            Call
+            Call Now
           </Button>
         </a>
-        <a href="#quote" className="flex-1">
+        <a href="#quote-form" className="flex-1">
           <Button className="w-full h-12 text-base font-bold shadow-lg shadow-primary/20">
-            Get Quote
+            Get a Quote
           </Button>
         </a>
       </div>

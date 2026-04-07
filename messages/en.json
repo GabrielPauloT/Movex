@@ -11,7 +11,8 @@
             "pricing": "Pricing",
             "reviews": "Reviews",
             "contact": "Contact",
-            "volumeCalculator": "Volume Calculator"
+            "volumeCalculator": "Volume Calculator",
+            "about": "About Us"
         },
         "getQuote": "Get a Quote",
         "tagline": "REMOVALS & STORAGE"
@@ -21,6 +22,7 @@
         "title": "Professional <primary>Local Removalist</primary> You Can Trust",
         "description": "Local moving specialists delivering precision, care, and discretion across Melbourne. Fully insured and trusted for over 15 years.",
         "quote": "\"Seamless, carefully managed moves from start to finish.\"",
+        "familyMessage": "<strong>Let our family help your family.</strong> Get your free quote today with no obligations, no pressure, just honest advice.",
         "buttons": {
             "calculate": "Get a detailed Quote",
             "call": "Call Now"
@@ -129,25 +131,21 @@
             "4_5T": {
                 "name": "4.5T Truck",
                 "volume": "Up to 20m³",
-                "price": "139",
                 "ideal": "Perfect for 1 bedroom / studio apartment"
             },
             "8T": {
                 "name": "8T Truck",
                 "volume": "Up to 40m³",
-                "price": "149",
                 "ideal": "Ideal for 2-3 bedroom houses"
             },
             "12T": {
                 "name": "12T Truck",
                 "volume": "Up to 50m³",
-                "price": "169",
                 "ideal": "Best for 4 bedroom houses. 3 men recommended"
             },
             "16T": {
                 "name": "16T Truck",
                 "volume": "Up to 70m³",
-                "price": "249",
                 "ideal": "Ideal for 5+ bedrooms. 4 men required"
             }
         }
@@ -208,7 +206,7 @@
         "calculate": "Calculate Online"
     },
     "QuoteCalculator": {
-        "title": "Get Instant Quote",
+        "title": "Get a Free Quote",
         "subtitle": "No hidden fees, no surprises",
         "labels": {
             "name": "Full Name",
@@ -364,7 +362,7 @@
             "totalVolume": "Total Volume",
             "capacity": "capacity",
             "noItems": "No items selected yet",
-            "getQuote": "Get Free Quote"
+            "getQuote": "Get a Free Quote"
         },
         "trucks": {
             "4T": {

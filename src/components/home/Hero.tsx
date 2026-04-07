@@ -77,9 +77,17 @@ export default function Hero({ rating }: { rating: number }) {
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-500">
               <TrustIndicators />
             </div>
+
+            <div className="mt-10 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-[600ms]">
+              <p className="text-lg lg:text-xl text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                {t.rich('familyMessage', {
+                  strong: (chunks) => <strong className="text-primary font-extrabold">{chunks}</strong>
+                })}
+              </p>
+            </div>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-right-10 duration-1000 delay-300">
+          <div id="quote-form" className="animate-in fade-in slide-in-from-right-10 duration-1000 delay-300">
             <QuoteCalculator />
           </div>
         </div>

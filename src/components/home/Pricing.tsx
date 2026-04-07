@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import FadeIn from '@/components/ui/FadeIn';
 import { Link } from '@/i18n/routing';
+import { formatPrice, type TruckKey } from '@/data/truck-pricing';
 
 const TRUCK_IMAGES = [
   '/trucks/truck-4_5t.png',
@@ -12,7 +13,7 @@ const TRUCK_IMAGES = [
   '/trucks/truck-16t.png',
 ];
 
-const TRUCK_KEYS = ['4_5T', '8T', '12T', '16T'] as const;
+const TRUCK_KEYS: readonly TruckKey[] = ['4_5T', '8T', '12T', '16T'] as const;
 
 export default function Pricing() {
   const t = useTranslations('Pricing');
@@ -21,7 +22,7 @@ export default function Pricing() {
     key,
     name: t(`trucks.${key}.name`),
     volume: t(`trucks.${key}.volume`),
-    price: t(`trucks.${key}.price`),
+    price: formatPrice(key),
     ideal: t(`trucks.${key}.ideal`),
     image: TRUCK_IMAGES[index],
     popular: key === '8T',
@@ -76,9 +77,9 @@ export default function Pricing() {
                 <div className="p-5 flex flex-col flex-grow">
                   <div className="flex items-baseline mb-4">
                     <span className="text-sm text-gray-500 font-medium mr-1">From</span>
-                    <span className="text-4xl font-black text-primary tracking-tight">${truck.price}</span>
+                    <span className="text-4xl font-black text-primary tracking-tight">{truck.price}</span>
                     <span className="text-base text-gray-500 font-medium ml-1">/h</span>
-                    <span className="text-xs text-gray-400 font-medium ml-1">+ GST</span>
+                    <span className="text-xs text-gray-400 font-medium ml-1">GST incl.</span>
                   </div>
 
                   <p className="text-sm text-gray-600 mb-6 flex-grow">{truck.ideal}</p>

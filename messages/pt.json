@@ -11,7 +11,8 @@
             "pricing": "Preços",
             "reviews": "Avaliações",
             "contact": "Contato",
-            "volumeCalculator": "Calculadora de Volume"
+            "volumeCalculator": "Calculadora de Volume",
+            "about": "Sobre Nós"
         },
         "getQuote": "Fazer Orçamento",
         "tagline": "MUDANÇAS E ARMAZENAMENTO"
@@ -21,6 +22,7 @@
         "title": "Profissionais em <primary>Mudanças Locais</primary> em quem Você Pode Confiar",
         "description": "Especialistas em mudanças locais oferecendo precisão, cuidado e discrição em toda Melbourne. Totalmente segurados e confiáveis por mais de 15 anos.",
         "quote": "\"Mudanças impecáveis e cuidadosamente gerenciadas do início ao fim.\"",
+        "familyMessage": "<strong>Deixe nossa família ajudar a sua.</strong> Receba seu orçamento gratuito hoje sem obrigações, sem pressão, apenas conselhos honestos.",
         "buttons": {
             "calculate": "Calcular Custo",
             "call": "Ligar Agora"
@@ -129,25 +131,21 @@
             "4_5T": {
                 "name": "Caminhão 4.5T",
                 "volume": "Até 20m³",
-                "price": "139",
                 "ideal": "Perfeito para 1 quarto / apartamento studio"
             },
             "8T": {
                 "name": "Caminhão 8T",
                 "volume": "Até 40m³",
-                "price": "149",
                 "ideal": "Ideal para casas de 2-3 quartos"
             },
             "12T": {
                 "name": "Caminhão 12T",
                 "volume": "Até 50m³",
-                "price": "169",
                 "ideal": "Melhor para casas de 4 quartos. 3 homens recomendados"
             },
             "16T": {
                 "name": "Caminhão 16T",
                 "volume": "Até 70m³",
-                "price": "249",
                 "ideal": "Ideal para 5+ quartos. 4 homens necessários"
             }
         }
@@ -208,7 +206,7 @@
         "calculate": "Calcular Online"
     },
     "QuoteCalculator": {
-        "title": "Orçamento Instantâneo",
+        "title": "Orçamento Gratuito",
         "subtitle": "Sem taxas ocultas, sem surpresas",
         "labels": {
             "name": "Nome Completo",

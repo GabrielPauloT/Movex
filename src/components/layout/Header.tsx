@@ -26,6 +26,11 @@ export default function Header() {
     { name: t('nav.contact'), href: '/#contact' },
   ];
 
+  const mobileNavigation = [
+    ...navigation,
+    { name: t('nav.about'), href: '/about' },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -232,7 +237,7 @@ export default function Header() {
 
             {/* Navigation */}
             <div className="flex-1 overflow-y-auto py-4">
-              {navigation.map((item) => (
+              {mobileNavigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { Check, Package, Phone, Shield, Truck, Wrench, BedDouble, ArrowUpDown, Users, type LucideIcon } from 'lucide-react';
 import { GiBeltBuckles } from 'react-icons/gi';
 import Link from 'next/link';
+import { formatPrice, calculateEstimateRange, type TruckKey } from '@/data/truck-pricing';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -18,7 +19,7 @@ export default async function PricingPage({ params }: Props) {
     const trucks = [
         {
             name: '4.5T Truck',
-            price: 'From $139',
+            price: `From ${formatPrice('4_5T')}`,
             volume: 'Up to 20m³',
             ideal: 'Studio / 1 bedroom apartment',
             movers: '2 movers included',
@@ -34,7 +35,7 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '8T Truck',
-            price: 'From $149',
+            price: `From ${formatPrice('8T')}`,
             volume: 'Up to 40m³',
             ideal: '2-3 bedroom houses',
             movers: '2 movers included',
@@ -51,7 +52,7 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '12T Truck',
-            price: 'From $169',
+            price: `From ${formatPrice('12T')}`,
             volume: 'Up to 50m³',
             ideal: '4 bedroom houses',
             movers: '3 movers recommended',
@@ -67,7 +68,7 @@ export default async function PricingPage({ params }: Props) {
         },
         {
             name: '16T Truck',
-            price: 'From $249',
+            price: `From ${formatPrice('16T')}`,
             volume: 'Up to 70m³',
             ideal: '5+ bedroom homes',
             movers: '4 movers required',
@@ -83,15 +84,21 @@ export default async function PricingPage({ params }: Props) {
         }
     ];
 
-    const estimates = [
-        { size: 'Studio Apartment', volume: '8-10 m³', time: '1.5-2.5 hrs', rate: '$139', total: '$208-$347' },
-        { size: '1 Bedroom Apartment', volume: '10-15 m³', time: '2-3 hrs', rate: '$139', total: '$278-$417' },
-        { size: '2 Bedroom Apartment', volume: '20-24 m³', time: '3-4 hrs', rate: '$139', total: '$417-$556' },
-        { size: '3 Bedroom Apartment', volume: '25-30 m³', time: '5-6 hrs', rate: '$149', total: '$745-$894' },
-        { size: '2 Bedroom House', volume: '20-25 m³', time: '4-5 hrs', rate: '$139', total: '$556-$695' },
-        { size: '3 Bedroom House', volume: '25-35 m³', time: '5-7 hrs', rate: '$149', total: '$745-$1043' },
-        { size: '4 Bedroom House', volume: '35-50 m³', time: '8-9 hrs', rate: '$169', total: '$1352-$1521' },
-        { size: '5 Bedroom House', volume: '55+ m³', time: '10-12 hrs', rate: '$249', total: '$2490-$2988' }
+    const estimates: Array<{
+        size: string;
+        volume: string;
+        minHours: number;
+        maxHours: number;
+        truck: TruckKey;
+    }> = [
+        { size: 'Studio Apartment', volume: '8-10 m³', minHours: 1.5, maxHours: 2.5, truck: '4_5T' },
+        { size: '1 Bedroom Apartment', volume: '10-15 m³', minHours: 2, maxHours: 3, truck: '4_5T' },
+        { size: '2 Bedroom Apartment', volume: '20-24 m³', minHours: 3, maxHours: 4, truck: '4_5T' },
+        { size: '3 Bedroom Apartment', volume: '25-30 m³', minHours: 5, maxHours: 6, truck: '8T' },
+        { size: '2 Bedroom House', volume: '20-25 m³', minHours: 4, maxHours: 5, truck: '4_5T' },
+        { size: '3 Bedroom House', volume: '25-35 m³', minHours: 5, maxHours: 7, truck: '8T' },
+        { size: '4 Bedroom House', volume: '35-50 m³', minHours: 8, maxHours: 9, truck: '12T' },
+        { size: '5 Bedroom House', volume: '55+ m³', minHours: 10, maxHours: 12, truck: '16T' }
     ];
 
     const included: { label: string; icon: React.ComponentType<{ className?: string }> }[] = [
@@ -296,9 +303,9 @@ export default async function PricingPage({ params }: Props) {
                                             <tr key={index} className={`border-b border-gray-200 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-primary/5 transition-colors`}>
                                                 <td className="px-6 py-4 font-semibold text-secondary">{estimate.size}</td>
                                                 <td className="px-6 py-4 text-gray-600">{estimate.volume}</td>
-                                                <td className="px-6 py-4 text-gray-600">{estimate.time}</td>
-                                                <td className="px-6 py-4 text-gray-600">{estimate.rate}</td>
-                                                <td className="px-6 py-4 font-bold text-primary">{estimate.total}</td>
+                                                <td className="px-6 py-4 text-gray-600">{`${estimate.minHours}-${estimate.maxHours} hrs`}</td>
+                                                <td className="px-6 py-4 text-gray-600">{formatPrice(estimate.truck)}</td>
+                                                <td className="px-6 py-4 font-bold text-primary">{calculateEstimateRange(estimate.minHours, estimate.maxHours, estimate.truck)}</td>
                                             </tr>
                                         ))}
                                     </tbody>
