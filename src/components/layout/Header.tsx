@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button';
 import { smoothScrollTo } from '@/lib/scroll';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 export default function Header() {
   const t = useTranslations('Header');
@@ -258,10 +259,10 @@ export default function Header() {
               <Link href="/#quote" onClick={(e) => handleScroll(e, '/#quote')}>
                 <Button className="w-full h-12 text-base">{t('getQuote')}</Button>
               </Link>
-              <a href="tel:0370580073" className="block">
+              <a href={PHONE_TEL_HREF} className="block">
                 <Button variant="outline" className="w-full h-12 text-base border-2">
                   <Phone className="w-4 h-4 mr-2" />
-                  03 7058 0073
+                  {PHONE_DISPLAY}
                 </Button>
               </a>
             </div>

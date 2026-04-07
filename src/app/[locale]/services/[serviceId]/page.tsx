@@ -7,6 +7,7 @@ import { Check, ArrowRight, Phone, Calendar, Shield, Users, Package, Clock, Truc
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import FadeIn from '@/components/ui/FadeIn';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 type Props = {
     params: Promise<{ locale: string; serviceId: string }>;
@@ -179,10 +180,10 @@ export default async function ServicePage({ params }: Props) {
                                         <Link href="/#quote" className="block w-full">
                                             <Button className="w-full text-lg h-12">Get Free Quote</Button>
                                         </Link>
-                                        <a href="tel:0370580073" className="block w-full">
+                                        <a href={PHONE_TEL_HREF} className="block w-full">
                                             <Button variant="outline" className="w-full text-lg h-12 border-2">
                                                 <Phone className="w-4 h-4 mr-2" />
-                                                03 7058 0073
+                                                {PHONE_DISPLAY}
                                             </Button>
                                         </a>
                                     </div>
@@ -228,7 +229,7 @@ export default async function ServicePage({ params }: Props) {
 
             {/* Sticky Mobile CTA */}
             <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 lg:hidden z-50 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-                <a href="tel:1300480732" className="flex-1">
+                <a href={PHONE_TEL_HREF} className="flex-1">
                     <Button variant="outline" className="w-full h-12 text-base font-bold border-2 border-secondary text-secondary hover:bg-secondary hover:text-white">
                         <Phone className="w-5 h-5 mr-2" />
                         Call

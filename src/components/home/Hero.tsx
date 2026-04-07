@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/Button';
 import QuoteCalculator from './QuoteCalculator';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import { PHONE_TEL_HREF } from '@/data/contact';
 
 export default function Hero({ rating }: { rating: number }) {
   const t = useTranslations('Hero');
@@ -66,7 +67,7 @@ export default function Hero({ rating }: { rating: number }) {
               <Link href="/volume-calculator">
                 <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
               </Link>
-              <a href="tel:1300480732">
+              <a href={PHONE_TEL_HREF}>
                 <Button variant="accent" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg">
                   <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}

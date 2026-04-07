@@ -1,6 +1,7 @@
 import { Link } from '@/i18n/routing';
 import { Phone } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { PHONE_DISPLAY } from '@/data/contact';
 
 export default function TopBar() {
   const t = useTranslations('TopBar');
@@ -14,7 +15,7 @@ export default function TopBar() {
         </div>
         <div className="flex items-center gap-2 font-semibold ml-auto sm:ml-0">
           <Phone className="w-4 h-4 fill-current" />
-          <span>03 7058 0073</span>
+          <span>{PHONE_DISPLAY}</span>
         </div>
       </div>
     </div>

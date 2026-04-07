@@ -17,6 +17,7 @@ import { Button } from '@/components/ui/Button';
 import { setRequestLocale } from 'next-intl/server';
 
 import { getGooglePlaceDetails } from '@/lib/googleMaps';
+import { PHONE_TEL_HREF } from '@/data/contact';
 
 export default async function Home({
   params
@@ -54,7 +55,7 @@ export default async function Home({
       {/* WhatsApp Floating Button */}
       {/* Sticky Mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 lg:hidden z-40 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-        <a href="tel:1300480732" className="flex-1">
+        <a href={PHONE_TEL_HREF} className="flex-1">
           <Button variant="accent" className="w-full h-12 text-base font-bold">
             <Phone className="w-5 h-5 mr-2" />
             Call Now

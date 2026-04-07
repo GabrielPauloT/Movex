@@ -7,6 +7,7 @@ import { Check, Package, Phone, Shield, Truck, Wrench, BedDouble, ArrowUpDown, U
 import { GiBeltBuckles } from 'react-icons/gi';
 import Link from 'next/link';
 import { formatPrice, calculateEstimateRange, type TruckKey } from '@/data/truck-pricing';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -363,11 +364,10 @@ export default async function PricingPage({ params }: Props) {
                                     Contact us today for a free, no-obligation quote tailored to your specific moving needs.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    {/* TODO: Update phone number when client provides new number */}
-                                    <a href="tel:0370580073">
+                                    <a href={PHONE_TEL_HREF}>
                                         <Button variant="outline" className="bg-white text-secondary hover:bg-gray-100 border-0 h-14 px-8 text-lg">
                                             <Phone className="w-5 h-5 mr-2" />
-                                            03 7058 0073
+                                            {PHONE_DISPLAY}
                                         </Button>
                                     </a>
                                     <Link href={`/${locale}/#quote`}>

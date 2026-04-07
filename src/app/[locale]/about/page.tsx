@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/Button';
 import { Heart, Eye, Clock, Users, Phone, CheckSquare } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -167,10 +168,10 @@ export default async function AboutPage({ params }: Props) {
                                     Get in touch today for a free, no-obligation quote.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <a href="tel:0370580073">
+                                    <a href={PHONE_TEL_HREF}>
                                         <Button variant="outline" className="bg-white text-secondary hover:bg-gray-100 border-0 h-14 px-8 text-lg">
                                             <Phone className="w-5 h-5 mr-2" />
-                                            03 7058 0073
+                                            {PHONE_DISPLAY}
                                         </Button>
                                     </a>
                                     <Link href={`/${locale}/#quote`}>

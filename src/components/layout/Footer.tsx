@@ -2,6 +2,7 @@ import { Link } from '@/i18n/routing';
 import ScrollLink from '@/components/ui/ScrollLink';
 import { Facebook, Instagram, Linkedin, Phone, MapPin, Mail, Clock } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -66,9 +67,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-extrabold text-[0.9375rem] uppercase tracking-wider mb-6">{t('titles.getInTouch')}</h4>
             <div className="flex flex-col gap-5">
-              <a href="tel:0370580073" className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
+              <a href={PHONE_TEL_HREF} className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
                 <Phone className="w-6 h-6 fill-current" />
-                03 7058 0073
+                {PHONE_DISPLAY}
               </a>
               <div className="flex gap-3 text-[0.9375rem] leading-relaxed">
                 <MapPin className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
