@@ -7,6 +7,11 @@ interface NotificationData {
   from: string;
   to: string;
   inventory: string;
+  volume?: number;
+  truck?: string;
+  truckCapacity?: number;
+  price?: string;
+  totalItems?: number;
 }
 
 /**

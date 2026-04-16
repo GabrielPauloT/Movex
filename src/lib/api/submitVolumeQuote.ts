@@ -8,6 +8,11 @@ export interface VolumeQuotePayload {
   pickup: string;
   delivery: string;
   inventory: string;
+  volume: number;
+  truck: string;
+  truckCapacity: number;
+  price: string;
+  totalItems: number;
 }
 
 export interface VolumeQuoteResponse {
@@ -46,6 +51,11 @@ export async function submitVolumeQuote(
     from: data.pickup,
     to: data.delivery,
     inventory: data.inventory,
+    volume: data.volume,
+    truck: data.truck,
+    truckCapacity: data.truckCapacity,
+    price: data.price,
+    totalItems: data.totalItems,
   });
 
   return response.json();

@@ -12,6 +12,11 @@ interface NotificationPayload {
   from: string;
   to: string;
   inventory: string;
+  volume?: number;
+  truck?: string;
+  truckCapacity?: number;
+  price?: string;
+  totalItems?: number;
 }
 
 export async function POST(request: NextRequest) {
@@ -30,6 +35,34 @@ export async function POST(request: NextRequest) {
     const subject = isInstant
       ? 'New instant quote request'
       : 'New detailed quote request';
+
+    const inventoryHtml = data.inventory
+      ? data.inventory.split('\n').map(line => `<div style="padding: 4px 0; border-bottom: 1px solid #f3f4f6;">${line}</div>`).join('')
+      : 'Not specified';
+
+    const moveSummaryHtml = data.volume != null ? `
+          <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
+            <h2 style="color: #273690; margin-top: 0; margin-bottom: 12px;">Move Summary</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="width: 33%; text-align: center; padding: 16px 8px; background-color: #273690; border-radius: 8px 0 0 8px;">
+                  <div style="color: rgba(255,255,255,0.7); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Total Volume</div>
+                  <div style="color: white; font-size: 24px; font-weight: bold; margin-top: 4px;">${data.volume.toFixed(1)} m³</div>
+                </td>
+                <td style="width: 34%; text-align: center; padding: 16px 8px; background-color: #1e2a6e;">
+                  <div style="color: rgba(255,255,255,0.7); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Recommended Truck</div>
+                  <div style="color: white; font-size: 18px; font-weight: bold; margin-top: 4px;">${data.truck || '-'}</div>
+                  <div style="color: rgba(255,255,255,0.6); font-size: 12px;">${data.truckCapacity ? `${data.truckCapacity} m³ capacity` : ''}</div>
+                </td>
+                <td style="width: 33%; text-align: center; padding: 16px 8px; background-color: #FF6600; border-radius: 0 8px 8px 0;">
+                  <div style="color: rgba(255,255,255,0.8); font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Price</div>
+                  <div style="color: white; font-size: 24px; font-weight: bold; margin-top: 4px;">${data.price || '-'}</div>
+                </td>
+              </tr>
+            </table>
+            ${data.totalItems ? `<div style="text-align: center; margin-top: 8px; color: #6b7280; font-size: 13px;">${data.totalItems} items selected</div>` : ''}
+          </div>
+    ` : '';
 
     const html = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -67,10 +100,11 @@ export async function POST(request: NextRequest) {
               <td style="padding: 8px 0;">${data.to}</td>
             </tr>
           </table>
+          ${moveSummaryHtml}
           <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
             <p style="color: #6b7280; margin-bottom: 8px;">Inventory:</p>
-            <div style="background-color: white; padding: 12px; border-radius: 8px; border: 1px solid #e5e7eb;">
-              ${data.inventory || 'Not specified'}
+            <div style="background-color: white; padding: 12px; border-radius: 8px; border: 1px solid #e5e7eb; font-size: 14px;">
+              ${inventoryHtml}
             </div>
           </div>
         </div>

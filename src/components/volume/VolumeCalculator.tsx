@@ -146,7 +146,14 @@ export default function VolumeCalculator() {
     setIsSubmitting(true);
 
     try {
-      await submitVolumeQuote(result.data);
+      await submitVolumeQuote({
+        ...result.data,
+        volume: totalVolume,
+        truck: recommendedTruck.name,
+        truckCapacity: recommendedTruck.capacity,
+        price: totalVolume >= 70 ? 'Custom Price' : recommendedTruck.price,
+        totalItems,
+      });
       setSubmitSuccess(true);
       setFormName('');
       setFormEmail('');
