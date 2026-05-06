@@ -64,6 +64,13 @@
   h6 {
     @apply font-extrabold tracking-tight;
   }
+
+  /* Normalize date input height on iOS Safari — it ignores padding due to native appearance */
+  input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+    min-height: 3.125rem;
+  }
 }
 
 /* Custom Utilities */

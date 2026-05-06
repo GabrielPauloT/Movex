@@ -11,16 +11,18 @@
             "pricing": "Preços",
             "reviews": "Avaliações",
             "contact": "Contato",
-            "volumeCalculator": "Calculadora de Volume"
+            "volumeCalculator": "Calculadora de Volume",
+            "about": "Sobre Nós"
         },
         "getQuote": "Fazer Orçamento",
         "tagline": "MUDANÇAS E ARMAZENAMENTO"
     },
     "Hero": {
         "trustedSince": "CONFIÁVEL DESDE 2009",
-        "title": "Profissionais de <primary>Mudanças Interestaduais</primary> em quem Você Pode Confiar",
-        "description": "Empresa familiar atendendo de Melbourne a Sydney, Canberra e Adelaide. Totalmente segurada, preços transparentes e cuidado excepcional por mais de 15 anos.",
-        "quote": "\"Mudar não precisa ser estressante. Deixe nossa equipe experiente cuidar de tudo.\"",
+        "title": "Profissionais em <primary>Mudanças Locais</primary> em quem Você Pode Confiar",
+        "description": "Especialistas em mudanças locais oferecendo precisão, cuidado e discrição em toda Melbourne. Totalmente segurados e confiáveis por mais de 15 anos.",
+        "quote": "\"Mudanças impecáveis e cuidadosamente gerenciadas do início ao fim.\"",
+        "familyMessage": "<strong>Deixe nossa família ajudar a sua.</strong> Receba seu orçamento gratuito hoje sem obrigações, sem pressão, apenas conselhos honestos.",
         "buttons": {
             "calculate": "Calcule Seu Volume",
             "call": "Ligar Agora"
@@ -31,6 +33,9 @@
             "rating": "Avaliação Google",
             "owned": "Propriedade e Operação"
         }
+    },
+    "PartnersBar": {
+        "title": "Parceiros de Confiança"
     },
     "StatsBar": {
         "years": "Anos de Negócio",
@@ -49,7 +54,7 @@
             },
             "family": {
                 "title": "Familiar desde 2009",
-                "description": "Três gerações de experiência em mudanças. Não somos uma empresa qualquer — somos uma família servindo famílias."
+                "description": "Três gerações de experiência em mudanças. Não somos uma empresa qualquer. Somos uma família servindo famílias."
             },
             "fees": {
                 "title": "Sem Taxas Ocultas",
@@ -117,49 +122,31 @@
     },
     "Pricing": {
         "sectionTitle": "Preços",
-        "title": "Pacotes Honestos e Transparentes",
-        "description": "Todos os pacotes incluem seguro total. Escolha o nível de serviço ideal para você.",
+        "title": "Preços Honestos e Transparentes",
+        "description": "Todos os preços são por hora + GST included. Cada caminhão vem com equipe profissional e equipamento completo.",
         "mostPopular": "Mais Popular",
-        "getQuote": "Fazer Orçamento",
-        "packages": {
-            "essential": {
-                "name": "Essencial",
-                "subtitle": "Serviços básicos de mudança",
-                "description": "Perfeito para mudanças de 1-2 quartos",
-                "features": {
-                    "loading": "Carregamento e descarregamento profissional",
-                    "insurance": "Cobertura básica de seguro",
-                    "materials": "Materiais de embalagem padrão",
-                    "gps": "Rastreamento GPS",
-                    "packing": "Serviço completo de embalagem",
-                    "assembly": "Montagem de móveis"
-                }
+        "learnMore": "Saiba mais",
+        "viewDetailed": "Ver preços detalhados e estimativas",
+        "trucks": {
+            "4_5T": {
+                "name": "Caminhão 4.5T",
+                "volume": "Até 20m³",
+                "ideal": "Perfeito para 1 quarto / apartamento studio"
             },
-            "complete": {
-                "name": "Completo",
-                "subtitle": "Mudança completa",
-                "description": "Ideal para casas de 3-4 quartos",
-                "features": {
-                    "essential": "Tudo no Essencial",
-                    "packing": "Serviço completo de embalagem",
-                    "insurance": "Seguro premium",
-                    "assembly": "Desmontagem e montagem de móveis",
-                    "storage": "30 dias de armazenamento gratuito",
-                    "scheduling": "Agendamento prioritário"
-                }
+            "8T": {
+                "name": "Caminhão 8T",
+                "volume": "Até 40m³",
+                "ideal": "Ideal para casas de 2-3 quartos"
             },
-            "premium": {
-                "name": "Premium",
-                "subtitle": "Serviço de luxo",
-                "description": "Para 4+ quartos ou mudanças de luxo",
-                "features": {
-                    "complete": "Tudo no Completo",
-                    "coordinator": "Coordenador de mudança dedicado",
-                    "crating": "Caixotes personalizados para valores",
-                    "storage": "90 dias de armazenamento gratuito",
-                    "sameday": "Serviço no mesmo dia disponível",
-                    "cleaning": "Limpeza pós-mudança"
-                }
+            "12T": {
+                "name": "Caminhão 12T",
+                "volume": "Até 50m³",
+                "ideal": "Melhor para casas de 4 quartos. 3 homens recomendados"
+            },
+            "16T": {
+                "name": "Caminhão 16T",
+                "volume": "Até 70m³",
+                "ideal": "Ideal para 5+ quartos. 4 homens necessários"
             }
         }
     },
@@ -192,60 +179,67 @@
         "items": [
             {
                 "question": "Com que antecedência devo reservar?",
-                "answer": "Recomendamos reservar com 2-4 semanas de antecedência para mudanças interestaduais, especialmente durante a alta temporada (verão e final de mês). No entanto, muitas vezes podemos acomodar mudanças de última hora — basta nos ligar!"
+                "answer": "Recomendamos reservar com pelo menos 1-2 semanas de antecedência, especialmente durante períodos de pico (final de mês e fins de semana). No entanto, frequentemente conseguimos acomodar mudanças de última hora em Melbourne. Basta nos ligar!"
             },
             {
                 "question": "Que seguro vocês oferecem?",
-                "answer": "Todas as nossas mudanças incluem seguro total de trânsito e responsabilidade civil. A cobertura básica está incluída em todos os pacotes, com opções de cobertura adicional para itens de alto valor. Somos totalmente licenciados e segurados para sua tranquilidade."
+                "answer": "Todas as nossas mudanças incluem seguro completo de trânsito e responsabilidade civil. A cobertura está incluída em todas as reservas, com opções de proteção adicional para itens de alto valor. Somos totalmente licenciados e segurados para sua tranquilidade."
             },
             {
-                "question": "Posso rastrear meus pertences?",
-                "answer": "Sim! Todas as mudanças interestaduais incluem rastreamento por GPS. Você receberá atualizações em tempo real sobre a localização da sua carga e a estimativa de chegada. Nossa equipe também está disponível por telefone para atualizações a qualquer momento."
+                "question": "O que está incluído na taxa por hora?",
+                "answer": "Nossa taxa por hora inclui equipe profissional, caminhão, cobertores e cintas, carrinhos de mão, filme stretch, protetores de colchão e plataforma hidráulica. Sem taxas ocultas. O que cotamos é o que você paga."
             },
             {
-                "question": "O que vocês não podem transportar?",
-                "answer": "Por razões legais e de segurança, não podemos transportar materiais perigosos, alimentos perecíveis, plantas (interestaduais), animais de estimação ou itens ilegais. Ficaremos felizes em aconselhar sobre alternativas para plantas e animais de estimação, se necessário."
+                "question": "Quais itens vocês não podem transportar?",
+                "answer": "Por razões de segurança e legais, não podemos transportar materiais perigosos, alimentos perecíveis, animais de estimação ou itens ilegais. Se tiver dúvidas sobre algum item específico, consulte nossa equipe antes do dia da mudança."
             },
             {
                 "question": "Quais são os termos de pagamento?",
-                "answer": "Exigimos um depósito de 25% para garantir sua reserva, com o saldo devido na conclusão. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Planos de pagamento disponíveis para mudanças maiores."
+                "answer": "O pagamento é devido na conclusão da mudança. Aceitamos todos os principais cartões de crédito, transferências bancárias e dinheiro. Para mudanças maiores, planos de pagamento podem estar disponíveis. Entre em contato para discutir opções."
             }
         ]
     },
     "CTA": {
         "title": "Pronto para fazer sua mudança?",
-        "description": "Deixe nossa família ajudar a sua. Receba seu orçamento gratuito hoje — sem obrigações, sem pressão, apenas conselhos honestos.",
-        "call": "Ligar 1300 480 732",
+        "description": "Deixe nossa família ajudar a sua. Receba seu orçamento gratuito hoje sem obrigações, sem pressão, apenas conselhos honestos.",
+        "call": "Ligar 03 7058 0073",
         "calculate": "Calcular Online"
     },
     "QuoteCalculator": {
-        "title": "Orçamento Instantâneo",
+        "title": "Orçamento Gratuito",
         "subtitle": "Sem taxas ocultas, sem surpresas",
         "labels": {
-            "from": "Saindo de",
-            "to": "Indo para",
-            "size": "Tamanho do Imóvel",
-            "date": "Data Preferida"
+            "name": "Nome Completo",
+            "from": "Local de Retirada",
+            "to": "Destino",
+            "date": "Data Preferida",
+            "phone": "Telefone",
+            "email": "E-mail",
+            "inventory": "Inventário"
         },
         "placeholders": {
-            "city": "Selecione a cidade",
-            "size": "Selecione o tamanho"
+            "name": "ex: João da Silva",
+            "from": "Digite o endereço de retirada",
+            "to": "Digite o endereço de destino",
+            "phone": "ex: 0412 345 678",
+            "email": "seu@email.com",
+            "inventory": "ex: 2x camas, 1x sofá, 5x caixas..."
         },
-        "button": "Calcular Estimativa",
+        "button": {
+            "submit": "Solicitar Orçamento",
+            "submitting": "Enviando..."
+        },
         "errors": {
-            "fields": "Por favor, preencha todos os campos",
-            "sameCity": "Cidades de origem e destino não podem ser as mesmas"
+            "required": "Este campo é obrigatório",
+            "sameCity": "Cidades de origem e destino não podem ser as mesmas",
+            "invalidPhone": "Por favor, insira um número de telefone válido",
+            "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+            "submitFailed": "Algo deu errado. Tente novamente ou ligue diretamente para nós."
         },
-        "result": {
-            "title": "Seu Custo Estimado",
-            "call": "Ligar para Confirmar Reserva",
-            "note": "Inclui seguro e materiais de embalagem premium. Preço final confirmado após avaliação."
-        },
-        "sizes": {
-            "1bed": "1 Quarto",
-            "2bed": "2 Quartos",
-            "3bed": "3 Quartos",
-            "4bed": "4+ Quartos"
+        "success": {
+            "title": "Orçamento Solicitado!",
+            "description": "Recebemos sua solicitação e entraremos em contato em breve. Verifique seu e-mail para confirmação.",
+            "newQuote": "Enviar Outro Orçamento"
         }
     },
     "Home": {
@@ -274,8 +268,7 @@
         "company": {
             "about": "Sobre Nós",
             "reviews": "Avaliações",
-            "faq": "FAQ",
-            "careers": "Carreiras"
+            "faq": "FAQ"
         },
         "hours": {
             "title": "Horários",
@@ -378,8 +371,11 @@
             "8T": {
                 "description": "Ideal para casas de 2-3 quartos"
             },
-            "10T": {
-                "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+            "12T": {
+                "description": "Melhor para casas de 4 quartos. 3 homens recomendados"
+            },
+            "16T": {
+                "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
             }
         },
         "modal": {
@@ -390,18 +386,70 @@
                 "name": "Nome Completo",
                 "email": "E-mail",
                 "phone": "Telefone",
-                "pickup": "Retirada (Bairro/CEP)",
-                "delivery": "Entrega (Bairro/CEP)",
-                "submit": "Enviar Solicitação"
+                "date": "Data Preferida",
+                "pickup": "Retirada",
+                "pickupPlaceholder": "Endereço de retirada",
+                "delivery": "Entrega",
+                "deliveryPlaceholder": "Endereço de entrega",
+                "inventory": "Inventário",
+                "submit": "Enviar Solicitação",
+                "submitting": "Enviando..."
             },
-            "success": "Solicitação enviada! (Demo)"
+            "errors": {
+                "required": "Este campo é obrigatório",
+                "invalidPhone": "Por favor, insira um número de telefone válido",
+                "invalidEmail": "Por favor, insira um endereço de e-mail válido",
+                "submitFailed": "Algo deu errado. Tente novamente ou ligue diretamente para nós."
+            },
+            "success": {
+                "title": "Cotação Solicitada!",
+                "description": "Recebemos sua solicitação e entraremos em contato em breve. Verifique seu e-mail para confirmação.",
+                "close": "Fechar"
+            }
+        }
+    },
+    "About": {
+        "title": "Sobre Nós",
+        "subtitle": "Empresa familiar. Sediada em Melbourne. Confiável por mais de 15 anos.",
+        "story": {
+            "title": "Nossa História",
+            "p1": "A MoverX Solutions é uma empresa de mudanças familiar, sediada em Melbourne. Desde 2009, ajudamos famílias, profissionais e empresas a se mudarem com confiança. Entregando precisão, cuidado e discrição em cada trabalho.",
+            "p2": "O que começou como uma pequena operação familiar cresceu e se tornou uma das empresas de mudanças locais mais confiáveis de Melbourne. Após mais de 15 anos e 6.000+ mudanças bem-sucedidas, nosso compromisso permanece o mesmo: tratar cada pertence como se fosse nosso.",
+            "p3": "Não somos uma corporação sem rosto. Somos uma família servindo famílias. E esse toque pessoal é o que nos diferencia.",
+            "mission": {
+                "title": "Nossa Missão",
+                "description": "Fornecer serviços de mudança confiáveis e sem estresse que colocam nossos clientes em primeiro lugar. Nosso objetivo é lidar com cada mudança com cuidado, atenção e profissionalismo, tornando cada transição o mais suave possível."
+            },
+            "vision": {
+                "title": "Nossa Visão",
+                "description": "Ser a empresa de mudanças mais confiável e recomendada de Melbourne, conhecida por serviços excepcionais, valores familiares e o compromisso de tornar cada mudança uma experiência positiva."
+            }
+        },
+        "values": {
+            "title": "O Que Defendemos",
+            "care": {
+                "title": "Cuidado e Precisão",
+                "description": "Cada item é manuseado com o mesmo cuidado que daríamos aos nossos próprios pertences. Embalagem cuidadosa, transporte seguro, colocação precisa."
+            },
+            "transparency": {
+                "title": "Transparência",
+                "description": "Sem taxas ocultas, sem surpresas. Oferecemos preços claros e diretos para que você saiba exatamente o que esperar."
+            },
+            "reliability": {
+                "title": "Confiabilidade",
+                "description": "Pontuais, sempre. Chegamos quando dizemos que vamos e cumprimos nossas promessas."
+            },
+            "community": {
+                "title": "Comunidade",
+                "description": "Temos orgulho de servir Melbourne e seus subúrbios. Esta é nossa casa, e tratamos cada cliente como um vizinho."
+            }
         }
     },
     "ServiceDetails": {
         "house": {
             "title": "Mudança Residencial",
             "subtitle": "Serviços completos de mudança residencial",
-            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua realocação suave, segura e livre de estresse. Da embalagem cuidadosa e transporte seguro à descarga e colocação de móveis, nossa equipe experiente cuida de cada etapa com atenção e eficiência.",
+            "description": "Oferecemos serviços profissionais de mudança residencial projetados para tornar sua mudança tranquila, segura e completamente livre de estresse. Desde embalagem cuidadosa e transporte protegido até descarga precisa e colocação de móveis, nossa equipe experiente gerencia cada detalhe com cuidado, eficiência e profissionalismo. Para que você possa se concentrar em se instalar em sua nova casa.",
             "features": [
                 "Equipe de mudança treinada e experiente",
                 "Materiais de embalagem protetores",
@@ -420,7 +468,7 @@
         "commercial": {
             "title": "Mudança Comercial",
             "subtitle": "Realocações empresariais eficientes",
-            "description": "Fornecemos suporte confiável de mudança comercial e logística para empresas de todos os tamanhos, incluindo varejo, armazéns e operações comerciais. Nossa equipe cuida da embalagem, transporte, carga/descarga e instalação com forte foco em eficiência, segurança e mínima interrupção de suas operações.",
+            "description": "Oferecemos suporte completo de mudança comercial e logística para empresas que exigem confiabilidade e eficiência. Seja na realocação de espaços de varejo, armazéns ou operações comerciais, nossa equipe entrega planejamento estruturado, manuseio seguro e execução otimizada. Minimizando o tempo de inatividade e protegendo seus ativos em cada etapa.",
             "features": [
                 "Opções flexíveis de agendamento",
                 "Equipes de mudança experientes",
@@ -439,7 +487,7 @@
         "office": {
             "title": "Realocação de Escritório",
             "subtitle": "Serviços especializados de mudança de escritório",
-            "description": "Gerenciamos realocações de escritório completas projetadas para manter seu negócio funcionando sem problemas durante toda a mudança. Do planejamento e embalagem ao transporte, montagem de móveis e configuração do espaço de trabalho, garantimos uma transição estruturada e eficiente com mínimo tempo de inatividade.",
+            "description": "Oferecemos soluções completas de realocação de escritório com foco em eficiência, organização e continuidade dos negócios. Do planejamento inicial e embalagem segura ao transporte, remontagem e configuração do espaço de trabalho, nossa equipe experiente garante uma transição tranquila com mínimo tempo de inatividade e máxima produtividade.",
             "features": [
                 "Planejamento e coordenação pré-mudança",
                 "Manuseio profissional de equipamentos",
@@ -458,7 +506,7 @@
         "packing": {
             "title": "Embalagem Profissional",
             "subtitle": "Embalagem especializada para proteção máxima",
-            "description": "Nosso serviço de embalagem profissional garante que seus pertences sejam cuidadosamente preparados, protegidos e prontos para transporte ou armazenamento. Usando materiais de alta qualidade e técnicas comprovadas, nossa equipe treinada embala tudo com eficiência, reduzindo o risco de danos e economizando seu tempo e esforço.",
+            "description": "A embalagem é uma das etapas mais críticas de qualquer mudança. Nosso serviço profissional de embalagem garante que cada item seja envolvido, protegido e organizado com segurança, utilizando materiais de alta qualidade e técnicas especializadas. O resultado? Transporte mais seguro, menos estresse e uma experiência de mudança mais tranquila do início ao fim.",
             "features": [
                 "Materiais de embalagem de alta qualidade",
                 "Embaladores experientes e treinados",
@@ -477,7 +525,7 @@
         "storage": {
             "title": "Armazenamento",
             "subtitle": "Soluções seguras de armazenamento em contêineres",
-            "description": "Oferecemos soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que precisam de espaço de curto ou longo prazo. Seus bens são carregados com segurança, selados e armazenados em contêineres dedicados em nossa instalação monitorada, garantindo proteção e fácil acesso quando necessário.",
+            "description": "Oferecemos soluções seguras e flexíveis de armazenamento em contêineres para clientes residenciais e comerciais que necessitam de espaço de curto ou longo prazo. Seus bens são carregados profissionalmente, selados e armazenados em contêineres dedicados em nossa instalação monitorada, garantindo máxima proteção e acesso conveniente sempre que necessário.",
             "features": [
                 "Contêineres de uso exclusivo",
                 "Instalação monitorada 24/7",
@@ -496,7 +544,7 @@
         "furniture": {
             "title": "Entrega de Móveis Novos",
             "subtitle": "Entrega e montagem profissional de móveis",
-            "description": "Fornecemos entrega e instalação confiável de móveis novos para residências, escritórios e espaços comerciais. Da coleta e transporte seguro à colocação e montagem, nossa equipe garante que cada item chegue em perfeitas condições e seja instalado exatamente onde você precisa.",
+            "description": "Trabalhamos em parceria com lojas de móveis e fornecedores para oferecer serviços profissionais de entrega e instalação que estendem a experiência da sua marca além do showroom. Da coleta no armazém à entrega e montagem na residência, nossa equipe treinada garante manuseio seguro, agendamento eficiente e apresentação impecável, elevando a satisfação do cliente e a eficiência operacional.",
             "features": [
                 "Manuseio e transporte cuidadoso",
                 "Montagem e colocação profissional",

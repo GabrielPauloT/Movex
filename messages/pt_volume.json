@@ -88,8 +88,11 @@
         "8T": {
             "description": "Ideal para casas de 2-3 quartos"
         },
-        "10T": {
-            "description": "Melhor para casas de 3+ quartos ou grandes mudanças"
+        "12T": {
+            "description": "Melhor para casas de 4 quartos. 3 homens recomendados"
+        },
+        "16T": {
+            "description": "Para mudanças extra-grandes que necessitam de dois caminhões"
         }
     },
     "modal": {
@@ -100,8 +103,10 @@
             "name": "Nome Completo",
             "email": "E-mail",
             "phone": "Telefone",
-            "pickup": "Retirada (Bairro/CEP)",
-            "delivery": "Entrega (Bairro/CEP)",
+            "pickup": "Retirada",
+            "pickupPlaceholder": "Endereço de retirada",
+            "delivery": "Entrega",
+            "deliveryPlaceholder": "Endereço de entrega",
             "submit": "Enviar Solicitação"
         },
         "success": "Solicitação enviada! (Demo)"

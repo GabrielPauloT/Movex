@@ -1,12 +1,18 @@
+import { Link } from '@/i18n/routing';
 import ScrollLink from '@/components/ui/ScrollLink';
 import { Facebook, Instagram, Linkedin, Phone, MapPin, Mail, Clock } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 export default function Footer() {
   const t = useTranslations('Footer');
 
   const serviceKeys = ['house', 'commercial', 'office', 'packing', 'storage', 'furniture'];
-  const companyKeys = ['about', 'reviews', 'faq', 'careers'];
+  const companyLinks = [
+    { key: 'about', href: '/about' },
+    { key: 'reviews', href: '/#testimonials' },
+    { key: 'faq', href: '/#faq' },
+  ];
 
   return (
     <footer className="bg-gray-900 text-gray-400 pt-16 pb-8">
@@ -20,15 +26,12 @@ export default function Footer() {
               {t('header.description')}
             </p>
             <div className="flex gap-4">
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+              <a href="https://www.facebook.com/share/1FLgEEjj6L/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                 <Facebook className="w-4 h-4" />
-              </ScrollLink>
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-                <Linkedin className="w-4 h-4" />
-              </ScrollLink>
-              <ScrollLink href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
+              </a>
+              <a href="https://www.instagram.com/moverxsolutions?igsh=MTFxZWo3cG5zdW8zbw==" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all">
                 <Instagram className="w-4 h-4" />
-              </ScrollLink>
+              </a>
             </div>
           </div>
 
@@ -38,9 +41,9 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {serviceKeys.map((key) => (
                 <li key={key}>
-                  <ScrollLink href="#services" className="text-[0.9375rem] hover:text-primary transition-colors">
+                  <Link href={`/services/${key}`} className="text-[0.9375rem] hover:text-primary transition-colors">
                     {t(`services.${key}`)}
-                  </ScrollLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -50,11 +53,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-extrabold text-[0.9375rem] uppercase tracking-wider mb-6">{t('titles.company')}</h4>
             <ul className="flex flex-col gap-3">
-              {companyKeys.map((key) => (
+              {companyLinks.map(({ key, href }) => (
                 <li key={key}>
-                  <ScrollLink href="#" className="text-[0.9375rem] hover:text-primary transition-colors">
+                  <Link href={href} className="text-[0.9375rem] hover:text-primary transition-colors">
                     {t(`company.${key}`)}
-                  </ScrollLink>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -64,9 +67,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-extrabold text-[0.9375rem] uppercase tracking-wider mb-6">{t('titles.getInTouch')}</h4>
             <div className="flex flex-col gap-5">
-              <a href="tel:0370580073" className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
+              <a href={PHONE_TEL_HREF} className="flex items-center gap-3 text-2xl font-black text-primary hover:text-primary-light transition-colors">
                 <Phone className="w-6 h-6 fill-current" />
-                03 7058 0073
+                {PHONE_DISPLAY}
               </a>
               <div className="flex gap-3 text-[0.9375rem] leading-relaxed">
                 <MapPin className="w-5 h-5 text-gray-600 shrink-0 mt-0.5" />
@@ -97,8 +100,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 text-center md:text-left">
           <div>{t('legal.rights')}</div>
           <div className="flex gap-6">
-            <ScrollLink href="#" className="hover:text-white transition-colors">{t('legal.privacy')}</ScrollLink>
-            <ScrollLink href="#" className="hover:text-white transition-colors">{t('legal.terms')}</ScrollLink>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">{t('legal.privacy')}</Link>
+            <Link href="/terms-of-service" className="hover:text-white transition-colors">{t('legal.terms')}</Link>
           </div>
         </div>
       </div>

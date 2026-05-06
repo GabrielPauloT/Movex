@@ -3,6 +3,8 @@ import { Check, Shield, Star, Users, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import QuoteCalculator from './QuoteCalculator';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import { PHONE_TEL_HREF } from '@/data/contact';
 
 export default function Hero({ rating }: { rating: number }) {
   const t = useTranslations('Hero');
@@ -27,7 +29,7 @@ export default function Hero({ rating }: { rating: number }) {
   );
 
   return (
-    <section className="relative pt-16 pb-20 lg:pt-24 lg:pb-28 overflow-hidden bg-white" id="quote">
+    <section className="relative pt-6 pb-20 lg:pt-10 lg:pb-28 overflow-hidden bg-white" id="quote">
       {/* Background Image with Gradient Fade */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply pointer-events-none"
@@ -37,7 +39,7 @@ export default function Hero({ rating }: { rating: number }) {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-16 items-start">
           <div className="hero-content text-center lg:text-left">
             <div className="inline-flex items-center gap-2 bg-secondary/5 backdrop-blur-sm px-4 py-2 rounded-full text-[0.8125rem] font-bold text-secondary mb-6 shadow-sm border border-secondary/10 animate-in fade-in slide-in-from-bottom-4 duration-700">
               <Check className="w-4 h-4 stroke-[3] text-primary" />
@@ -62,11 +64,11 @@ export default function Hero({ rating }: { rating: number }) {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
-              <ScrollLink href="#quote">
-                <Button size="lg" className="w-full sm:w-auto sm:min-w-[220px] h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
-              </ScrollLink>
-              <a href="tel:1300480732">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto sm:min-w-[220px] h-14 px-8 text-lg border-2 border-transparent hover:border-secondary/10 hover:bg-white text-secondary">
+              <Link href="/volume-calculator">
+                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
+              </Link>
+              <a href={PHONE_TEL_HREF}>
+                <Button variant="accent" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg">
                   <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}
                 </Button>
@@ -76,9 +78,17 @@ export default function Hero({ rating }: { rating: number }) {
             <div className="animate-in fade-in slide-in-from-bottom-10 duration-700 delay-500">
               <TrustIndicators />
             </div>
+
+            <div className="mt-10 animate-in fade-in slide-in-from-bottom-10 duration-700 delay-[600ms]">
+              <p className="text-lg lg:text-xl text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                {t.rich('familyMessage', {
+                  strong: (chunks) => <strong className="text-primary font-extrabold">{chunks}</strong>
+                })}
+              </p>
+            </div>
           </div>
 
-          <div className="animate-in fade-in slide-in-from-right-10 duration-1000 delay-300">
+          <div id="quote-form" className="animate-in fade-in slide-in-from-right-10 duration-1000 delay-300">
             <QuoteCalculator />
           </div>
         </div>

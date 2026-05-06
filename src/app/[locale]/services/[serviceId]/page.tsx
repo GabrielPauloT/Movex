@@ -2,12 +2,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import TopBar from '@/components/layout/TopBar';
 import CTA from '@/components/home/CTA';
-import { Check, ArrowRight, Phone, Calendar, Shield } from 'lucide-react';
+import { Check, ArrowRight, Phone, Calendar, Shield, Users, Package, Clock, Truck, MapPin, Wrench, Lock, Box, ClipboardList, Tag, Star } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import Link from 'next/link';
 import FadeIn from '@/components/ui/FadeIn';
+import { PHONE_DISPLAY, PHONE_TEL_HREF } from '@/data/contact';
 
 type Props = {
     params: Promise<{ locale: string; serviceId: string }>;
@@ -39,20 +39,31 @@ export default async function ServicePage({ params }: Props) {
         commercial: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80',
         office: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80',
         packing: 'https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&q=80',
-        storage: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80',
+        storage: '/storage/container.jpeg',
         furniture: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80',
     };
 
     const heroImage = SERVICE_IMAGES[serviceId] || SERVICE_IMAGES.house;
 
+    // Icons for key features per service type
+    const FEATURE_ICONS: Record<string, typeof Check[]> = {
+        house: [Users, Package, Wrench, Shield, Clock, Tag],
+        commercial: [Clock, Users, Truck, Lock, Star, Shield],
+        office: [ClipboardList, Wrench, Tag, Clock, MapPin, Shield],
+        packing: [Box, Users, Shield, Tag, Package, Clock],
+        storage: [Lock, Shield, Clock, MapPin, Truck, Package],
+        furniture: [Package, Wrench, Box, Clock, Phone, Star],
+    };
+
+    const featureIcons = FEATURE_ICONS[serviceId] || features.map(() => Check);
+
     return (
         <div className="min-h-screen bg-white">
-            <TopBar />
             <Header />
 
             <main className="pb-24 lg:pb-0">
                 {/* Service Hero */}
-                <section className="relative bg-secondary py-20 lg:py-32 overflow-hidden">
+                <section className="relative bg-secondary pb-32 lg:pb-40 pt-20 lg:pt-32 overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay transition-opacity duration-700"
                         style={{ backgroundImage: `url('${heroImage}')` }}
@@ -61,10 +72,10 @@ export default async function ServicePage({ params }: Props) {
 
                     <div className="container mx-auto px-6 relative z-10">
                         <FadeIn direction="up">
-                            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-white/90 mb-6 border border-white/20">
-                                <Link href={`/${locale}`} className="hover:text-primary transition-colors">Home</Link>
-                                <span className="text-white/40">/</span>
-                                <span className="text-primary">{t('title')}</span>
+                            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/30">
+                                <Link href={`/${locale}`} className="text-white hover:text-accent transition-colors">Home</Link>
+                                <span className="text-white/60">/</span>
+                                <span className="text-accent font-semibold">{t('title')}</span>
                             </div>
 
                             <h1 className="text-4xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight max-w-4xl">
@@ -75,9 +86,16 @@ export default async function ServicePage({ params }: Props) {
                             </p>
                         </FadeIn>
                     </div>
+
+                    {/* Wave separator */}
+                    <div className="absolute bottom-0 left-0 right-0 z-10">
+                        <svg viewBox="0 0 1440 150" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-[80px] lg:h-[120px] block">
+                            <path d="M0 150L0 70C240 60 480 0 650 12C960 20 1200 100 1440 50L1440 150L0 150Z" fill="white" />
+                        </svg>
+                    </div>
                 </section>
 
-                <div className="container mx-auto px-6 py-20">
+                <div className="container mx-auto px-6 py-5">
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-16">
                         {/* Main Content */}
                         <div>
@@ -119,14 +137,17 @@ export default async function ServicePage({ params }: Props) {
                                     Key Features
                                 </h3>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-                                    {features.map((feature, idx) => (
-                                        <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-50 border border-gray-100 hover:border-primary/20 hover:bg-white hover:shadow-lg transition-all duration-300 group">
-                                            <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-primary shadow-sm border border-gray-100 group-hover:scale-110 transition-transform flex-shrink-0">
-                                                <Check className="w-4 h-4 stroke-[3]" />
+                                    {features.map((feature, idx) => {
+                                        const Icon = featureIcons[idx] || Check;
+                                        return (
+                                            <div key={idx} className="flex items-start gap-4 p-6 rounded-2xl bg-gray-100 border border-gray-200 shadow-md hover:border-primary/30 hover:bg-white hover:shadow-xl transition-all duration-300 group">
+                                                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center text-white shadow-sm group-hover:scale-110 transition-transform flex-shrink-0">
+                                                    <Icon className="w-5 h-5" />
+                                                </div>
+                                                <span className="font-medium text-gray-700 pt-2 group-hover:text-secondary transition-colors">{feature}</span>
                                             </div>
-                                            <span className="font-medium text-gray-700 pt-1 group-hover:text-secondary transition-colors">{feature}</span>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </FadeIn>
 
@@ -159,10 +180,10 @@ export default async function ServicePage({ params }: Props) {
                                         <Link href="/#quote" className="block w-full">
                                             <Button className="w-full text-lg h-12">Get Free Quote</Button>
                                         </Link>
-                                        <a href="tel:1300480732" className="block w-full">
+                                        <a href={PHONE_TEL_HREF} className="block w-full">
                                             <Button variant="outline" className="w-full text-lg h-12 border-2">
                                                 <Phone className="w-4 h-4 mr-2" />
-                                                1300 480 732
+                                                {PHONE_DISPLAY}
                                             </Button>
                                         </a>
                                     </div>
@@ -208,7 +229,7 @@ export default async function ServicePage({ params }: Props) {
 
             {/* Sticky Mobile CTA */}
             <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 lg:hidden z-50 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
-                <a href="tel:1300480732" className="flex-1">
+                <a href={PHONE_TEL_HREF} className="flex-1">
                     <Button variant="outline" className="w-full h-12 text-base font-bold border-2 border-secondary text-secondary hover:bg-secondary hover:text-white">
                         <Phone className="w-5 h-5 mr-2" />
                         Call

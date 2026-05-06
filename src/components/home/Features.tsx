@@ -29,7 +29,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 lg:py-24 bg-white" id="features">
+    <section className="py-20 lg:py-24 bg-gray-200" id="features">
       <div className="container mx-auto px-6">
         <FadeIn direction="up" className="max-w-3xl mx-auto text-center mb-16">
           <div className="inline-block text-sm font-extrabold text-primary uppercase tracking-widest mb-3">{t('sectionTitle')}</div>
@@ -48,7 +48,7 @@ export default function Features() {
               className="h-full"
             >
               <div
-                className="group h-full bg-white p-8 rounded-xl border-2 border-gray-100 hover:border-primary hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                className="group h-full bg-white p-8 rounded-xl border border-gray-100 shadow-md hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center text-white mb-6 shadow-md group-hover:shadow-primary/30 transition-shadow flex-shrink-0">
                   <feature.icon className="w-8 h-8" />
