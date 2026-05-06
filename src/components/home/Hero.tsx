@@ -65,10 +65,10 @@ export default function Hero({ rating }: { rating: number }) {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-400">
               <Link href="/volume-calculator">
-                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
+                <Button size="lg" className="w-full sm:w-64 h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
               </Link>
               <a href={PHONE_TEL_HREF}>
-                <Button variant="accent" size="lg" className="w-full sm:w-auto h-14 px-8 text-lg">
+                <Button variant="accent" size="lg" className="w-full sm:w-64 h-14 px-8 text-lg">
                   <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}
                 </Button>
