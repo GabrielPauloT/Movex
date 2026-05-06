@@ -67,7 +67,7 @@ export default function Hero({ rating }: { rating: number }) {
               <Link href="/volume-calculator">
                 <Button size="lg" className="w-full sm:w-64 h-14 px-8 text-lg shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">{t('buttons.calculate')}</Button>
               </Link>
-              <a href={PHONE_TEL_HREF}>
+              <a href={PHONE_TEL_HREF} className="hidden sm:block">
                 <Button variant="accent" size="lg" className="w-full sm:w-64 h-14 px-8 text-lg">
                   <Phone className="w-5 h-5 mr-2" />
                   {t('buttons.call')}

@@ -86,7 +86,8 @@ export default function VolumeCalculator() {
     return Object.entries(selectedItems)
       .map(([id, qty]) => {
         const name = t(`items.${id}`);
-        return `${qty}x ${name}`;
+        const volume = allItems[id]?.volume ?? 0;
+        return `${qty}x ${name} (${volume} m³)`;
       })
       .join('\n');
   };

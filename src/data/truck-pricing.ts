@@ -5,7 +5,7 @@
  */
 export const TRUCK_PRICES = {
   '4_5T': 149,
-  '8T': 159,
+  '8T': 169,
   '12T': 179,
   '16T': 269,
 } as const;

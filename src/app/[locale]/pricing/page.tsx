@@ -95,9 +95,9 @@ export default async function PricingPage({ params }: Props) {
         { size: 'Studio Apartment', volume: '8-10 m³', minHours: 1.5, maxHours: 2.5, truck: '4_5T' },
         { size: '1 Bedroom Apartment', volume: '10-15 m³', minHours: 2, maxHours: 3, truck: '4_5T' },
         { size: '2 Bedroom Apartment', volume: '20-24 m³', minHours: 3, maxHours: 4, truck: '4_5T' },
-        { size: '3 Bedroom Apartment', volume: '25-30 m³', minHours: 5, maxHours: 6, truck: '8T' },
+        { size: '3 Bedroom Apartment', volume: '25-30 m³', minHours: 5, maxHours: 7, truck: '8T' },
         { size: '2 Bedroom House', volume: '20-25 m³', minHours: 4, maxHours: 5, truck: '4_5T' },
-        { size: '3 Bedroom House', volume: '25-35 m³', minHours: 5, maxHours: 7, truck: '8T' },
+        { size: '3 Bedroom House', volume: '25-35 m³', minHours: 5, maxHours: 6, truck: '8T' },
         { size: '4 Bedroom House', volume: '35-50 m³', minHours: 8, maxHours: 9, truck: '12T' },
         { size: '5 Bedroom House', volume: '55+ m³', minHours: 10, maxHours: 12, truck: '16T' }
     ];
