@@ -37,7 +37,7 @@ export default async function PricingPage({ params }: Props) {
         {
             name: '8T Truck',
             price: `From ${formatPrice('8T')}`,
-            volume: 'Up to 40m³',
+            volume: 'Up to 37m³',
             ideal: '2-3 bedroom houses',
             movers: '2 movers included',
             popular: true,
@@ -54,7 +54,7 @@ export default async function PricingPage({ params }: Props) {
         {
             name: '12T Truck',
             price: `From ${formatPrice('12T')}`,
-            volume: 'Up to 50m³',
+            volume: 'Up to 55m³',
             ideal: '4 bedroom houses',
             movers: '3 movers recommended',
             image: '/trucks/truck-12t.png',
@@ -70,7 +70,7 @@ export default async function PricingPage({ params }: Props) {
         {
             name: '16T Truck',
             price: `From ${formatPrice('16T')}`,
-            volume: 'Up to 70m³',
+            volume: 'Up to 75m³',
             ideal: '5+ bedroom homes',
             movers: '4 movers required',
             image: '/trucks/truck-16t.png',

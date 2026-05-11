@@ -135,17 +135,17 @@
             },
             "8T": {
                 "name": "Caminhão 8T",
-                "volume": "Até 40m³",
+                "volume": "Até 37m³",
                 "ideal": "Ideal para casas de 2-3 quartos"
             },
             "12T": {
                 "name": "Caminhão 12T",
-                "volume": "Até 50m³",
+                "volume": "Até 55m³",
                 "ideal": "Melhor para casas de 4 quartos. 3 homens recomendados"
             },
             "16T": {
                 "name": "Caminhão 16T",
-                "volume": "Até 70m³",
+                "volume": "Até 75m³",
                 "ideal": "Ideal para 5+ quartos. 4 homens necessários"
             }
         }

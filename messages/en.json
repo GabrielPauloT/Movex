@@ -135,17 +135,17 @@
             },
             "8T": {
                 "name": "8T Truck",
-                "volume": "Up to 40m³",
+                "volume": "Up to 37m³",
                 "ideal": "Ideal for 2-3 bedroom houses"
             },
             "12T": {
                 "name": "12T Truck",
-                "volume": "Up to 50m³",
+                "volume": "Up to 55m³",
                 "ideal": "Best for 4 bedroom houses. 3 men recommended"
             },
             "16T": {
                 "name": "16T Truck",
-                "volume": "Up to 70m³",
+                "volume": "Up to 75m³",
                 "ideal": "Ideal for 5+ bedrooms. 4 men required"
             }
         }
